@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Turkish Homepage -->
+  <url>
+    <loc>https://tamendustri.com/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/"/>
+  </url>
+  
+  <!-- English Homepage -->
+  <url>
+    <loc>https://tamendustri.com/en</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en"/>
+  </url>
+  
+  <!-- Services Page (Turkish) -->
+  <url>
+    <loc>https://tamendustri.com/hizmetler</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/hizmetler"/>
+  </url>
+  
+  <!-- Services Page (English) -->
+  <url>
+    <loc>https://tamendustri.com/en/services</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/hizmetler"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/services"/>
+  </url>
+  
+  <!-- About Page (Turkish) -->
+  <url>
+    <loc>https://tamendustri.com/hakkimizda</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/hakkimizda"/>
+  </url>
+  
+  <!-- About Page (English) -->
+  <url>
+    <loc>https://tamendustri.com/en/about</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/hakkimizda"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/about"/>
+  </url>
+  
+  <!-- Contact Page (Turkish) -->
+  <url>
+    <loc>https://tamendustri.com/iletisim</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/iletisim"/>
+  </url>
+  
+  <!-- Contact Page (English) -->
+  <url>
+    <loc>https://tamendustri.com/en/contact</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/iletisim"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/contact"/>
+  </url>
+  
+</urlset> 
