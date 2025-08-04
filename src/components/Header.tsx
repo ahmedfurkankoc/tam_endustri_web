@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Menu, X, ChevronDown, ChevronRight, Settings, TrendingUp, GraduationCap } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 // SVG Bayrak Bileşenleri
 const TurkishFlag: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
@@ -32,6 +33,8 @@ const EnglishFlag: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }
 
 const Header: React.FC = () => {
   const { t, language, setLanguage } = useLanguage();
+  const location = useLocation();
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
@@ -61,6 +64,25 @@ const Header: React.FC = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+
+  // Dil değiştirme fonksiyonu
+  const handleLanguageChange = () => {
+    const newLanguage = language === 'tr' ? 'en' : 'tr';
+    setLanguage(newLanguage);
+    
+    // URL mapping - otomatik çeviri
+    const urlMap: Record<string, string> = {
+      '/': '/en',
+      '/hakkimizda': '/en/about',
+      '/iletisim': '/en/contact',
+      '/en': '/',
+      '/en/about': '/hakkimizda',
+      '/en/contact': '/iletisim'
+    };
+    
+    const newPath = urlMap[location.pathname] || (newLanguage === 'en' ? '/en' : '/');
+    navigate(newPath);
+  };
 
   const megaMenuData = [
     {
@@ -182,12 +204,13 @@ const Header: React.FC = () => {
                         <h4 className="text-gray-900 font-semibold mb-2">Tüm Hizmetlerimizi Keşfedin</h4>
                         <p className="text-gray-600 text-sm">Uzman ekibimizle tanışın ve projelerinizi hayata geçirin</p>
                       </div>
-                      <button 
-                        className="bg-tam-blue text-white px-6 py-3 rounded-full font-semibold hover:bg-tam-accent transition-all duration-200 hover:shadow-lg hover:scale-105"
+                      <a 
+                        href={language === 'en' ? '/en/contact' : '/iletisim'}
+                        className="bg-tam-blue text-white px-6 py-3 rounded-full font-semibold hover:bg-tam-accent transition-all duration-200 hover:shadow-lg hover:scale-105 inline-block"
                         onClick={() => setIsMegaMenuOpen(false)}
                       >
                         {t('nav.contact_us')}
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -198,13 +221,13 @@ const Header: React.FC = () => {
           <a href="#" className={`font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
             {t('nav.why')}
           </a>
-          <a href="#" className={`font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
+          <a href={language === 'en' ? '/en/contact' : '/iletisim'} className={`font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
             {t('nav.contact')}
           </a>
           
           {/* Language Toggle */}
           <button
-            onClick={() => setLanguage(language === 'tr' ? 'en' : 'tr')}
+            onClick={handleLanguageChange}
             className={`px-4 py-2 rounded-full border transition-all duration-200 flex items-center space-x-2 ${
               isScrolled 
                 ? 'border-gray-300 text-gray-800 hover:bg-gray-100' 
@@ -225,13 +248,16 @@ const Header: React.FC = () => {
           </button>
           
           {/* Contact Button */}
-          <button className={`px-6 py-2 rounded-full font-semibold transition-all duration-200 ${
-            isScrolled 
-              ? 'bg-tam-blue text-white hover:bg-tam-accent' 
-              : 'bg-white text-tam-dark hover:bg-gray-100'
-          }`}>
+          <a 
+            href={language === 'en' ? '/en/contact' : '/iletisim'}
+            className={`px-6 py-2 rounded-full font-semibold transition-all duration-200 ${
+              isScrolled 
+                ? 'bg-tam-blue text-white hover:bg-tam-accent' 
+                : 'bg-white text-tam-dark hover:bg-gray-100'
+            }`}
+          >
             {t('nav.contact_us')}
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -310,7 +336,7 @@ const Header: React.FC = () => {
               <a href="#" className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
                 {t('nav.why')}
               </a>
-              <a href="#" className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
+              <a href={language === 'en' ? '/en/contact' : '/iletisim'} className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
                 {t('nav.contact')}
               </a>
             </div>
@@ -319,7 +345,7 @@ const Header: React.FC = () => {
             <div className="px-6 py-6 space-y-4 border-t border-gray-200">
               {/* Language Toggle Mobile */}
               <button
-                onClick={() => setLanguage(language === 'tr' ? 'en' : 'tr')}
+                onClick={handleLanguageChange}
                 className="w-full px-4 py-3 rounded-full border border-gray-300 text-gray-800 hover:bg-gray-100 transition-all duration-200 flex items-center justify-center space-x-2"
               >
                 {language === 'tr' ? (
@@ -336,9 +362,13 @@ const Header: React.FC = () => {
               </button>
               
               {/* Contact Button Mobile */}
-              <button className="w-full px-6 py-3 rounded-full font-semibold transition-all duration-200 bg-tam-blue text-white hover:bg-tam-accent">
+              <a 
+                href={language === 'en' ? '/en/contact' : '/iletisim'}
+                className="w-full px-6 py-3 rounded-full font-semibold transition-all duration-200 bg-tam-blue text-white hover:bg-tam-accent text-center block"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 {t('nav.contact_us')}
-              </button>
+              </a>
             </div>
           </div>
         </div>
