@@ -186,7 +186,7 @@ const translations = {
     'footer.calculation_reporting_apps': 'Calculation and Reporting Applications',
     
     'footer.consulting': 'Consulting',
-    'footer.turkey_business_consulting': 'Turkey Business Consulting/Turkey Trade Consulting',
+    'footer.turkey_business_consulting': 'Türkiye Business Consulting',
     'footer.design_training': 'Design Training',
     'footer.feasibility_studies': 'Feasibility Studies and Reporting',
     'footer.lean_production_training': 'Lean Production Methods Training',
@@ -196,7 +196,7 @@ const translations = {
     'footer.copyright': '© 2023 Tam Industry Consulting Group, LLC',
     
     // Hero Section
-    'hero.title': 'TURKEY TRADE',
+    'hero.title': 'TÜRKİYE BUSINESS',
     'hero.title2': 'CONSULTING',
     'hero.description': 'We provide expert consulting services in Turkey market entry processes. We manage all necessary trade processes for foreign companies to succeed in Turkey.',
     'hero.scroll': 'Scroll',
