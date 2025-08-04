@@ -69,6 +69,45 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Lenis smooth scrolling */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Enhanced smooth scrolling for sections */
+section {
+  scroll-margin-top: 80px; /* Account for fixed header */
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Parallax effect for sections */
+.parallax-section {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+
+
 /* GPU Acceleration for Performance */
 .gpu-accelerated {
   transform: translateZ(0);

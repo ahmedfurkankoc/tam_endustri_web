@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import Lenis from 'lenis';
 
 const Hero: React.FC = () => {
   const { t } = useLanguage();
@@ -8,7 +9,17 @@ const Hero: React.FC = () => {
   const scrollToNextSection = () => {
     const nextSection = document.getElementById('problem-statement');
     if (nextSection) {
-      nextSection.scrollIntoView({ behavior: 'smooth' });
+      // Lenis smooth scroll
+      const lenis = (window as any).lenis;
+      if (lenis) {
+        lenis.scrollTo(nextSection, {
+          duration: 1.5,
+          easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        });
+      } else {
+        // Fallback to native smooth scroll
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
