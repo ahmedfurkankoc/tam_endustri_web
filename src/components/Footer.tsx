@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                 </ul>
               </div>
               
-              {/* Danışmanlık Proje Tasarım ve İmalat */}
+                                  {/* Proje Tasarım ve İmalat */}
               <div>
                 <h4 className="font-semibold mb-6 text-lg text-tam-blue">{t('footer.consulting_design')}</h4>
                 <ul className="space-y-4 text-gray-300">

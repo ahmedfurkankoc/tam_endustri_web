@@ -108,11 +108,13 @@ const Header: React.FC = () => {
         : 'bg-transparent'
     }`}>
       <nav className="flex items-center justify-between max-w-7xl mx-auto">
-        <img 
-          src={isScrolled ? "/tam-endustri-logo.png" : "/tam-endustri-logo.png"} 
-          alt="Tam Endüstri Logo" 
-          className="h-20" 
-        />
+        <a href="/" className="flex-shrink-0">
+          <img 
+            src={isScrolled ? "/tam-endustri-logo.png" : "/tam-endustri-logo.png"} 
+            alt="Tam Endüstri Logo" 
+            className="h-12 md:h-14" 
+          />
+        </a>
         
         <div className="hidden md:flex items-center space-x-8 text-sm font-body">
           <a href="#" className={`font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
@@ -247,86 +249,97 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className={`md:hidden absolute top-full left-0 right-0 ${isScrolled ? 'bg-white' : 'bg-tam-dark'} shadow-lg`}>
-          <div className="px-6 py-4 space-y-4">
-            <a href="#" className={`block font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
-              {t('nav.about')}
-            </a>
-            
-            {/* Mobile Services Menu */}
-            <div className="space-y-2">
+        <div className="md:hidden fixed inset-0 top-0 left-0 right-0 bottom-0 bg-white z-50">
+          <div className="flex flex-col h-full">
+            {/* Mobile Menu Header */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
+              <img 
+                src="/tam-endustri-logo.png" 
+                alt="Tam Endüstri Logo" 
+                className="h-12" 
+              />
               <button
-                onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
-                className={`w-full text-left font-semibold transition-colors flex items-center justify-between ${isScrolled ? 'text-tam-blue' : 'text-tam-blue'}`}
+                onClick={() => setIsMenuOpen(false)}
+                className="p-2"
               >
-                <span>{t('nav.services')}</span>
-                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+                <X className="w-6 h-6 text-gray-800" />
               </button>
-              {isMobileServicesOpen && (
-                <div className="ml-4 space-y-2">
-                  {megaMenuData.map((category, index) => (
-                    <div key={index} className="space-y-2">
-                      <div className={`text-sm font-medium ${isScrolled ? 'text-gray-300' : 'text-gray-300'}`}>{category.title}</div>
-                      <div className="ml-4 space-y-1">
-                        {category.items.map((item, itemIndex) => (
-                          <a
-                            key={itemIndex}
-                            href={item.href}
-                            className={`block text-xs transition-colors ${
-                              isScrolled ? 'text-gray-400 hover:text-gray-800' : 'text-gray-400 hover:text-white'
-                            }`}
-                            onClick={() => {
-                              setIsMenuOpen(false);
-                              setIsMobileServicesOpen(false);
-                            }}
-                          >
-                            {item.title}
-                          </a>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
             </div>
             
-            <a href="#" className={`block font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
-              {t('nav.why')}
-            </a>
-            <a href="#" className={`block font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
-              {t('nav.contact')}
-            </a>
+            {/* Mobile Menu Content */}
+            <div className="flex-1 px-6 py-8 space-y-6 overflow-y-auto">
+              <a href="#" className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
+                {t('nav.about')}
+              </a>
+              
+              {/* Mobile Services Menu */}
+              <div className="space-y-4">
+                <button
+                  onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                  className="w-full text-left font-semibold text-lg transition-colors flex items-center justify-between text-tam-blue"
+                >
+                  <span>{t('nav.services')}</span>
+                  <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {isMobileServicesOpen && (
+                  <div className="ml-4 space-y-4">
+                    {megaMenuData.map((category, index) => (
+                      <div key={index} className="space-y-3">
+                        <div className="text-base font-medium text-gray-600">{category.title}</div>
+                        <div className="ml-4 space-y-2">
+                          {category.items.map((item, itemIndex) => (
+                            <a
+                              key={itemIndex}
+                              href={item.href}
+                              className="block text-sm transition-colors text-gray-600 hover:text-gray-800"
+                              onClick={() => {
+                                setIsMenuOpen(false);
+                                setIsMobileServicesOpen(false);
+                              }}
+                            >
+                              {item.title}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+              
+              <a href="#" className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
+                {t('nav.why')}
+              </a>
+              <a href="#" className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
+                {t('nav.contact')}
+              </a>
+            </div>
             
-            {/* Language Toggle Mobile */}
-            <button
-              onClick={() => setLanguage(language === 'tr' ? 'en' : 'tr')}
-              className={`w-full px-4 py-2 rounded-full border transition-all duration-200 flex items-center justify-center space-x-2 ${
-                isScrolled 
-                  ? 'border-gray-300 text-gray-800 hover:bg-gray-100' 
-                  : 'border-white text-white hover:bg-white hover:text-tam-dark'
-              }`}
-            >
-              {language === 'tr' ? (
-                <>
-                  <EnglishFlag />
-                  <span>EN</span>
-                </>
-              ) : (
-                <>
-                  <TurkishFlag />
-                  <span>TR</span>
-                </>
-              )}
-            </button>
-            
-            {/* Contact Button Mobile */}
-            <button className={`w-full px-6 py-2 rounded-full font-semibold transition-all duration-200 ${
-              isScrolled 
-                ? 'bg-tam-blue text-white hover:bg-tam-accent' 
-                : 'bg-white text-tam-dark hover:bg-gray-100'
-            }`}>
-              {t('nav.contact_us')}
-            </button>
+            {/* Mobile Menu Footer */}
+            <div className="px-6 py-6 space-y-4 border-t border-gray-200">
+              {/* Language Toggle Mobile */}
+              <button
+                onClick={() => setLanguage(language === 'tr' ? 'en' : 'tr')}
+                className="w-full px-4 py-3 rounded-full border border-gray-300 text-gray-800 hover:bg-gray-100 transition-all duration-200 flex items-center justify-center space-x-2"
+              >
+                {language === 'tr' ? (
+                  <>
+                    <EnglishFlag />
+                    <span>EN</span>
+                  </>
+                ) : (
+                  <>
+                    <TurkishFlag />
+                    <span>TR</span>
+                  </>
+                )}
+              </button>
+              
+              {/* Contact Button Mobile */}
+              <button className="w-full px-6 py-3 rounded-full font-semibold transition-all duration-200 bg-tam-blue text-white hover:bg-tam-accent">
+                {t('nav.contact_us')}
+              </button>
+            </div>
           </div>
         </div>
       )}

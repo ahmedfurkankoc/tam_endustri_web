@@ -33,7 +33,7 @@ export const tr = {
   'footer.services': 'Hizmetlerimiz',
   'footer.contact': 'İletişim',
   
-  'footer.consulting_design': 'Danışmanlık Proje Tasarım ve İmalat',
+  'footer.consulting_design': 'Proje Tasarım ve İmalat',
   'footer.3d_design_services': '3D Tasarım Hizmetleri',
   'footer.3d_design_automation': '3D Tasarım Otomasyonları (SolidWorks)',
   'footer.rnd_machine_design': 'AR-GE Makine Tasarım Geliştirme ve İyileştirme',
@@ -100,10 +100,10 @@ export const tr = {
   // Concept Validators (Business Danışmanlığı)
   'concept.title': 'TÜRKİYE PAZARINA GİRİŞ DANIŞMANLIĞI',
   'concept.description': 'Yabancı şirketlerin Türkiye pazarına güvenli ve başarılı giriş yapması için kapsamlı danışmanlık hizmeti veriyoruz. Pazar araştırmasından operasyonel süreçlere kadar tüm aşamalarda yanınızdayız.',
-  'concept.cta': 'YAKLAŞIMIMIZ',
+  'concept.cta': 'HAKKIMIZDA',
   
   // Testimonial
-  'testimonial.quote': 'Tam Endüstri ile çalışmaya başladığımızdan beri üretim süreçlerimiz %40 daha verimli hale geldi. Uzmanlıkları ve pratik yaklaşımları gerçekten fark yaratıyor.',
+  'testimonial.quote': 'Tam Endüstri ile çalışmaya başladığımızdan beri üretim süreçlerimiz %40 daha verimli hale geldi. Uzmanlıkları ve pratik yaklaşımları gerçekten fark oluşturuyor.',
   'testimonial.name': 'AHMET YILMAZ',
   'testimonial.position': 'Üretim Müdürü, Endüstri A.Ş.',
   

@@ -33,7 +33,7 @@ export const en = {
   'footer.services': 'Services',
   'footer.contact': 'Contact',
   
-  'footer.consulting_design': 'Consulting Project Design and Manufacturing',
+  'footer.consulting_design': 'Project Design and Manufacturing',
   'footer.3d_design_services': '3D Design Services',
   'footer.3d_design_automation': '3D Design Automations (SolidWorks)',
   'footer.rnd_machine_design': 'R&D Machine Design Development and Improvement',
@@ -100,10 +100,10 @@ export const en = {
   // Concept Validators (Business Consulting)
   'concept.title': 'TÜRKİYE MARKET ENTRY CONSULTING',
   'concept.description': 'We provide comprehensive consulting services for foreign companies to safely and successfully enter the Turkish market. We are with you in all stages from market research to operational processes.',
-  'concept.cta': 'OUR APPROACH',
+  'concept.cta': 'ABOUT US',
   
   // Testimonial
-  'testimonial.quote': 'Since we started working with Tam Industry, our production processes have become 40% more efficient. Their expertise and practical approaches really make a difference.',
+  'testimonial.quote': 'Since we started working with Tam Industry, our production processes have become 40% more efficient. Their expertise and practical approaches really create impact.',
   'testimonial.name': 'AHMET YILMAZ',
   'testimonial.position': 'Production Manager, Industry Inc.',
   
