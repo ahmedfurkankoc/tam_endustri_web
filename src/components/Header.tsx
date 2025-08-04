@@ -108,7 +108,7 @@ const Header: React.FC = () => {
         : 'bg-transparent'
     }`}>
       <nav className="flex items-center justify-between max-w-7xl mx-auto">
-        <a href="/" className="flex-shrink-0">
+        <a href={language === 'en' ? '/en' : '/'} className="flex-shrink-0">
           <img 
             src={isScrolled ? "/tam-endustri-logo.png" : "/tam-endustri-logo.png"} 
             alt="Tam Endüstri Logo" 
@@ -117,7 +117,7 @@ const Header: React.FC = () => {
         </a>
         
         <div className="hidden md:flex items-center space-x-8 text-sm font-body">
-          <a href="#" className={`font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
+          <a href={language === 'en' ? '/en/about' : '/hakkimizda'} className={`font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
             {t('nav.about')}
           </a>
           
@@ -268,7 +268,7 @@ const Header: React.FC = () => {
             
             {/* Mobile Menu Content */}
             <div className="flex-1 px-6 py-8 space-y-6 overflow-y-auto">
-              <a href="#" className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
+              <a href={language === 'en' ? '/en/about' : '/hakkimizda'} className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
                 {t('nav.about')}
               </a>
               

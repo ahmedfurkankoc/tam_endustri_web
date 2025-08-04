@@ -112,4 +112,64 @@ export const tr = {
   'cta.title2': 'DANIŞMANLIĞI ALIN',
   'cta.description': 'Proje tasarımından imalata, iş geliştirmeden eğitimlere kadar tüm ihtiyaçlarınız için uzman ekibimizle çalışın. İşinizi daha verimli hale getirmek için buradayız.',
   'cta.button': 'İLETİŞİME GEÇİN',
+
+  // About Page
+  'about.hero.title': 'HAKKIMIZDA',
+  'about.hero_description': 'Endüstriyel tasarım ve imalat alanında uzmanlaşmış ekibimizle, yabancı şirketlerin Türkiye pazarına güvenli ve başarılı giriş yapması için kapsamlı danışmanlık hizmeti veriyoruz.',
+  
+  'about.story.title': 'Biz Kimiz',
+  'about.story.paragraph1': 'TAM Endüstri 15 yılı aşkın sektör tecrübesiyle müşterilerimizin işlerine Verimlilik, Fayda ve Zekâ katmak amacıyla kuruldu. Dönemin ihtiyaçlarının Verim ve Zaman olduğuna inancımızla "Yalın Üretim(Lean Manufacturing)" temelinden yola çıkarak daha fazla şirkete, kuruma ve insana dokunmayı hedefliyoruz.',
+  'about.story.paragraph2': '"İşi yapan bilir." sözüne çok inanıyor ve sizin en iyi bildiğiniz işinize bizim katkı sağlamamızın ancak sizinle beraber çalışmak olduğuna inanıyoruz. "Yalın Üretim" in temelini oluşturan Japon "Kaizen" kavramında da belirttiği üzere bir işi yapan en iyi bileceği gibi en iyi de yapan geliştirir.',
+  'about.story.paragraph3': 'TAM Endüstri olarak amacımız işinizi sizinle beraber yapmak, geliştirmek, iyileştirmek!',
+  
+  'about.stats.projects': 'Tamamlanan Proje',
+  'about.stats.countries': 'Hizmet Verilen Ülke',
+  'about.stats.clients': 'Mutlu Müşteri',
+  'about.stats.experience': 'Yıllık Deneyim',
+  
+  'about.mission.title': 'Misyonumuz',
+  'about.mission.description': 'Yabancı şirketlerin Türkiye pazarına güvenli ve başarılı giriş yapması için kapsamlı danışmanlık hizmeti vermek. Proje tasarımından imalata kadar tüm süreçlerde müşterilerimizin yanında olarak, onların Türkiye\'de başarılı olmasını sağlamak.',
+  
+  'about.vision.title': 'Vizyonumuz',
+  'about.vision.description': 'Türkiye\'yi yabancı şirketler için en çekici ve güvenli yatırım merkezi haline getirmek. Endüstriyel danışmanlık alanında lider konuma ulaşarak, global iş dünyasında güvenilir bir partner olmak.',
+  
+  'about.values.title': 'Değerlerimiz',
+  'about.values.subtitle': 'Çalışma prensiplerimizi oluşturan temel değerlerimiz',
+  
+  'about.values.excellence.title': 'Mükemmellik',
+  'about.values.excellence.description': 'Her projede en yüksek kalite standartlarını hedefliyor, müşterilerimizin beklentilerini aşan sonuçlar elde ediyoruz.',
+  
+  'about.values.trust.title': 'Güven',
+  'about.values.trust.description': 'Şeffaflık ve dürüstlük temelinde uzun vadeli ilişkiler kuruyor, müşterilerimizin güvenini kazanıyoruz.',
+  
+  'about.values.innovation.title': 'İnovasyon',
+  'about.values.innovation.description': 'Sürekli gelişim ve yenilikçi çözümlerle, müşterilerimizin rekabet avantajı elde etmesini sağlıyoruz.',
+  
+  'about.values.global.title': 'Global Bakış',
+  'about.values.global.description': 'Uluslararası deneyimimizle, farklı kültürler ve pazarlar arasında köprü kuruyoruz.',
+  
+  'about.values.efficiency.title': 'Verimlilik',
+  'about.values.efficiency.description': 'Yalın üretim yöntemleri ve otomasyon çözümleriyle, müşterilerimizin operasyonel verimliliğini artırıyoruz.',
+  
+  'about.values.expertise.title': 'Uzmanlık',
+  'about.values.expertise.description': '15 yıllık deneyimimizle, endüstriyel tasarım ve imalat alanında derin uzmanlık sunuyoruz.',
+  
+  'about.team.title': 'Ekibimiz',
+  'about.team.subtitle': 'Deneyimli ve uzman ekibimizle müşterilerimizin başarısı için çalışıyoruz',
+  
+  'about.team.member1.name': 'Ahmet Yılmaz',
+  'about.team.member1.position': 'Kurucu & CEO',
+  'about.team.member1.expertise': '15 yıllık endüstriyel tasarım ve imalat deneyimi. Yabancı şirketlerin Türkiye pazarına giriş süreçlerinde uzman.',
+  
+  'about.team.member2.name': 'Fatma Demir',
+  'about.team.member2.position': 'Operasyon Direktörü',
+  'about.team.member2.expertise': 'Yalın üretim yöntemleri ve iş geliştirme konularında uzman. 200+ proje yönetimi deneyimi.',
+  
+  'about.team.member3.name': 'Mehmet Kaya',
+  'about.team.member3.position': 'Teknik Direktör',
+  'about.team.member3.expertise': '3D tasarım ve otomasyon alanında uzman. SolidWorks API ve AR-GE projelerinde deneyimli.',
+  
+  'about.cta.title': 'Bizimle Çalışın',
+  'about.cta.description': 'Uzman ekibimizle tanışın ve işinizi Türkiye pazarında başarıya ulaştıralım.',
+  'about.cta.button': 'İLETİŞİME GEÇİN',
 }; 

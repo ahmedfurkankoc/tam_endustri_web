@@ -112,4 +112,64 @@ export const en = {
   'cta.title2': 'CONSULTING',
   'cta.description': 'Work with our expert team for all your needs from project design to manufacturing, from business development to training. We are here to make your business more efficient.',
   'cta.button': 'CONTACT US',
+
+  // About Page
+  'about.hero.title': 'ABOUT US',
+  'about.hero_description': 'With our team specialized in industrial design and manufacturing, we provide comprehensive consulting services for foreign companies to safely and successfully enter the Turkish market.',
+  
+  'about.story.title': 'Who We Are',
+  'about.story.paragraph1': 'TAM Industry was established with over 15 years of sector experience to add Efficiency, Benefit, and Intelligence to our customers\' businesses. With our belief that the needs of the era are Efficiency and Time, we aim to reach more companies, institutions, and people based on the foundation of "Lean Manufacturing".',
+  'about.story.paragraph2': 'We strongly believe in the saying "The one who does the job knows it best" and believe that our contribution to your business, which you know best, can only be achieved by working together with you. As stated in the Japanese "Kaizen" concept, which forms the foundation of "Lean Manufacturing", the one who does a job knows it best, and the one who does it best improves it.',
+  'about.story.paragraph3': 'As TAM Industry, our goal is to do, develop, and improve your business together with you!',
+  
+  'about.stats.projects': 'Completed Projects',
+  'about.stats.countries': 'Countries Served',
+  'about.stats.clients': 'Happy Clients',
+  'about.stats.experience': 'Years Experience',
+  
+  'about.mission.title': 'Our Mission',
+  'about.mission.description': 'To provide comprehensive consulting services for foreign companies to safely and successfully enter the Turkish market. To be with our customers at every stage from project design to manufacturing, ensuring their success in Türkiye.',
+  
+  'about.vision.title': 'Our Vision',
+  'about.vision.description': 'To make Türkiye the most attractive and safe investment center for foreign companies. To become a leading position in industrial consulting and a reliable partner in the global business world.',
+  
+  'about.values.title': 'Our Values',
+  'about.values.subtitle': 'The core values that form our working principles',
+  
+  'about.values.excellence.title': 'Excellence',
+  'about.values.excellence.description': 'We aim for the highest quality standards in every project and achieve results that exceed our customers\' expectations.',
+  
+  'about.values.trust.title': 'Trust',
+  'about.values.trust.description': 'We build long-term relationships based on transparency and honesty, earning our customers\' trust.',
+  
+  'about.values.innovation.title': 'Innovation',
+  'about.values.innovation.description': 'We ensure our customers gain competitive advantage through continuous improvement and innovative solutions.',
+  
+  'about.values.global.title': 'Global Perspective',
+  'about.values.global.description': 'With our international experience, we build bridges between different cultures and markets.',
+  
+  'about.values.efficiency.title': 'Efficiency',
+  'about.values.efficiency.description': 'We increase our customers\' operational efficiency through lean production methods and automation solutions.',
+  
+  'about.values.expertise.title': 'Expertise',
+  'about.values.expertise.description': 'With 15 years of experience, we provide deep expertise in industrial design and manufacturing.',
+  
+  'about.team.title': 'Our Team',
+  'about.team.subtitle': 'We work for our customers\' success with our experienced and expert team',
+  
+  'about.team.member1.name': 'Ahmet Yılmaz',
+  'about.team.member1.position': 'Founder & CEO',
+  'about.team.member1.expertise': '15 years of industrial design and manufacturing experience. Expert in foreign companies\' Türkiye market entry processes.',
+  
+  'about.team.member2.name': 'Fatma Demir',
+  'about.team.member2.position': 'Operations Director',
+  'about.team.member2.expertise': 'Expert in lean production methods and business development. 200+ project management experience.',
+  
+  'about.team.member3.name': 'Mehmet Kaya',
+  'about.team.member3.position': 'Technical Director',
+  'about.team.member3.expertise': 'Expert in 3D design and automation. Experienced in SolidWorks API and R&D projects.',
+  
+  'about.cta.title': 'Work With Us',
+  'about.cta.description': 'Meet our expert team and let us help your business succeed in the Turkish market.',
+  'about.cta.button': 'CONTACT US',
 }; 
