@@ -2,10 +2,39 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Menu, X, ChevronDown, ChevronRight, Settings, TrendingUp, GraduationCap } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
+// SVG Bayrak Bileşenleri
+const TurkishFlag: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#E30A17"/>
+    <circle cx="425" cy="400" r="200" fill="#ffffff"/>
+    <circle cx="475" cy="400" r="160" fill="#E30A17"/>
+    <polygon points="583.334,400 764.235,458.779 652.431,304.894 652.431,495.106 764.235,341.221" fill="#ffffff"/>
+  </svg>
+);
+
+const EnglishFlag: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+    <clipPath id="s">
+      <path d="M0,0 v30 h60 v-30 z"/>
+    </clipPath>
+    <clipPath id="t">
+      <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/>
+    </clipPath>
+    <g clipPath="url(#s)">
+      <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+      <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6"/>
+      <path d="M0,0 L60,30 M60,0 L0,30" clipPath="url(#t)" stroke="#C8102E" strokeWidth="4"/>
+      <path d="M30,0 v30 M0,15 h60" stroke="#fff" strokeWidth="10"/>
+      <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" strokeWidth="6"/>
+    </g>
+  </svg>
+);
+
 const Header: React.FC = () => {
   const { t, language, setLanguage } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const megaMenuRef = useRef<HTMLDivElement>(null);
 
@@ -174,13 +203,23 @@ const Header: React.FC = () => {
           {/* Language Toggle */}
           <button
             onClick={() => setLanguage(language === 'tr' ? 'en' : 'tr')}
-            className={`px-4 py-2 rounded-full border transition-all duration-200 ${
+            className={`px-4 py-2 rounded-full border transition-all duration-200 flex items-center space-x-2 ${
               isScrolled 
                 ? 'border-gray-300 text-gray-800 hover:bg-gray-100' 
                 : 'border-white text-white hover:bg-white hover:text-tam-dark'
             }`}
           >
-            {language === 'tr' ? '🇺🇸 EN' : '🇹🇷 TR'}
+            {language === 'tr' ? (
+              <>
+                <EnglishFlag />
+                <span>EN</span>
+              </>
+            ) : (
+              <>
+                <TurkishFlag />
+                <span>TR</span>
+              </>
+            )}
           </button>
           
           {/* Contact Button */}
@@ -216,26 +255,39 @@ const Header: React.FC = () => {
             
             {/* Mobile Services Menu */}
             <div className="space-y-2">
-              <div className={`font-semibold ${isScrolled ? 'text-tam-blue' : 'text-tam-blue'}`}>{t('nav.services')}</div>
-              {megaMenuData.map((category, index) => (
-                <div key={index} className="ml-4 space-y-2">
-                  <div className={`text-sm font-medium ${isScrolled ? 'text-gray-300' : 'text-gray-300'}`}>{category.title}</div>
-                  <div className="ml-4 space-y-1">
-                    {category.items.map((item, itemIndex) => (
-                      <a
-                        key={itemIndex}
-                        href={item.href}
-                        className={`block text-xs transition-colors ${
-                          isScrolled ? 'text-gray-400 hover:text-gray-800' : 'text-gray-400 hover:text-white'
-                        }`}
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        {item.title}
-                      </a>
-                    ))}
-                  </div>
+              <button
+                onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                className={`w-full text-left font-semibold transition-colors flex items-center justify-between ${isScrolled ? 'text-tam-blue' : 'text-tam-blue'}`}
+              >
+                <span>{t('nav.services')}</span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isMobileServicesOpen && (
+                <div className="ml-4 space-y-2">
+                  {megaMenuData.map((category, index) => (
+                    <div key={index} className="space-y-2">
+                      <div className={`text-sm font-medium ${isScrolled ? 'text-gray-300' : 'text-gray-300'}`}>{category.title}</div>
+                      <div className="ml-4 space-y-1">
+                        {category.items.map((item, itemIndex) => (
+                          <a
+                            key={itemIndex}
+                            href={item.href}
+                            className={`block text-xs transition-colors ${
+                              isScrolled ? 'text-gray-400 hover:text-gray-800' : 'text-gray-400 hover:text-white'
+                            }`}
+                            onClick={() => {
+                              setIsMenuOpen(false);
+                              setIsMobileServicesOpen(false);
+                            }}
+                          >
+                            {item.title}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
             
             <a href="#" className={`block font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
@@ -248,13 +300,23 @@ const Header: React.FC = () => {
             {/* Language Toggle Mobile */}
             <button
               onClick={() => setLanguage(language === 'tr' ? 'en' : 'tr')}
-              className={`w-full px-4 py-2 rounded-full border transition-all duration-200 ${
+              className={`w-full px-4 py-2 rounded-full border transition-all duration-200 flex items-center justify-center space-x-2 ${
                 isScrolled 
                   ? 'border-gray-300 text-gray-800 hover:bg-gray-100' 
                   : 'border-white text-white hover:bg-white hover:text-tam-dark'
               }`}
             >
-              {language === 'tr' ? '🇺🇸 EN' : '🇹🇷 TR'}
+              {language === 'tr' ? (
+                <>
+                  <EnglishFlag />
+                  <span>EN</span>
+                </>
+              ) : (
+                <>
+                  <TurkishFlag />
+                  <span>TR</span>
+                </>
+              )}
             </button>
             
             {/* Contact Button Mobile */}
