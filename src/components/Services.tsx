@@ -30,7 +30,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section className="py-12 md:py-20 px-4 md:px-6 bg-gradient-to-br from-gray-50 to-white">
+    <section className="py-12 md:py-20 px-4 md:px-6">
       <div className="max-w-7xl mx-auto">  
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {services.map((service, index) => (
