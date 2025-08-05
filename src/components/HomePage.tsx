@@ -7,7 +7,6 @@ import RegulatoryPower from './RegulatoryPower';
 import GlobalApprovals from './GlobalApprovals';
 import ConceptValidators from './ConceptValidators';
 import Testimonial from './Testimonial';
-import SuccessStories from './SuccessStories';
 import CTA from './CTA';
 import Footer from './Footer';
 

@@ -9,7 +9,7 @@ const Testimonial: React.FC = () => {
     <section className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto bg-gray-100 rounded-2xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="pl-14">
+          <div className="pl-14 py-6">
             <div className="text-6xl text-tam-blue mb-6">
               <Quote />
             </div>
@@ -26,14 +26,11 @@ const Testimonial: React.FC = () => {
               <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
             </div>
           </div>
-          
-          <div className="lg:pl-8">
-            <img 
+          <img 
               src="https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
               alt="Endüstriyel danışmanlık"
               className="rounded-2xl shadow-lg w-full h-full object-cover"
             />
-          </div>
         </div>
       </div>
     </section>

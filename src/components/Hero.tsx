@@ -1,9 +1,27 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import Lenis from 'lenis';
 
 const Hero: React.FC = () => {
   const { t } = useLanguage();
+
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById('problem-statement');
+    if (nextSection) {
+      // Lenis smooth scroll
+      const lenis = (window as any).lenis;
+      if (lenis) {
+        lenis.scrollTo(nextSection, {
+          duration: 1.5,
+          easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        });
+      } else {
+        // Fallback to native smooth scroll
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
 
   return (
     <section className="h-screen relative flex items-center hero-section overflow-hidden">
@@ -31,10 +49,13 @@ const Hero: React.FC = () => {
           </h1>
           
           <div className="flex items-start space-x-6">
-            <div className="scroll-indicator">
+            <button
+              onClick={scrollToNextSection}
+              className="scroll-indicator hover:scale-110 transition-transform duration-200 flex-shrink-0 mt-2"
+            >
               <ChevronRight className="w-5 h-5 text-white transform rotate-90" />
               <span className="text-white text-xs font-light"></span>
-            </div>
+            </button>
             <p className="text-white text-base md:text-lg max-w-lg leading-relaxed body-text">
               {t('hero.description')}
             </p>
