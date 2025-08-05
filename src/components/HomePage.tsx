@@ -22,7 +22,6 @@ const HomePage: React.FC = () => {
       <GlobalApprovals />
       <ConceptValidators />
       <Testimonial />
-      <SuccessStories />
       <CTA />
       <Footer />
     </div>

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Exo 2', sans-serif;
+}
+
 /* Base font styles */
 body {
   font-family: 'Poppins', sans-serif;
@@ -62,6 +67,67 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* Lenis smooth scrolling */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Enhanced smooth scrolling for sections */
+section {
+  scroll-margin-top: 80px; /* Account for fixed header */
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Parallax effect for sections */
+.parallax-section {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+
+
+/* GPU Acceleration for Performance */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Optimized transitions */
+.optimized-transition {
+  transition: transform 0.4s ease-out, 
+              box-shadow 0.4s ease-out, 
+              color 0.4s ease-out;
+  will-change: transform, box-shadow, color;
+}
+
+/* Hardware acceleration for hover effects */
+.hover-accelerated {
+  transform: translateZ(0);
+  transition: all 0.4s ease-out;
+  will-change: transform, opacity, color;
 }
 
 /* Hero section styles */

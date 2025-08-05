@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-tam-dark text-white pt-20 pb-5 px-6">
+    <footer className="bg-tam-dark text-white pt-20 pb-5">
       <div className="max-w-[75%] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
           {/* Logo ve Açıklama */}
