@@ -205,11 +205,11 @@ const Header: React.FC = () => {
                         <p className="text-gray-600 text-sm">Uzman ekibimizle tanışın ve projelerinizi hayata geçirin</p>
                       </div>
                       <a 
-                        href={language === 'en' ? '/en/contact' : '/iletisim'}
+                        href={language === 'en' ? '/en/services' : '/hizmetlerimiz'}
                         className="bg-tam-blue text-white px-6 py-3 rounded-full font-semibold hover:bg-tam-accent transition-all duration-200 hover:shadow-lg hover:scale-105 inline-block"
                         onClick={() => setIsMegaMenuOpen(false)}
                       >
-                        {t('nav.contact_us')}
+                        {t('nav.services')}
                       </a>
                     </div>
                   </div>
@@ -296,6 +296,10 @@ const Header: React.FC = () => {
             <div className="flex-1 px-6 py-8 space-y-6 overflow-y-auto">
               <a href={language === 'en' ? '/en/about' : '/hakkimizda'} className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
                 {t('nav.about')}
+              </a>
+              
+              <a href={language === 'en' ? '/en/services' : '/hizmetlerimiz'} className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
+                {t('nav.services')}
               </a>
               
               {/* Mobile Services Menu */}

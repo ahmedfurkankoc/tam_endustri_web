@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
+import ServicesPage from './components/ServicesPage';
 import ContactPage from './components/ContactPage';
 import Lenis from 'lenis';
 
@@ -38,6 +39,8 @@ const App: React.FC = () => {
         <Route path="/en" element={<HomePage />} />
         <Route path="/hakkimizda" element={<AboutPage />} />
         <Route path="/en/about" element={<AboutPage />} />
+        <Route path="/hizmetlerimiz" element={<ServicesPage />} />
+        <Route path="/en/services" element={<ServicesPage />} />
         <Route path="/iletisim" element={<ContactPage />} />
         <Route path="/en/contact" element={<ContactPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />

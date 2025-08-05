@@ -173,6 +173,37 @@ export const en = {
   'about.cta.description': 'Meet our expert team and let us help your business succeed in the Turkish market.',
   'about.cta.button': 'CONTACT US',
   
+  // Services Page
+  'services.hero.title': 'OUR SERVICES',
+  'services.hero.subtitle': 'Discover our comprehensive services in industrial design and manufacturing. We offer custom solutions for every project.',
+  'services.design_manufacturing.title': 'PROJECT DESIGN AND MANUFACTURING',
+  'services.design_manufacturing.description': 'We are with you in all processes from 3D design services to manufacturing.',
+  'services.design_manufacturing.items.3d_design': '3D Design Services',
+  'services.design_manufacturing.items.3d_automation': '3D Design Automations (SolidWorks API)',
+  'services.design_manufacturing.items.rnd_machine': 'R&D Machine Design Development-Improvement',
+  'services.design_manufacturing.items.custom_machine': 'Custom Machine Design – Manufacturing Projects',
+  'services.design_manufacturing.items.factory_setup': 'Factory Setup Layout Plan',
+  'services.design_manufacturing.items.reverse_engineering': 'Reverse Engineering Designs',
+  
+  'services.business_improvement.title': 'BUSINESS DEVELOPMENT AND IMPROVEMENT',
+  'services.business_improvement.description': 'The most valuable form of time is the time you can produce. We want to add "Intelligence" to your business!',
+  'services.business_improvement.items.lean_production': 'Lean Production Methods Applications',
+  'services.business_improvement.items.3d_automation': '3D Design Automations',
+  'services.business_improvement.items.rnd_machine': 'R&D Machine Design Development',
+  'services.business_improvement.items.technical_sales': 'Technical Sales Program-Applications',
+  'services.business_improvement.items.calculation_reporting': 'Calculation-Reporting Applications',
+  
+  'services.consulting_training.title': 'OUR CONSULTING AND TRAINING',
+  'services.consulting_training.description': 'We can fish for you, but we want to make bigger contributions by teaching you how to fish.',
+  'services.consulting_training.items.sales_consulting': 'Sales Consulting',
+  'services.consulting_training.items.design_training': 'Design Training',
+  'services.consulting_training.items.feasibility_studies': 'Feasibility Studies and Reporting',
+  'services.consulting_training.items.lean_training': 'Lean Production Methods Training',
+  
+  'services.cta.title': 'START YOUR PROJECT',
+  'services.cta.description': 'Bring your projects to life by working with our expert team.',
+  'services.cta.button': 'CONTACT US',
+  
   // Contact Page
   'contact.hero.title': 'CONTACT',
   'contact.hero.subtitle': 'Get in touch with us for your projects. Our expert team is ready to help you.',

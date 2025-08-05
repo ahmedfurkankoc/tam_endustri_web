@@ -173,6 +173,37 @@ export const tr = {
   'about.cta.description': 'Uzman ekibimizle tanışın ve işinizi Türkiye pazarında başarıya ulaştıralım.',
   'about.cta.button': 'İLETİŞİME GEÇİN',
   
+  // Services Page
+  'services.hero.title': 'HİZMETLERİMİZ',
+  'services.hero.subtitle': 'Endüstriyel tasarım ve imalat alanında kapsamlı hizmetlerimizi keşfedin. Her proje için özel çözümler sunuyoruz.',
+  'services.design_manufacturing.title': 'PROJE TASARIM VE İMALAT',
+  'services.design_manufacturing.description': '3D tasarım hizmetlerinden imalata kadar tüm süreçlerde yanınızdayız.',
+  'services.design_manufacturing.items.3d_design': '3D Tasarım Hizmetleri',
+  'services.design_manufacturing.items.3d_automation': '3D Tasarım Otomasyonları (SolidWorks API)',
+  'services.design_manufacturing.items.rnd_machine': 'AR-GE Makine Tasarım Geliştirme-İyileştirme',
+  'services.design_manufacturing.items.custom_machine': 'İşe Özel Makine Tasarım – İmalat Projeleri',
+  'services.design_manufacturing.items.factory_setup': 'Fabrika Kurulum Yerleşim Planı',
+  'services.design_manufacturing.items.reverse_engineering': 'Tersine Mühendislik Tasarımları',
+  
+  'services.business_improvement.title': 'İŞ GELİŞTİRME VE İYİLEŞTİRME',
+  'services.business_improvement.description': 'Zamanın en değerli hali; üretebildiğiniz zamandır. İşinize "Zekâ" katmak istiyoruz!',
+  'services.business_improvement.items.lean_production': 'Yalın Üretim Yöntemleri Uygulamaları',
+  'services.business_improvement.items.3d_automation': '3D Tasarım Otomasyonları',
+  'services.business_improvement.items.rnd_machine': 'AR-GE Makine Tasarım Geliştirme',
+  'services.business_improvement.items.technical_sales': 'Teknik Satış Program-Uygulamaları',
+  'services.business_improvement.items.calculation_reporting': 'Hesaplama-Raporlama Uygulamaları',
+  
+  'services.consulting_training.title': 'DANIŞMANLIK VE EĞİTİMLERİMİZ',
+  'services.consulting_training.description': 'Sizin için balık tutabiliriz ancak balık tutmayı öğreterek daha büyük katkılar vermek istiyoruz.',
+  'services.consulting_training.items.sales_consulting': 'Satış Danışmanlığı',
+  'services.consulting_training.items.design_training': 'Tasarım Eğitimleri',
+  'services.consulting_training.items.feasibility_studies': 'Fizibilite Çalışmaları ve Raporlama',
+  'services.consulting_training.items.lean_training': 'Yalın Üretim Yöntemleri Eğitimi',
+  
+  'services.cta.title': 'PROJENİZİ BAŞLATIN',
+  'services.cta.description': 'Uzman ekibimizle çalışarak projelerinizi hayata geçirin.',
+  'services.cta.button': 'İLETİŞİME GEÇİN',
+  
   // Contact Page
   'contact.hero.title': 'İLETİŞİM',
   'contact.hero.subtitle': 'Projeleriniz için bizimle iletişime geçin. Uzman ekibimiz size yardımcı olmaya hazır.',
