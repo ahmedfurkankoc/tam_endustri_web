@@ -67,6 +67,227 @@ const ServicesPage: React.FC = () => {
       image: 'https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       gradient: 'from-orange-600/20 via-red-600/20 to-pink-600/20',
       accentColor: 'from-orange-500 to-red-500'
+    },
+    {
+      id: '3d-design',
+      title: '3D Tasarım Hizmetleri',
+      description: 'Profesyonel 3D tasarım ve modelleme hizmetleri ile projelerinizi hayata geçirin.',
+      icon: <Settings className="w-6 h-6" />,
+      items: [
+        'SolidWorks 3D Tasarım',
+        'AutoCAD 2D/3D Çizim',
+        'Inventor Tasarım',
+        '3D Baskı Hazırlığı',
+        'Prototip Tasarımı',
+        'Teknik Çizimler'
+      ],
+      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      gradient: 'from-indigo-600/20 via-blue-600/20 to-cyan-600/20',
+      accentColor: 'from-indigo-500 to-cyan-500'
+    },
+    {
+      id: '3d-automation',
+      title: '3D Tasarım Otomasyonları',
+      description: 'SolidWorks API ile özel otomasyon çözümleri geliştiriyoruz.',
+      icon: <Settings className="w-6 h-6" />,
+      items: [
+        'SolidWorks API Geliştirme',
+        'Özel Makro Yazılımları',
+        'Otomatik Çizim Üretimi',
+        'Parametrik Tasarım',
+        'BOM Otomasyonu',
+        'Kütüphane Yönetimi'
+      ],
+      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      gradient: 'from-purple-600/20 via-pink-600/20 to-red-600/20',
+      accentColor: 'from-purple-500 to-red-500'
+    },
+    {
+      id: 'rnd-machine',
+      title: 'Ar-Ge Makine Tasarımı',
+      description: 'Yenilikçi makine tasarımları ile üretim süreçlerinizi optimize edin.',
+      icon: <Settings className="w-6 h-6" />,
+      items: [
+        'Özel Makine Tasarımı',
+        'Üretim Hattı Tasarımı',
+        'Robot Entegrasyonu',
+        'Sensör Sistemleri',
+        'Hidrolik/Pnömatik Sistemler',
+        'Elektrik Kontrol Sistemleri'
+      ],
+      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      gradient: 'from-green-600/20 via-emerald-600/20 to-teal-600/20',
+      accentColor: 'from-green-500 to-teal-500'
+    },
+    {
+      id: 'custom-machine',
+      title: 'Özel Makine İmalatı',
+      description: 'İhtiyaçlarınıza özel makine imalatı ile üretim kapasitenizi artırın.',
+      icon: <Settings className="w-6 h-6" />,
+      items: [
+        'Özel Makine Üretimi',
+        'Montaj ve Test',
+        'Kalite Kontrol',
+        'Teknik Dokümantasyon',
+        'Eğitim ve Destek',
+        'Bakım Hizmetleri'
+      ],
+      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      gradient: 'from-yellow-600/20 via-orange-600/20 to-red-600/20',
+      accentColor: 'from-yellow-500 to-red-500'
+    },
+    {
+      id: 'factory-setup',
+      title: 'Fabrika Kurulumu',
+      description: 'Sıfırdan fabrika kurulumu ile üretim süreçlerinizi optimize edin.',
+      icon: <Settings className="w-6 h-6" />,
+      items: [
+        'Fabrika Planlaması',
+        'Üretim Hattı Kurulumu',
+        'Ekipman Seçimi',
+        'Güvenlik Sistemleri',
+        'Kalite Kontrol Sistemleri',
+        'Enerji Optimizasyonu'
+      ],
+      image: 'https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      gradient: 'from-blue-600/20 via-indigo-600/20 to-purple-600/20',
+      accentColor: 'from-blue-500 to-purple-500'
+    },
+    {
+      id: 'reverse-engineering',
+      title: 'Tersine Mühendislik',
+      description: 'Mevcut ürünlerin analizi ve yeniden tasarımı ile inovasyon sağlayın.',
+      icon: <Settings className="w-6 h-6" />,
+      items: [
+        '3D Tarama ve Ölçüm',
+        'CAD Modelleme',
+        'Malzeme Analizi',
+        'Fonksiyon Analizi',
+        'İyileştirme Önerileri',
+        'Prototip Üretimi'
+      ],
+      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      gradient: 'from-teal-600/20 via-cyan-600/20 to-blue-600/20',
+      accentColor: 'from-teal-500 to-blue-500'
+    },
+    {
+      id: 'lean-production',
+      title: 'Yalın Üretim',
+      description: 'Yalın üretim prensipleri ile verimliliğinizi artırın.',
+      icon: <TrendingUp className="w-6 h-6" />,
+      items: [
+        'Süreç Analizi',
+        'İsraf Tespiti',
+        '5S Uygulaması',
+        'Kanban Sistemleri',
+        'Sürekli İyileştirme',
+        'Performans Ölçümü'
+      ],
+      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      gradient: 'from-emerald-600/20 via-green-600/20 to-lime-600/20',
+      accentColor: 'from-emerald-500 to-lime-500'
+    },
+    {
+      id: 'technical-sales',
+      title: 'Teknik Satış',
+      description: 'Teknik satış stratejileri ile müşteri memnuniyetini artırın.',
+      icon: <TrendingUp className="w-6 h-6" />,
+      items: [
+        'Teknik Satış Eğitimi',
+        'Müşteri İhtiyaç Analizi',
+        'Teknik Sunum Hazırlama',
+        'Satış Süreçleri',
+        'Müşteri İlişkileri',
+        'Satış Performansı'
+      ],
+      image: 'https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      gradient: 'from-pink-600/20 via-rose-600/20 to-red-600/20',
+      accentColor: 'from-pink-500 to-red-500'
+    },
+    {
+      id: 'calculation-reporting',
+      title: 'Hesaplama ve Raporlama',
+      description: 'Detaylı hesaplamalar ve raporlama ile kararlarınızı destekleyin.',
+      icon: <TrendingUp className="w-6 h-6" />,
+      items: [
+        'Maliyet Hesaplamaları',
+        'ROI Analizleri',
+        'Performans Raporları',
+        'Veri Analizi',
+        'Trend Analizleri',
+        'Karar Destek Sistemleri'
+      ],
+      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      gradient: 'from-violet-600/20 via-purple-600/20 to-indigo-600/20',
+      accentColor: 'from-violet-500 to-indigo-500'
+    },
+    {
+      id: 'sales-consulting',
+      title: 'Satış Danışmanlığı',
+      description: 'Satış stratejilerinizi geliştirin ve satış performansınızı artırın.',
+      icon: <GraduationCap className="w-6 h-6" />,
+      items: [
+        'Satış Stratejisi Geliştirme',
+        'Pazar Analizi',
+        'Rekabet Analizi',
+        'Satış Ekip Eğitimi',
+        'Müşteri Segmentasyonu',
+        'Satış Süreçleri Optimizasyonu'
+      ],
+      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      gradient: 'from-amber-600/20 via-orange-600/20 to-red-600/20',
+      accentColor: 'from-amber-500 to-red-500'
+    },
+    {
+      id: 'design-training',
+      title: 'Tasarım Eğitimleri',
+      description: '3D tasarım yazılımları konusunda uzmanlaşın.',
+      icon: <GraduationCap className="w-6 h-6" />,
+      items: [
+        'SolidWorks Eğitimi',
+        'AutoCAD Eğitimi',
+        'Inventor Eğitimi',
+        '3D Baskı Eğitimi',
+        'Teknik Çizim Eğitimi',
+        'Parametrik Tasarım'
+      ],
+      image: 'https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      gradient: 'from-sky-600/20 via-blue-600/20 to-indigo-600/20',
+      accentColor: 'from-sky-500 to-indigo-500'
+    },
+    {
+      id: 'feasibility-studies',
+      title: 'Fizibilite Çalışmaları',
+      description: 'Projelerinizin uygulanabilirliğini analiz edin.',
+      icon: <GraduationCap className="w-6 h-6" />,
+      items: [
+        'Teknik Fizibilite',
+        'Ekonomik Fizibilite',
+        'Pazar Araştırması',
+        'Risk Analizi',
+        'Maliyet Analizi',
+        'Yatırım Değerlendirmesi'
+      ],
+      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      gradient: 'from-lime-600/20 via-green-600/20 to-emerald-600/20',
+      accentColor: 'from-lime-500 to-emerald-500'
+    },
+    {
+      id: 'lean-training',
+      title: 'Yalın Üretim Eğitimleri',
+      description: 'Yalın üretim prensiplerini öğrenin ve uygulayın.',
+      icon: <GraduationCap className="w-6 h-6" />,
+      items: [
+        'Yalın Üretim Prensipleri',
+        '5S Metodolojisi',
+        'Kanban Sistemleri',
+        'Kaizen Uygulamaları',
+        'Süreç İyileştirme',
+        'Verimlilik Artırma'
+      ],
+      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      gradient: 'from-rose-600/20 via-pink-600/20 to-purple-600/20',
+      accentColor: 'from-rose-500 to-purple-500'
     }
   ];
 
