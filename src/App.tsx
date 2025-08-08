@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
-import HomePage from './components/HomePage';
-import AboutPage from './components/AboutPage';
-import ServicesPage from './components/ServicesPage';
-import ContactPage from './components/ContactPage';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ServicesPage from './pages/ServicesPage';
+import ContactPage from './pages/ContactPage';
 import WhyUsPage from './components/WhyUsPage';
 import Lenis from 'lenis';
 

@@ -1,11 +1,85 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import Header from './Header';
-import Footer from './Footer';
-import { Users, Target, Award, Globe, Factory, Lightbulb, ArrowRight, Zap, Shield, TrendingUp, Heart, Star } from 'lucide-react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import { Users, Target, Award, Globe, Factory, Lightbulb, ArrowRight, Zap, Shield, TrendingUp, Heart, Star, Play, MapPin, Calendar, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const AboutPage: React.FC = () => {
   const { t } = useLanguage();
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Auto slide effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % projectGallery.length);
+    }, 4000); // 4 saniyede bir geçiş
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Proje Galerisi Verileri
+  const projectGallery = [
+    {
+      id: 1,
+      title: '3D Makine Tasarımı',
+      category: 'Tasarım',
+      image: '/tam-endustri-logo.png', // Gerçek proje görselleri eklenecek
+      description: 'Endüstriyel makine tasarımı ve 3D modelleme projesi',
+      year: '2023'
+    },
+    {
+      id: 2,
+      title: 'Fabrika Otomasyonu',
+      category: 'Otomasyon',
+      image: '/tam-endustri-logo.png',
+      description: 'Üretim hattı otomasyonu ve verimlilik artırma projesi',
+      year: '2023'
+    },
+    {
+      id: 3,
+      title: 'Yalın Üretim Uygulaması',
+      category: 'Danışmanlık',
+      image: '/tam-endustri-logo.png',
+      description: 'Yalın üretim yöntemleri ile verimlilik artırma',
+      year: '2022'
+    },
+    {
+      id: 4,
+      title: 'SolidWorks API Geliştirme',
+      category: 'Yazılım',
+      image: '/tam-endustri-logo.png',
+      description: 'Tasarım otomasyonu için özel yazılım geliştirme',
+      year: '2022'
+    },
+    {
+      id: 5,
+      title: 'Tersine Mühendislik',
+      category: 'Analiz',
+      image: '/tam-endustri-logo.png',
+      description: 'Mevcut ürün analizi ve yeniden tasarım projesi',
+      year: '2021'
+    },
+    {
+      id: 6,
+      title: 'AR-GE Makine Geliştirme',
+      category: 'AR-GE',
+      image: '/tam-endustri-logo.png',
+      description: 'İnovatif makine tasarımı ve prototip geliştirme',
+      year: '2021'
+    }
+  ];
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % projectGallery.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + projectGallery.length) % projectGallery.length);
+  };
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
 
   const exploreServices = [
     {
@@ -110,7 +184,7 @@ const AboutPage: React.FC = () => {
             <h1 className="text-5xl md:text-6xl text-white mb-6 leading-tight">
               {t('about.hero.title')}
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-l text-white/90 max-w-3xl mx-auto leading-relaxed">
               {t('about.hero_description')}
             </p>
           </div>
@@ -167,8 +241,131 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Project Gallery Section */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white rounded-t-3xl relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-tam-blue/10 to-tam-accent/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-tam-accent/10 to-tam-blue/10 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-tam-blue/10 to-tam-accent/10 backdrop-blur-sm rounded-full px-6 py-3 mb-8">
+              <Star className="w-5 h-5 text-tam-blue" />
+              <span className="text-tam-blue font-semibold">Projelerimiz</span>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              Proje Galerisi
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Başarıyla tamamladığımız projelerden örnekler
+            </p>
+          </div>
+
+          {/* Modern Carousel Container */}
+          <div className="relative max-w-6xl mx-auto">
+            {/* Carousel Slides */}
+            <div className="overflow-hidden">
+              <div 
+                className="flex transition-all duration-700 ease-out"
+                style={{ transform: `translateX(-${currentSlide * 33.333}%)` }}
+              >
+                {projectGallery.map((project, index) => (
+                  <div key={project.id} className="w-1/3 flex-shrink-0 px-2">
+                    <div className={`transition-all duration-500 ease-out ${
+                      index === currentSlide 
+                        ? 'scale-100 opacity-100' 
+                        : 'scale-85 opacity-60'
+                    }`}>
+                      <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div className="relative h-80">
+                          <img 
+                            src={project.image} 
+                            alt={project.title}
+                            className="w-full h-full object-cover"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                          
+                          {/* PROJE Label */}
+                          <div className="absolute top-4 left-4">
+                            <div className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                              PROJE
+                            </div>
+                          </div>
+                          
+                          {/* Content Overlay */}
+                          <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 className={`font-bold mb-2 leading-tight ${
+                              index === currentSlide ? 'text-2xl' : 'text-lg'
+                            }`}>
+                              {project.title}
+                            </h3>
+                            <p className={`text-white/80 mb-4 ${
+                              index === currentSlide ? 'text-sm' : 'text-xs'
+                            }`}>
+                              {project.year} • {project.category}
+                            </p>
+                            <div className="flex items-center space-x-3">
+                              <div className={`bg-white rounded-full flex items-center justify-center ${
+                                index === currentSlide ? 'w-8 h-8' : 'w-6 h-6'
+                              }`}>
+                                <ArrowRight className={`text-gray-800 ${
+                                  index === currentSlide ? 'w-4 h-4' : 'w-3 h-3'
+                                }`} />
+                              </div>
+                              <span className={`text-white font-medium ${
+                                index === currentSlide ? 'text-base' : 'text-xs'
+                              }`}>
+                                Detayları Gör
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Navigation Buttons */}
+            <button 
+              onClick={prevSlide}
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-all duration-300 hover:scale-110 z-20"
+            >
+              <ChevronLeft className="w-5 h-5 text-gray-700" />
+            </button>
+            
+            <button 
+              onClick={nextSlide}
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-all duration-300 hover:scale-110 z-20"
+            >
+              <ChevronRight className="w-5 h-5 text-gray-700" />
+            </button>
+
+            {/* Slide Indicator */}
+            <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+              <div className="flex items-center space-x-2">
+                {projectGallery.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                      index === currentSlide 
+                        ? 'bg-tam-blue scale-125' 
+                        : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission & Vision */}
-      <section className="py-20 bg-white rounded-t-3xl">
+      <section className="py-20 bg-gray-50 rounded-t-3xl">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Mission */}
@@ -201,7 +398,7 @@ const AboutPage: React.FC = () => {
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-gray-50 rounded-t-3xl">
+      <section className="py-20 bg-white rounded-t-3xl">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -243,7 +440,7 @@ const AboutPage: React.FC = () => {
       </section>
 
       {/* Explore Section */}
-      <section className="py-20 bg-white rounded-t-3xl">
+      <section className="py-20 bg-gray-50 rounded-t-3xl">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Title */}
