@@ -460,32 +460,6 @@ const ServicesPage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-tam-blue/5 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white/40"></div>
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-          <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-tam-blue/10 to-tam-accent/10 backdrop-blur-sm rounded-full px-6 py-3 mb-8">
-            <Sparkles className="w-5 h-5 text-tam-blue" />
-            <span className="text-tam-blue font-semibold">Ready to Transform?</span>
-          </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 drop-shadow-sm leading-tight">
-            {t('services.cta.title')}
-          </h2>
-          <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
-            {t('services.cta.description')}
-          </p>
-          <a
-            href={language === 'en' ? '/en/contact' : '/iletisim'}
-            className="group inline-flex items-center space-x-4 bg-gradient-to-r from-tam-blue to-tam-accent text-white px-10 py-5 rounded-full font-bold text-xl hover:shadow-2xl hover:shadow-tam-blue/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1"
-          >
-            <span>{t('services.cta.button')}</span>
-            <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" />
-          </a>
-        </div>
-      </section>
-
       <Footer />
     </div>
   );

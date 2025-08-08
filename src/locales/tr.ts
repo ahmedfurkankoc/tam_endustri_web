@@ -264,5 +264,58 @@ export const tr = {
   'contact.appointment.calendar.title': 'Tarih Seçin',
   'contact.appointment.calendar.selected': 'Seçili Tarih',
   'contact.appointment.time.title': 'Saat Seçin',
-  'contact.appointment.form.title': 'Kişisel Bilgiler'
+  'contact.appointment.form.title': 'Kişisel Bilgiler',
+  
+  // Why Us Page
+  'why.hero.title': 'NEDEN BİZ',
+  'why.hero.subtitle': '15 yıllık deneyimimiz ve uzmanlığımızla, işinizi Türkiye pazarında başarıya ulaştırıyoruz.',
+  
+  'why.experience.title': 'Deneyim ve Uzmanlık',
+  'why.experience.description': '15 yılı aşkın sektör deneyimimizle, endüstriyel tasarım ve imalat alanında derin uzmanlık sunuyoruz.',
+  'why.experience.years': 'Yıllık Deneyim',
+  'why.experience.projects': 'Tamamlanan Proje',
+  'why.experience.clients': 'Mutlu Müşteri',
+  'why.experience.countries': 'Hizmet Verilen Ülke',
+  
+  'why.approach.title': 'Benzersiz Yaklaşımımız',
+  'why.approach.description': 'Her projeye özel çözümler geliştiriyor, müşterilerimizin ihtiyaçlarını tam olarak anlayarak en uygun hizmeti sunuyoruz.',
+  'why.approach.custom_solutions': 'Özel Çözümler',
+  'why.approach.quality_focus': 'Kalite Odaklı',
+  'why.approach.innovation': 'Sürekli İnovasyon',
+  'why.approach.customer_satisfaction': 'Müşteri Memnuniyeti',
+  
+  'why.values.title': 'Değerlerimiz',
+  'why.values.description': 'Çalışma prensiplerimizi oluşturan temel değerlerimiz',
+  'why.values.excellence.title': 'Mükemmellik',
+  'why.values.excellence.description': 'Her projede en yüksek kalite standartlarını hedefliyor, müşterilerimizin beklentilerini aşan sonuçlar elde ediyoruz.',
+  'why.values.trust.title': 'Güven',
+  'why.values.trust.description': 'Şeffaflık ve dürüstlük temelinde uzun vadeli ilişkiler kuruyor, müşterilerimizin güvenini kazanıyoruz.',
+  'why.values.innovation.title': 'İnovasyon',
+  'why.values.innovation.description': 'Sürekli gelişim ve yenilikçi çözümlerle, müşterilerimizin rekabet avantajı elde etmesini sağlıyoruz.',
+  'why.values.efficiency.title': 'Verimlilik',
+  'why.values.efficiency.description': 'Yalın üretim yöntemleri ve otomasyon çözümleriyle, müşterilerimizin operasyonel verimliliğini artırıyoruz.',
+  
+  'why.success.title': 'Başarı Hikayelerimiz',
+  'why.success.description': 'Müşterilerimizin başarıları bizim başarımızdır',
+  'why.success.story1.title': 'Üretim Verimliliği %40 Artış',
+  'why.success.story1.description': 'Bir endüstriyel şirketin üretim süreçlerini optimize ederek %40 verimlilik artışı sağladık.',
+  'why.success.story2.title': '3D Tasarım Otomasyonu',
+  'why.success.story2.description': 'SolidWorks API ile özel otomasyon çözümleri geliştirerek tasarım süreçlerini %60 hızlandırdık.',
+  'why.success.story3.title': 'Yalın Üretim Dönüşümü',
+  'why.success.story3.description': 'Geleneksel üretim sistemini yalın üretim prensiplerine dönüştürerek maliyetleri %30 azalttık.',
+  
+  'why.difference.title': 'Bizi Farklı Kılan',
+  'why.difference.description': 'Diğerlerinden farklı olan özelliklerimiz',
+  'why.difference.global_expertise': 'Global Uzmanlık',
+  'why.difference.global_expertise_desc': 'Yabancı şirketlerin Türkiye pazarına giriş süreçlerinde uzman danışmanlık',
+  'why.difference.technical_excellence': 'Teknik Mükemmellik',
+  'why.difference.technical_excellence_desc': '3D tasarım ve otomasyon alanında derin teknik bilgi',
+  'why.difference.lean_methodology': 'Yalın Metodoloji',
+  'why.difference.lean_methodology_desc': 'Yalın üretim yöntemleri ile verimlilik artırma',
+  'why.difference.custom_solutions': 'Özel Çözümler',
+  'why.difference.custom_solutions_desc': 'Her projeye özel tasarlanmış çözümler',
+  
+  'why.cta.title': 'Bizimle Çalışın',
+  'why.cta.description': 'Uzman ekibimizle tanışın ve işinizi Türkiye pazarında başarıya ulaştıralım.',
+  'why.cta.button': 'İLETİŞİME GEÇİN'
 };

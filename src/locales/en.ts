@@ -264,5 +264,58 @@ export const en = {
   'contact.appointment.calendar.title': 'Select Date',
   'contact.appointment.calendar.selected': 'Selected Date',
   'contact.appointment.time.title': 'Select Time',
-  'contact.appointment.form.title': 'Personal Information'
+  'contact.appointment.form.title': 'Personal Information',
+  
+  // Why Us Page
+  'why.hero.title': 'WHY CHOOSE US',
+  'why.hero.subtitle': 'With our 15 years of experience and expertise, we help your business succeed in the Turkish market.',
+  
+  'why.experience.title': 'Experience and Expertise',
+  'why.experience.description': 'With over 15 years of sector experience, we provide deep expertise in industrial design and manufacturing.',
+  'why.experience.years': 'Years Experience',
+  'why.experience.projects': 'Completed Projects',
+  'why.experience.clients': 'Happy Clients',
+  'why.experience.countries': 'Countries Served',
+  
+  'why.approach.title': 'Our Unique Approach',
+  'why.approach.description': 'We develop custom solutions for every project, understanding our customers\' needs completely and providing the most suitable service.',
+  'why.approach.custom_solutions': 'Custom Solutions',
+  'why.approach.quality_focus': 'Quality Focused',
+  'why.approach.innovation': 'Continuous Innovation',
+  'why.approach.customer_satisfaction': 'Customer Satisfaction',
+  
+  'why.values.title': 'Our Values',
+  'why.values.description': 'The core values that form our working principles',
+  'why.values.excellence.title': 'Excellence',
+  'why.values.excellence.description': 'We aim for the highest quality standards in every project and achieve results that exceed our customers\' expectations.',
+  'why.values.trust.title': 'Trust',
+  'why.values.trust.description': 'We build long-term relationships based on transparency and honesty, earning our customers\' trust.',
+  'why.values.innovation.title': 'Innovation',
+  'why.values.innovation.description': 'We ensure our customers gain competitive advantage through continuous improvement and innovative solutions.',
+  'why.values.efficiency.title': 'Efficiency',
+  'why.values.efficiency.description': 'We increase our customers\' operational efficiency through lean production methods and automation solutions.',
+  
+  'why.success.title': 'Our Success Stories',
+  'why.success.description': 'Our customers\' success is our success',
+  'why.success.story1.title': '40% Increase in Production Efficiency',
+  'why.success.story1.description': 'We achieved a 40% increase in efficiency by optimizing the production processes of an industrial company.',
+  'why.success.story2.title': '3D Design Automation',
+  'why.success.story2.description': 'We accelerated design processes by 60% by developing custom automation solutions with SolidWorks API.',
+  'why.success.story3.title': 'Lean Manufacturing Transformation',
+  'why.success.story3.description': 'We reduced costs by 30% by transforming traditional production systems to lean manufacturing principles.',
+  
+  'why.difference.title': 'What Makes Us Different',
+  'why.difference.description': 'Our features that make us different from others',
+  'why.difference.global_expertise': 'Global Expertise',
+  'why.difference.global_expertise_desc': 'Expert consulting in foreign companies\' Türkiye market entry processes',
+  'why.difference.technical_excellence': 'Technical Excellence',
+  'why.difference.technical_excellence_desc': 'Deep technical knowledge in 3D design and automation',
+  'why.difference.lean_methodology': 'Lean Methodology',
+  'why.difference.lean_methodology_desc': 'Efficiency improvement through lean production methods',
+  'why.difference.custom_solutions': 'Custom Solutions',
+  'why.difference.custom_solutions_desc': 'Solutions designed specifically for each project',
+  
+  'why.cta.title': 'Work With Us',
+  'why.cta.description': 'Meet our expert team and let us help your business succeed in the Turkish market.',
+  'why.cta.button': 'CONTACT US'
 };

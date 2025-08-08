@@ -3,7 +3,7 @@ import { Mail, ArrowRight, MapPin, Phone, Clock } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <footer className="bg-tam-dark text-white pt-20 pb-10 px-6">
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
                     <ArrowRight className="w-4 h-4 mr-3 text-tam-blue group-hover:translate-x-1 transition-transform duration-200 flex-shrink-0" />
                     <span className="text-sm">{t('footer.about')}</span>
                   </a></li>
-                  <li><a href="#" className="hover:text-white transition-colors flex items-center group">
+                  <li><a href={language === 'en' ? '/en/why-us' : '/neden-biz'} className="hover:text-white transition-colors flex items-center group">
                     <ArrowRight className="w-4 h-4 mr-3 text-tam-blue group-hover:translate-x-1 transition-transform duration-200 flex-shrink-0" />
                     <span className="text-sm">{t('footer.why')}</span>
                   </a></li>

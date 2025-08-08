@@ -74,9 +74,13 @@ const Header: React.FC = () => {
     const urlMap: Record<string, string> = {
       '/': '/en',
       '/hakkimizda': '/en/about',
+      '/hizmetlerimiz': '/en/services',
+      '/neden-biz': '/en/why-us',
       '/iletisim': '/en/contact',
       '/en': '/',
       '/en/about': '/hakkimizda',
+      '/en/services': '/hizmetlerimiz',
+      '/en/why-us': '/neden-biz',
       '/en/contact': '/iletisim'
     };
     
@@ -218,7 +222,7 @@ const Header: React.FC = () => {
             )}
           </div>
           
-          <a href="#" className={`font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
+          <a href={language === 'en' ? '/en/why-us' : '/neden-biz'} className={`font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
             {t('nav.why')}
           </a>
           <a href={language === 'en' ? '/en/contact' : '/iletisim'} className={`font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
@@ -337,7 +341,7 @@ const Header: React.FC = () => {
                 )}
               </div>
               
-              <a href="#" className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
+              <a href={language === 'en' ? '/en/why-us' : '/neden-biz'} className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
                 {t('nav.why')}
               </a>
               <a href={language === 'en' ? '/en/contact' : '/iletisim'} className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">

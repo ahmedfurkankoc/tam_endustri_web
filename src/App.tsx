@@ -5,6 +5,7 @@ import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import ServicesPage from './components/ServicesPage';
 import ContactPage from './components/ContactPage';
+import WhyUsPage from './components/WhyUsPage';
 import Lenis from 'lenis';
 
 const App: React.FC = () => {
@@ -41,6 +42,8 @@ const App: React.FC = () => {
         <Route path="/en/about" element={<AboutPage />} />
         <Route path="/hizmetlerimiz" element={<ServicesPage />} />
         <Route path="/en/services" element={<ServicesPage />} />
+        <Route path="/neden-biz" element={<WhyUsPage />} />
+        <Route path="/en/why-us" element={<WhyUsPage />} />
         <Route path="/iletisim" element={<ContactPage />} />
         <Route path="/en/contact" element={<ContactPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
