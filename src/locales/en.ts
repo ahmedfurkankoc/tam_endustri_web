@@ -2,8 +2,7 @@ export const en = {
   // Navigation
   'nav.about': 'About',
   'nav.services': 'Services',
-  'nav.why': 'Why Choose Us',
-  'nav.contact': 'Contact',
+
   'nav.contact_us': 'CONTACT US',
   
   // Mega Menu
@@ -15,12 +14,12 @@ export const en = {
   'megamenu.factory_setup': 'Factory Setup Layout Plan',
   'megamenu.reverse_engineering': 'Reverse Engineering Designs',
   
-  'megamenu.business_improvement': 'BUSINESS DEVELOPMENT and IMPROVEMENT',
+  'megamenu.business_improvement': 'Business Development and Improvement',
   'megamenu.lean_production': 'Lean Production Methods Applications',
   'megamenu.technical_sales': 'Technical Sales Program-Applications',
   'megamenu.calculation_reporting': 'Calculation-Reporting Applications',
   
-  'megamenu.consulting_training': 'CONSULTING - TRAINING',
+  'megamenu.consulting_training': 'Consulting',
   'megamenu.sales_consulting': 'Sales Consulting',
   'megamenu.design_training': 'Design Training',
   'megamenu.feasibility_studies': 'Feasibility Studies and Reporting',
@@ -29,7 +28,7 @@ export const en = {
   // Footer
   'footer.corporate': 'Corporate',
   'footer.about': 'About',
-  'footer.why': 'Why Choose Us',
+
   'footer.services': 'Services',
   'footer.contact': 'Contact',
   
@@ -133,26 +132,7 @@ export const en = {
   'about.vision.title': 'Our Vision',
   'about.vision.description': 'To make Türkiye the most attractive and safe investment center for foreign companies. To become a leading position in industrial consulting and a reliable partner in the global business world.',
   
-  'about.values.title': 'Our Values',
-  'about.values.subtitle': 'The core values that form our working principles',
-  
-  'about.values.excellence.title': 'Excellence',
-  'about.values.excellence.description': 'We aim for the highest quality standards in every project and achieve results that exceed our customers\' expectations.',
-  
-  'about.values.trust.title': 'Trust',
-  'about.values.trust.description': 'We build long-term relationships based on transparency and honesty, earning our customers\' trust.',
-  
-  'about.values.innovation.title': 'Innovation',
-  'about.values.innovation.description': 'We ensure our customers gain competitive advantage through continuous improvement and innovative solutions.',
-  
-  'about.values.global.title': 'Global Perspective',
-  'about.values.global.description': 'With our international experience, we build bridges between different cultures and markets.',
-  
-  'about.values.efficiency.title': 'Efficiency',
-  'about.values.efficiency.description': 'We increase our customers\' operational efficiency through lean production methods and automation solutions.',
-  
-  'about.values.expertise.title': 'Expertise',
-  'about.values.expertise.description': 'With 15 years of experience, we provide deep expertise in industrial design and manufacturing.',
+
   
   'about.team.title': 'Our Team',
   'about.team.subtitle': 'We work for our customers\' success with our experienced and expert team',
@@ -169,9 +149,7 @@ export const en = {
   'about.team.member3.position': 'Technical Director',
   'about.team.member3.expertise': 'Expert in 3D design and automation. Experienced in SolidWorks API and R&D projects.',
   
-  'about.cta.title': 'Work With Us',
-  'about.cta.description': 'Meet our expert team and let us help your business succeed in the Turkish market.',
-  'about.cta.button': 'CONTACT US',
+
   
   // Services Page
   'services.hero.title': 'OUR SERVICES',
@@ -209,8 +187,7 @@ export const en = {
   'contact.hero.subtitle': 'Get in touch with us for your projects. Our expert team is ready to help you.',
   'contact.info.title': 'Contact Information',
   'contact.info.subtitle': 'You can contact us through the method that suits you best.',
-  'contact.phone.title': 'Phone',
-  'contact.phone.description': 'You can call directly or send a message via WhatsApp.',
+
   'contact.email.title': 'Email',
   'contact.email.description': 'You can send an email for detailed information.',
   'contact.address.title': 'Address',
@@ -230,13 +207,7 @@ export const en = {
   'contact.form.message': 'Message',
   'contact.form.message_placeholder': 'Provide detailed information about your project...',
   'contact.form.send': 'SEND MESSAGE',
-  'contact.office.title': 'Office Information',
-  'contact.office.subtitle': 'Information about our headquarters and team.',
-  'contact.office.headquarters': 'Headquarters',
-  'contact.office.headquarters_address': 'Istanbul, Turkey. We are at your service with our team specialized in industrial design and manufacturing.',
-  'contact.office.team': 'Our Expert Team',
-  'contact.office.team_description': 'Our expert team with 15 years of experience is ready to successfully complete your projects.',
-  'contact.office.map_placeholder': 'Map will appear here',
+
   
   // Appointment System
   'contact.appointment.title': 'Book Appointment',
@@ -266,56 +237,5 @@ export const en = {
   'contact.appointment.time.title': 'Select Time',
   'contact.appointment.form.title': 'Personal Information',
   
-  // Why Us Page
-  'why.hero.title': 'WHY CHOOSE US',
-  'why.hero.subtitle': 'With our 15 years of experience and expertise, we help your business succeed in the Turkish market.',
-  
-  'why.experience.title': 'Experience and Expertise',
-  'why.experience.description': 'With over 15 years of sector experience, we provide deep expertise in industrial design and manufacturing.',
-  'why.experience.years': 'Years Experience',
-  'why.experience.projects': 'Completed Projects',
-  'why.experience.clients': 'Happy Clients',
-  'why.experience.countries': 'Countries Served',
-  
-  'why.approach.title': 'Our Unique Approach',
-  'why.approach.description': 'We develop custom solutions for every project, understanding our customers\' needs completely and providing the most suitable service.',
-  'why.approach.custom_solutions': 'Custom Solutions',
-  'why.approach.quality_focus': 'Quality Focused',
-  'why.approach.innovation': 'Continuous Innovation',
-  'why.approach.customer_satisfaction': 'Customer Satisfaction',
-  
-  'why.values.title': 'Our Values',
-  'why.values.description': 'The core values that form our working principles',
-  'why.values.excellence.title': 'Excellence',
-  'why.values.excellence.description': 'We aim for the highest quality standards in every project and achieve results that exceed our customers\' expectations.',
-  'why.values.trust.title': 'Trust',
-  'why.values.trust.description': 'We build long-term relationships based on transparency and honesty, earning our customers\' trust.',
-  'why.values.innovation.title': 'Innovation',
-  'why.values.innovation.description': 'We ensure our customers gain competitive advantage through continuous improvement and innovative solutions.',
-  'why.values.efficiency.title': 'Efficiency',
-  'why.values.efficiency.description': 'We increase our customers\' operational efficiency through lean production methods and automation solutions.',
-  
-  'why.success.title': 'Our Success Stories',
-  'why.success.description': 'Our customers\' success is our success',
-  'why.success.story1.title': '40% Increase in Production Efficiency',
-  'why.success.story1.description': 'We achieved a 40% increase in efficiency by optimizing the production processes of an industrial company.',
-  'why.success.story2.title': '3D Design Automation',
-  'why.success.story2.description': 'We accelerated design processes by 60% by developing custom automation solutions with SolidWorks API.',
-  'why.success.story3.title': 'Lean Manufacturing Transformation',
-  'why.success.story3.description': 'We reduced costs by 30% by transforming traditional production systems to lean manufacturing principles.',
-  
-  'why.difference.title': 'What Makes Us Different',
-  'why.difference.description': 'Our features that make us different from others',
-  'why.difference.global_expertise': 'Global Expertise',
-  'why.difference.global_expertise_desc': 'Expert consulting in foreign companies\' Türkiye market entry processes',
-  'why.difference.technical_excellence': 'Technical Excellence',
-  'why.difference.technical_excellence_desc': 'Deep technical knowledge in 3D design and automation',
-  'why.difference.lean_methodology': 'Lean Methodology',
-  'why.difference.lean_methodology_desc': 'Efficiency improvement through lean production methods',
-  'why.difference.custom_solutions': 'Custom Solutions',
-  'why.difference.custom_solutions_desc': 'Solutions designed specifically for each project',
-  
-  'why.cta.title': 'Work With Us',
-  'why.cta.description': 'Meet our expert team and let us help your business succeed in the Turkish market.',
-  'why.cta.button': 'CONTACT US'
+
 };

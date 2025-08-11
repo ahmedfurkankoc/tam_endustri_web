@@ -36,10 +36,10 @@ const Header: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
-  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const [isMobileDesignOpen, setIsMobileDesignOpen] = useState(false);
+  const [isMobileBusinessOpen, setIsMobileBusinessOpen] = useState(false);
+  const [isMobileConsultingOpen, setIsMobileConsultingOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const megaMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,20 +49,6 @@ const Header: React.FC = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Mega menu dışına tıklandığında kapanması için
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (megaMenuRef.current && !megaMenuRef.current.contains(event.target as Node)) {
-        setIsMegaMenuOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
   }, []);
 
   // Dil değiştirme fonksiyonu
@@ -75,12 +61,12 @@ const Header: React.FC = () => {
       '/': '/en',
       '/hakkimizda': '/en/about',
       '/hizmetlerimiz': '/en/services',
-      '/neden-biz': '/en/why-us',
+
       '/iletisim': '/en/contact',
       '/en': '/',
       '/en/about': '/hakkimizda',
       '/en/services': '/hizmetlerimiz',
-      '/en/why-us': '/neden-biz',
+
       '/en/contact': '/iletisim'
     };
     
@@ -142,92 +128,139 @@ const Header: React.FC = () => {
           />
         </a>
         
-        <div className="hidden md:flex items-center space-x-8 text-sm font-body">
+        <div className="hidden md:flex items-center space-x-6 text-sm font-body">
           <a href={language === 'en' ? '/en/about' : '/hakkimizda'} className={`font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
             {t('nav.about')}
           </a>
           
-          {/* Mega Menu Trigger */}
-          <div className="relative" ref={megaMenuRef}>
-            <button
-              onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
-              className={`flex items-center space-x-1 font-semibold transition-colors ${
-                isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'
-              }`}
-            >
-              <span>{t('nav.services')}</span>
-              <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isMegaMenuOpen ? 'rotate-180' : ''}`} />
+          {/* Proje Tasarım Ve İmalat */}
+          <div className="relative group">
+            <button className={`flex items-center space-x-1 font-semibold transition-colors ${
+              isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'
+            }`}>
+              <span>{t('megamenu.design_manufacturing')}</span>
+              <ChevronDown className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
             </button>
             
-            {/* Mega Menu */}
-            {isMegaMenuOpen && (
-              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-screen max-w-6xl bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
-                {/* Backdrop */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50 opacity-50"></div>
-                
-                <div className="relative z-10 p-8">
-                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    {megaMenuData.map((category, index) => (
-                      <div key={index} className="space-y-4">
-                        <div className="flex items-center space-x-3 mb-4">
-                          <div className="w-8 h-8 bg-tam-blue rounded-lg flex items-center justify-center text-white">
-                            {category.icon}
-                          </div>
-                          <div>
-                            <h3 className="text-tam-blue font-semibold text-lg">{category.title}</h3>
-                            <p className="text-gray-500 text-sm mt-1">{category.description}</p>
-                          </div>
-                        </div>
-                        <ul className="space-y-3">
-                          {category.items.map((item, itemIndex) => (
-                            <li key={itemIndex}>
-                              <a
-                                href={item.href}
-                                className="flex items-center justify-between text-gray-700 hover:text-tam-blue hover:bg-gray-50 px-3 py-2 rounded-lg transition-all duration-200 group"
-                                onClick={() => setIsMegaMenuOpen(false)}
-                              >
-                                <div>
-                                  <span className="text-sm font-medium">{item.title}</span>
-                                  <p className="text-xs text-gray-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                                    {item.description}
-                                  </p>
-                                </div>
-                                <ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
+            {/* Dropdown Menu */}
+            <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="p-4">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-8 h-8 bg-tam-blue rounded-lg flex items-center justify-center text-white">
+                    <Settings className="w-5 h-5" />
                   </div>
-                  
-                  {/* Bottom CTA */}
-                  <div className="mt-8 pt-6 border-t border-gray-200">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <h4 className="text-gray-900 font-semibold mb-2">Tüm Hizmetlerimizi Keşfedin</h4>
-                        <p className="text-gray-600 text-sm">Uzman ekibimizle tanışın ve projelerinizi hayata geçirin</p>
-                      </div>
-                      <a 
-                        href={language === 'en' ? '/en/services' : '/hizmetlerimiz'}
-                        className="bg-tam-blue text-white px-6 py-3 rounded-full font-semibold hover:bg-tam-accent transition-all duration-200 hover:shadow-lg hover:scale-105 inline-block"
-                        onClick={() => setIsMegaMenuOpen(false)}
-                      >
-                        {t('nav.services')}
-                      </a>
-                    </div>
+                  <div>
+                    <h3 className="text-tam-blue font-semibold text-lg">{t('megamenu.design_manufacturing')}</h3>
+                    <p className="text-gray-500 text-sm mt-1">3D tasarım ve imalat çözümleri</p>
                   </div>
                 </div>
+                <ul className="space-y-2">
+                  {megaMenuData[0].items.map((item, itemIndex) => (
+                    <li key={itemIndex}>
+                      <a
+                        href={item.href}
+                        className="flex items-center justify-between text-gray-700 hover:text-tam-blue hover:bg-gray-50 px-3 py-2 rounded-lg transition-all duration-200 group"
+                      >
+                        <div>
+                          <span className="text-sm font-medium">{item.title}</span>
+                          <p className="text-xs text-gray-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                            {item.description}
+                          </p>
+                        </div>
+                        <ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </div>
-            )}
+            </div>
           </div>
-          
-          <a href={language === 'en' ? '/en/why-us' : '/neden-biz'} className={`font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
-            {t('nav.why')}
-          </a>
-          <a href={language === 'en' ? '/en/contact' : '/iletisim'} className={`font-semibold transition-colors ${isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'}`}>
-            {t('nav.contact')}
-          </a>
+
+          {/* İş Geliştirme ve İyileştirme */}
+          <div className="relative group">
+            <button className={`flex items-center space-x-1 font-semibold transition-colors ${
+              isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'
+            }`}>
+              <span>{t('megamenu.business_improvement')}</span>
+              <ChevronDown className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
+            </button>
+            
+            {/* Dropdown Menu */}
+            <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="p-4">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-8 h-8 bg-tam-blue rounded-lg flex items-center justify-center text-white">
+                    <TrendingUp className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-tam-blue font-semibold text-lg">{t('megamenu.business_improvement')}</h3>
+                    <p className="text-gray-500 text-sm mt-1">İş süreçlerini optimize edin</p>
+                  </div>
+                </div>
+                <ul className="space-y-2">
+                  {megaMenuData[1].items.map((item, itemIndex) => (
+                    <li key={itemIndex}>
+                      <a
+                        href={item.href}
+                        className="flex items-center justify-between text-gray-700 hover:text-tam-blue hover:bg-gray-50 px-3 py-2 rounded-lg transition-all duration-200 group"
+                      >
+                        <div>
+                          <span className="text-sm font-medium">{item.title}</span>
+                          <p className="text-xs text-gray-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                            {item.description}
+                          </p>
+                        </div>
+                        <ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Danışmanlık */}
+          <div className="relative group">
+            <button className={`flex items-center space-x-1 font-semibold transition-colors ${
+              isScrolled ? 'text-gray-800 hover:text-tam-blue' : 'text-white hover:text-tam-blue'
+            }`}>
+              <span>{t('megamenu.consulting_training')}</span>
+              <ChevronDown className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
+            </button>
+            
+            {/* Dropdown Menu */}
+            <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="p-4">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-8 h-8 bg-tam-blue rounded-lg flex items-center justify-center text-white">
+                    <GraduationCap className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-tam-blue font-semibold text-lg">{t('megamenu.consulting_training')}</h3>
+                    <p className="text-gray-500 text-sm mt-1">Danışmanlık ve eğitim hizmetleri</p>
+                  </div>
+                </div>
+                <ul className="space-y-2">
+                  {megaMenuData[2].items.map((item, itemIndex) => (
+                    <li key={itemIndex}>
+                      <a
+                        href={item.href}
+                        className="flex items-center justify-between text-gray-700 hover:text-tam-blue hover:bg-gray-50 px-3 py-2 rounded-lg transition-all duration-200 group"
+                      >
+                        <div>
+                          <span className="text-sm font-medium">{item.title}</span>
+                          <p className="text-xs text-gray-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                            {item.description}
+                          </p>
+                        </div>
+                        <ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
           
           {/* Language Toggle */}
           <button
@@ -302,48 +335,90 @@ const Header: React.FC = () => {
                 {t('nav.about')}
               </a>
               
-              <a href={language === 'en' ? '/en/services' : '/hizmetlerimiz'} className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
-                {t('nav.services')}
-              </a>
-              
-              {/* Mobile Services Menu */}
+              {/* Proje Tasarım Ve İmalat Mobile */}
               <div className="space-y-4">
                 <button
-                  onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                  onClick={() => setIsMobileDesignOpen(!isMobileDesignOpen)}
                   className="w-full text-left font-semibold text-lg transition-colors flex items-center justify-between text-tam-blue"
                 >
-                  <span>{t('nav.services')}</span>
-                  <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+                  <span>{t('megamenu.design_manufacturing')}</span>
+                  <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${isMobileDesignOpen ? 'rotate-180' : ''}`} />
                 </button>
-                {isMobileServicesOpen && (
-                  <div className="ml-4 space-y-4">
-                    {megaMenuData.map((category, index) => (
-                      <div key={index} className="space-y-3">
-                        <div className="text-base font-medium text-gray-600">{category.title}</div>
-                        <div className="ml-4 space-y-2">
-                          {category.items.map((item, itemIndex) => (
-                            <a
-                              key={itemIndex}
-                              href={item.href}
-                              className="block text-sm transition-colors text-gray-600 hover:text-gray-800"
-                              onClick={() => {
-                                setIsMenuOpen(false);
-                                setIsMobileServicesOpen(false);
-                              }}
-                            >
-                              {item.title}
-                            </a>
-                          ))}
-                        </div>
-                      </div>
+                {isMobileDesignOpen && (
+                  <div className="ml-4 space-y-3">
+                    {megaMenuData[0].items.map((item, itemIndex) => (
+                      <a
+                        key={itemIndex}
+                        href={item.href}
+                        className="block text-sm transition-colors text-gray-600 hover:text-gray-800"
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          setIsMobileDesignOpen(false);
+                        }}
+                      >
+                        {item.title}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* İş Geliştirme ve İyileştirme Mobile */}
+              <div className="space-y-4">
+                <button
+                  onClick={() => setIsMobileBusinessOpen(!isMobileBusinessOpen)}
+                  className="w-full text-left font-semibold text-lg transition-colors flex items-center justify-between text-tam-blue"
+                >
+                  <span>{t('megamenu.business_improvement')}</span>
+                  <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${isMobileBusinessOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {isMobileBusinessOpen && (
+                  <div className="ml-4 space-y-3">
+                    {megaMenuData[1].items.map((item, itemIndex) => (
+                      <a
+                        key={itemIndex}
+                        href={item.href}
+                        className="block text-sm transition-colors text-gray-600 hover:text-gray-800"
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          setIsMobileBusinessOpen(false);
+                        }}
+                      >
+                        {item.title}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Danışmanlık Mobile */}
+              <div className="space-y-4">
+                <button
+                  onClick={() => setIsMobileConsultingOpen(!isMobileConsultingOpen)}
+                  className="w-full text-left font-semibold text-lg transition-colors flex items-center justify-between text-tam-blue"
+                >
+                  <span>{t('megamenu.consulting_training')}</span>
+                  <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${isMobileConsultingOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {isMobileConsultingOpen && (
+                  <div className="ml-4 space-y-3">
+                    {megaMenuData[2].items.map((item, itemIndex) => (
+                      <a
+                        key={itemIndex}
+                        href={item.href}
+                        className="block text-sm transition-colors text-gray-600 hover:text-gray-800"
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          setIsMobileConsultingOpen(false);
+                        }}
+                      >
+                        {item.title}
+                      </a>
                     ))}
                   </div>
                 )}
               </div>
               
-              <a href={language === 'en' ? '/en/why-us' : '/neden-biz'} className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
-                {t('nav.why')}
-              </a>
               <a href={language === 'en' ? '/en/contact' : '/iletisim'} className="block font-semibold text-lg transition-colors text-gray-800 hover:text-tam-blue">
                 {t('nav.contact')}
               </a>

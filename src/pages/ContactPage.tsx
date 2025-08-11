@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Mail, MapPin, Phone, Clock, Send, MessageSquare, Building, Users, Calendar, Clock as ClockIcon, X, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Mail, MapPin, Clock, Send, MessageSquare, Calendar, Clock as ClockIcon, X, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -14,13 +14,6 @@ const ContactPage: React.FC = () => {
   const [selectedDay, setSelectedDay] = useState<Date | null>(null);
 
   const contactMethods = [
-    {
-      icon: <Phone className="w-8 h-8" />,
-      title: t('contact.phone.title'),
-      description: t('contact.phone.description'),
-      value: '+90 (212) 555 0123',
-      gradient: 'from-green-500 to-emerald-500'
-    },
     {
       icon: <Mail className="w-8 h-8" />,
       title: t('contact.email.title'),
@@ -177,64 +170,66 @@ const ContactPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {contactMethods.map((method, index) => (
-              <div key={index} className="group h-full gpu-accelerated">
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl">
+              {contactMethods.map((method, index) => (
+                <div key={index} className="group h-full gpu-accelerated">
+                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl border border-gray-100 hover:border-tam-blue/20 h-full flex flex-col optimized-transition">
+                    {/* Icon */}
+                    <div className={`w-16 h-16 bg-gradient-to-br ${method.gradient} rounded-2xl flex items-center justify-center mb-6 shadow-lg flex-shrink-0 hover-accelerated`}>
+                      <div className="text-white group-hover:scale-105 transition-transform duration-250 ease-out">
+                        {method.icon}
+                      </div>
+                    </div>
+                    
+                    {/* Content */}
+                    <div className="flex-1 flex flex-col">
+                      <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-tam-blue transition-colors duration-250">
+                        {method.title}
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed flex-1 mb-4">
+                        {method.description}
+                      </p>
+                      <p className="text-tam-blue font-semibold">
+                        {method.value}
+                      </p>
+                    </div>
+                    
+                    {/* Hover Effect Line */}
+                    <div className="mt-4 h-1 bg-gradient-to-r from-tam-blue to-tam-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out origin-left rounded-full"></div>
+                  </div>
+                </div>
+              ))}
+              
+              {/* Randevu Kartı */}
+              <div className="group h-full gpu-accelerated">
                 <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl border border-gray-100 hover:border-tam-blue/20 h-full flex flex-col optimized-transition">
                   {/* Icon */}
-                  <div className={`w-16 h-16 bg-gradient-to-br ${method.gradient} rounded-2xl flex items-center justify-center mb-6 shadow-lg flex-shrink-0 hover-accelerated`}>
+                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg flex-shrink-0 hover-accelerated">
                     <div className="text-white group-hover:scale-105 transition-transform duration-250 ease-out">
-                      {method.icon}
+                      <Calendar className="w-8 h-8" />
                     </div>
                   </div>
                   
                   {/* Content */}
                   <div className="flex-1 flex flex-col">
                     <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-tam-blue transition-colors duration-250">
-                      {method.title}
+                      {t('contact.appointment.title')}
                     </h3>
                     <p className="text-gray-600 leading-relaxed flex-1 mb-4">
-                      {method.description}
+                      {t('contact.appointment.description')}
                     </p>
-                    <p className="text-tam-blue font-semibold">
-                      {method.value}
-                    </p>
+                    <button
+                      onClick={() => setShowAppointment(true)}
+                      className="bg-gradient-to-r from-tam-blue to-tam-accent text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200"
+                    >
+                      {t('contact.appointment.button')}
+                    </button>
                   </div>
                   
                   {/* Hover Effect Line */}
                   <div className="mt-4 h-1 bg-gradient-to-r from-tam-blue to-tam-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out origin-left rounded-full"></div>
                 </div>
-              </div>
-            ))}
-            
-            {/* Randevu Kartı */}
-            <div className="group h-full gpu-accelerated">
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl border border-gray-100 hover:border-tam-blue/20 h-full flex flex-col optimized-transition">
-                {/* Icon */}
-                <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg flex-shrink-0 hover-accelerated">
-                  <div className="text-white group-hover:scale-105 transition-transform duration-250 ease-out">
-                    <Calendar className="w-8 h-8" />
-                  </div>
-                </div>
-                
-                {/* Content */}
-                <div className="flex-1 flex flex-col">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-tam-blue transition-colors duration-250">
-                    {t('contact.appointment.title')}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed flex-1 mb-4">
-                    {t('contact.appointment.description')}
-                  </p>
-                  <button
-                    onClick={() => setShowAppointment(true)}
-                    className="bg-gradient-to-r from-tam-blue to-tam-accent text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200"
-                  >
-                    {t('contact.appointment.button')}
-                  </button>
-                </div>
-                
-                {/* Hover Effect Line */}
-                <div className="mt-4 h-1 bg-gradient-to-r from-tam-blue to-tam-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out origin-left rounded-full"></div>
               </div>
             </div>
           </div>
@@ -295,60 +290,7 @@ const ContactPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Office Section */}
-      <section className="py-20 bg-white rounded-t-3xl">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              {t('contact.office.title')}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('contact.office.subtitle')}
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="space-y-8">
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-tam-blue to-tam-accent rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Building className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    {t('contact.office.headquarters')}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {t('contact.office.headquarters_address')}
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-tam-accent to-tam-blue rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Users className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    {t('contact.office.team')}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {t('contact.office.team_description')}
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-gray-100 rounded-2xl p-8 h-64 flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <MapPin className="w-16 h-16 mx-auto mb-4 text-gray-400" />
-                <p className="text-lg font-medium">
-                  {t('contact.office.map_placeholder')}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       
       <Footer />
       

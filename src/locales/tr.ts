@@ -2,8 +2,7 @@ export const tr = {
   // Navigation
   'nav.about': 'Hakkımızda',
   'nav.services': 'Hizmetlerimiz',
-  'nav.why': 'Neden Biz',
-  'nav.contact': 'İletişim',
+
   'nav.contact_us': 'İLETİŞİME GEÇİN',
   
   // Mega Menu
@@ -15,12 +14,12 @@ export const tr = {
   'megamenu.factory_setup': 'Fabrika Kurulum Yerleşim Planı',
   'megamenu.reverse_engineering': 'Tersine Mühendislik Tasarımları',
   
-  'megamenu.business_improvement': 'İŞ GELİŞTİRME ve İYİLEŞTİRME',
+  'megamenu.business_improvement': 'İş Geliştirme ve İyileştirme',
   'megamenu.lean_production': 'Yalın Üretim Yöntemleri Uygulamaları',
   'megamenu.technical_sales': 'Teknik Satış Program-Uygulamaları',
   'megamenu.calculation_reporting': 'Hesaplama-Raporlama Uygulamaları',
   
-  'megamenu.consulting_training': 'DANIŞMANLIK - EĞİTİMLERİMİZ',
+  'megamenu.consulting_training': 'Danışmanlık',
   'megamenu.sales_consulting': 'Satış Danışmanlığı',
   'megamenu.design_training': 'Tasarım Eğitimleri',
   'megamenu.feasibility_studies': 'Fizibilite Çalışmaları ve Raporlama',
@@ -29,7 +28,7 @@ export const tr = {
   // Footer
   'footer.corporate': 'Kurumsal',
   'footer.about': 'Hakkımızda',
-  'footer.why': 'Neden Biz',
+
   'footer.services': 'Hizmetlerimiz',
   'footer.contact': 'İletişim',
   
@@ -133,26 +132,7 @@ export const tr = {
   'about.vision.title': 'Vizyonumuz',
   'about.vision.description': 'Türkiye\'yi yabancı şirketler için en çekici ve güvenli yatırım merkezi haline getirmek. Endüstriyel danışmanlık alanında lider konuma ulaşarak, global iş dünyasında güvenilir bir partner olmak.',
   
-  'about.values.title': 'Değerlerimiz',
-  'about.values.subtitle': 'Çalışma prensiplerimizi oluşturan temel değerlerimiz',
-  
-  'about.values.excellence.title': 'Mükemmellik',
-  'about.values.excellence.description': 'Her projede en yüksek kalite standartlarını hedefliyor, müşterilerimizin beklentilerini aşan sonuçlar elde ediyoruz.',
-  
-  'about.values.trust.title': 'Güven',
-  'about.values.trust.description': 'Şeffaflık ve dürüstlük temelinde uzun vadeli ilişkiler kuruyor, müşterilerimizin güvenini kazanıyoruz.',
-  
-  'about.values.innovation.title': 'İnovasyon',
-  'about.values.innovation.description': 'Sürekli gelişim ve yenilikçi çözümlerle, müşterilerimizin rekabet avantajı elde etmesini sağlıyoruz.',
-  
-  'about.values.global.title': 'Global Bakış',
-  'about.values.global.description': 'Uluslararası deneyimimizle, farklı kültürler ve pazarlar arasında köprü kuruyoruz.',
-  
-  'about.values.efficiency.title': 'Verimlilik',
-  'about.values.efficiency.description': 'Yalın üretim yöntemleri ve otomasyon çözümleriyle, müşterilerimizin operasyonel verimliliğini artırıyoruz.',
-  
-  'about.values.expertise.title': 'Uzmanlık',
-  'about.values.expertise.description': '15 yıllık deneyimimizle, endüstriyel tasarım ve imalat alanında derin uzmanlık sunuyoruz.',
+
   
   'about.team.title': 'Ekibimiz',
   'about.team.subtitle': 'Deneyimli ve uzman ekibimizle müşterilerimizin başarısı için çalışıyoruz',
@@ -169,9 +149,7 @@ export const tr = {
   'about.team.member3.position': 'Teknik Direktör',
   'about.team.member3.expertise': '3D tasarım ve otomasyon alanında uzman. SolidWorks API ve AR-GE projelerinde deneyimli.',
   
-  'about.cta.title': 'Bizimle Çalışın',
-  'about.cta.description': 'Uzman ekibimizle tanışın ve işinizi Türkiye pazarında başarıya ulaştıralım.',
-  'about.cta.button': 'İLETİŞİME GEÇİN',
+
   
   // Services Page
   'services.hero.title': 'HİZMETLERİMİZ',
@@ -209,8 +187,7 @@ export const tr = {
   'contact.hero.subtitle': 'Projeleriniz için bizimle iletişime geçin. Uzman ekibimiz size yardımcı olmaya hazır.',
   'contact.info.title': 'İletişim Bilgileri',
   'contact.info.subtitle': 'Size en uygun yöntemle bizimle iletişime geçebilirsiniz.',
-  'contact.phone.title': 'Telefon',
-  'contact.phone.description': 'Doğrudan arayabilir veya WhatsApp üzerinden mesaj gönderebilirsiniz.',
+
   'contact.email.title': 'E-posta',
   'contact.email.description': 'Detaylı bilgi için e-posta gönderebilirsiniz.',
   'contact.address.title': 'Adres',
@@ -230,13 +207,7 @@ export const tr = {
   'contact.form.message': 'Mesaj',
   'contact.form.message_placeholder': 'Projeniz hakkında detaylı bilgi verin...',
   'contact.form.send': 'MESAJ GÖNDER',
-  'contact.office.title': 'Ofis Bilgileri',
-  'contact.office.subtitle': 'Merkez ofisimiz ve ekibimiz hakkında bilgi.',
-  'contact.office.headquarters': 'Merkez Ofis',
-  'contact.office.headquarters_address': 'İstanbul, Türkiye. Endüstriyel tasarım ve imalat alanında uzmanlaşmış ekibimizle hizmetinizdeyiz.',
-  'contact.office.team': 'Uzman Ekibimiz',
-  'contact.office.team_description': '15 yıllık deneyime sahip uzman ekibimiz, projelerinizi başarıyla tamamlamak için hazır.',
-  'contact.office.map_placeholder': 'Harita burada görünecek',
+
   
   // Appointment System
   'contact.appointment.title': 'Randevu Al',
@@ -266,56 +237,5 @@ export const tr = {
   'contact.appointment.time.title': 'Saat Seçin',
   'contact.appointment.form.title': 'Kişisel Bilgiler',
   
-  // Why Us Page
-  'why.hero.title': 'NEDEN BİZ',
-  'why.hero.subtitle': '15 yıllık deneyimimiz ve uzmanlığımızla, işinizi Türkiye pazarında başarıya ulaştırıyoruz.',
-  
-  'why.experience.title': 'Deneyim ve Uzmanlık',
-  'why.experience.description': '15 yılı aşkın sektör deneyimimizle, endüstriyel tasarım ve imalat alanında derin uzmanlık sunuyoruz.',
-  'why.experience.years': 'Yıllık Deneyim',
-  'why.experience.projects': 'Tamamlanan Proje',
-  'why.experience.clients': 'Mutlu Müşteri',
-  'why.experience.countries': 'Hizmet Verilen Ülke',
-  
-  'why.approach.title': 'Benzersiz Yaklaşımımız',
-  'why.approach.description': 'Her projeye özel çözümler geliştiriyor, müşterilerimizin ihtiyaçlarını tam olarak anlayarak en uygun hizmeti sunuyoruz.',
-  'why.approach.custom_solutions': 'Özel Çözümler',
-  'why.approach.quality_focus': 'Kalite Odaklı',
-  'why.approach.innovation': 'Sürekli İnovasyon',
-  'why.approach.customer_satisfaction': 'Müşteri Memnuniyeti',
-  
-  'why.values.title': 'Değerlerimiz',
-  'why.values.description': 'Çalışma prensiplerimizi oluşturan temel değerlerimiz',
-  'why.values.excellence.title': 'Mükemmellik',
-  'why.values.excellence.description': 'Her projede en yüksek kalite standartlarını hedefliyor, müşterilerimizin beklentilerini aşan sonuçlar elde ediyoruz.',
-  'why.values.trust.title': 'Güven',
-  'why.values.trust.description': 'Şeffaflık ve dürüstlük temelinde uzun vadeli ilişkiler kuruyor, müşterilerimizin güvenini kazanıyoruz.',
-  'why.values.innovation.title': 'İnovasyon',
-  'why.values.innovation.description': 'Sürekli gelişim ve yenilikçi çözümlerle, müşterilerimizin rekabet avantajı elde etmesini sağlıyoruz.',
-  'why.values.efficiency.title': 'Verimlilik',
-  'why.values.efficiency.description': 'Yalın üretim yöntemleri ve otomasyon çözümleriyle, müşterilerimizin operasyonel verimliliğini artırıyoruz.',
-  
-  'why.success.title': 'Başarı Hikayelerimiz',
-  'why.success.description': 'Müşterilerimizin başarıları bizim başarımızdır',
-  'why.success.story1.title': 'Üretim Verimliliği %40 Artış',
-  'why.success.story1.description': 'Bir endüstriyel şirketin üretim süreçlerini optimize ederek %40 verimlilik artışı sağladık.',
-  'why.success.story2.title': '3D Tasarım Otomasyonu',
-  'why.success.story2.description': 'SolidWorks API ile özel otomasyon çözümleri geliştirerek tasarım süreçlerini %60 hızlandırdık.',
-  'why.success.story3.title': 'Yalın Üretim Dönüşümü',
-  'why.success.story3.description': 'Geleneksel üretim sistemini yalın üretim prensiplerine dönüştürerek maliyetleri %30 azalttık.',
-  
-  'why.difference.title': 'Bizi Farklı Kılan',
-  'why.difference.description': 'Diğerlerinden farklı olan özelliklerimiz',
-  'why.difference.global_expertise': 'Global Uzmanlık',
-  'why.difference.global_expertise_desc': 'Yabancı şirketlerin Türkiye pazarına giriş süreçlerinde uzman danışmanlık',
-  'why.difference.technical_excellence': 'Teknik Mükemmellik',
-  'why.difference.technical_excellence_desc': '3D tasarım ve otomasyon alanında derin teknik bilgi',
-  'why.difference.lean_methodology': 'Yalın Metodoloji',
-  'why.difference.lean_methodology_desc': 'Yalın üretim yöntemleri ile verimlilik artırma',
-  'why.difference.custom_solutions': 'Özel Çözümler',
-  'why.difference.custom_solutions_desc': 'Her projeye özel tasarlanmış çözümler',
-  
-  'why.cta.title': 'Bizimle Çalışın',
-  'why.cta.description': 'Uzman ekibimizle tanışın ve işinizi Türkiye pazarında başarıya ulaştıralım.',
-  'why.cta.button': 'İLETİŞİME GEÇİN'
+
 };
