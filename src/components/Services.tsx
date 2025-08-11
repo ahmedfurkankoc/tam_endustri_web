@@ -10,22 +10,19 @@ const Services: React.FC = () => {
       title: t('services.design.title'),
       description: t('services.design.desc'),
       icon: Cpu,
-      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600',
-      gradient: 'from-blue-500 to-purple-600'
+      image: '/images/machine-design.webp'
     },
     {
       title: t('services.improvement.title'),
       description: t('services.improvement.desc'),
       icon: TrendingUp,
-      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600',
-      gradient: 'from-green-500 to-blue-600'
+      image: '/images/improvement-service.webp'
     },
     {
       title: t('services.training.title'),
       description: t('services.training.desc'),
       icon: Users,
-      image: 'https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=600',
-      gradient: 'from-orange-500 to-red-600'
+      image: '/images/training-service.webp'
     }
   ];
 
@@ -42,9 +39,9 @@ const Services: React.FC = () => {
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-t ${service.gradient} bg-opacity-20`}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 <div className="absolute top-3 md:top-4 right-3 md:right-4">
-                  <div className={`w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-r ${service.gradient} flex items-center justify-center shadow-lg`}>
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-r from-tam-blue to-tam-accent flex items-center justify-center shadow-lg">
                     <service.icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
                   </div>
                 </div>

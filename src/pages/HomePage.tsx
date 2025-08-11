@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import ProblemStatement from '../components/ProblemStatement';
+import Challenges from '../components/Challenges';
 import Services from '../components/Services';
-import RegulatoryPower from '../components/RegulatoryPower';
-import GlobalApprovals from '../components/GlobalApprovals';
-import ConceptValidators from '../components/ConceptValidators';
+import DesignManufacturing from '../components/DesignManufacturing';
+import TrainingServices from '../components/TrainingServices';
+import BusinessConsulting from '../components/BusinessConsulting';
 import Testimonial from '../components/Testimonial';
-import CTA from '../components/CTA';
+import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
 const HomePage: React.FC = () => {
@@ -15,13 +15,13 @@ const HomePage: React.FC = () => {
     <div className="min-h-screen">
       <Header />
       <Hero />
-      <ProblemStatement />
+      <Challenges />
       <Services />
-      <RegulatoryPower />
-      <GlobalApprovals />
-      <ConceptValidators />
+      <DesignManufacturing />
+      <TrainingServices />
+      <BusinessConsulting />
       <Testimonial />
-      <CTA />
+      <ContactSection />
       <Footer />
     </div>
   );

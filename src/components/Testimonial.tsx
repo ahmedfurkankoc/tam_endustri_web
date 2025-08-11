@@ -27,7 +27,7 @@ const Testimonial: React.FC = () => {
             </div>
           </div>
           <img 
-              src="https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              src="/images/testimonial-person.webp"
               alt="Endüstriyel danışmanlık"
               className="rounded-2xl shadow-lg w-full h-full object-cover"
             />
