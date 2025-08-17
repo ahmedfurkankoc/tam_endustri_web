@@ -2,7 +2,7 @@ export const en = {
   // Navigation
   'nav.about': 'About',
   'nav.services': 'Services',
-
+  'nav.contact': 'Contact',
   'nav.contact_us': 'CONTACT US',
   
   // Mega Menu
@@ -24,6 +24,32 @@ export const en = {
   'megamenu.design_training': 'Design Training',
   'megamenu.feasibility_studies': 'Feasibility Studies and Reporting',
   'megamenu.lean_training': 'Lean Production Methods Training',
+  
+  // Main Categories
+  'megamenu.production_consulting': 'Production Consulting',
+  'megamenu.technology_consulting': 'Technology Consulting',
+  'megamenu.sectoral_consulting': 'Sectoral Consulting',
+  'megamenu.support_services': 'Support Services',
+  
+  // Production Consulting Sub-items
+  'megamenu.machinery_manufacturing': 'Machinery Manufacturing',
+  'megamenu.electrical_manufacturing': 'Electrical Manufacturing',
+  'megamenu.textile_manufacturing': 'Textile Manufacturing',
+  'megamenu.cnc_machining': 'CNC Machining',
+  'megamenu.laser_cutting_bending': 'Laser Cutting & Bending',
+  
+  // Technology Consulting Sub-items
+  'megamenu.website_localization': 'Website & Localization',
+  'megamenu.software_design_coding': 'Software Development',
+  
+  // Sectoral Consulting Sub-items
+  'megamenu.tourism_consulting': 'Tourism Consulting',
+  'megamenu.banking_consulting': 'Banking Consulting',
+  'megamenu.logistics_consulting': 'Logistics Consulting',
+  'megamenu.procurement_services': 'Procurement Services',
+  
+  // Support Services Sub-items
+  'megamenu.photography_videography': 'Photography & Video Services',
   
   // Footer
   'footer.corporate': 'Corporate',

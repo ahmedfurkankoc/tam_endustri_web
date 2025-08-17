@@ -3,8 +3,14 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-
 import ContactPage from './pages/ContactPage';
+
+// Service Pages
+import ThreeDDesignPage from './pages/services/design/3DDesignPage';
+import ThreeDAutomationPage from './pages/services/design/3DAutomationPage';
+import RndMachinePage from './pages/services/design/RndMachinePage';
+import LeanProductionPage from './pages/services/business/LeanProductionPage';
+import MachineryManufacturingPage from './pages/services/consulting/MachineryManufacturingPage';
 
 import Lenis from 'lenis';
 
@@ -40,10 +46,23 @@ const App: React.FC = () => {
         <Route path="/en" element={<HomePage />} />
         <Route path="/hakkimizda" element={<AboutPage />} />
         <Route path="/en/about" element={<AboutPage />} />
-
-
         <Route path="/iletisim" element={<ContactPage />} />
         <Route path="/en/contact" element={<ContactPage />} />
+        
+        {/* Service Pages - Turkish */}
+        <Route path="/hizmetler/tasarim/3d-tasarim" element={<ThreeDDesignPage />} />
+        <Route path="/hizmetler/tasarim/3d-otomasyon" element={<ThreeDAutomationPage />} />
+        <Route path="/hizmetler/tasarim/arge-makine" element={<RndMachinePage />} />
+        <Route path="/hizmetler/is-gelistirme/yalin-uretim" element={<LeanProductionPage />} />
+        <Route path="/hizmetler/danismanlik/makine-imalat" element={<MachineryManufacturingPage />} />
+        
+        {/* Service Pages - English */}
+        <Route path="/en/services/design/3d-design" element={<ThreeDDesignPage />} />
+        <Route path="/en/services/design/3d-automation" element={<ThreeDAutomationPage />} />
+        <Route path="/en/services/design/rnd-machine" element={<RndMachinePage />} />
+        <Route path="/en/services/business/lean-production" element={<LeanProductionPage />} />
+        <Route path="/en/services/consulting/machinery-manufacturing" element={<MachineryManufacturingPage />} />
+        
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </LanguageProvider>

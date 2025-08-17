@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Mail, MapPin, Clock, Send, MessageSquare, Calendar, Clock as ClockIcon, X, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
-import Header from '../components/Header';
+import HeaderNew from '../components/Header';
 import Footer from '../components/Footer';
 
 const ContactPage: React.FC = () => {
@@ -143,7 +143,7 @@ const ContactPage: React.FC = () => {
 
   return (
     <div className="min-h-screen">
-      <Header />
+      <HeaderNew />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-tam-blue to-tam-dark text-white py-32">
         <div className="max-w-7xl mx-auto px-6 relative z-10">

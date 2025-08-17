@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
+import HeaderNew from '../components/Header';
 import Hero from '../components/Hero';
 import Challenges from '../components/Challenges';
 import Services from '../components/Services';
@@ -13,7 +13,7 @@ import Footer from '../components/Footer';
 const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen">
-      <Header />
+      <HeaderNew />
       <Hero />
       <Challenges />
       <Services />

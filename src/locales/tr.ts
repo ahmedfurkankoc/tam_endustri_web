@@ -2,7 +2,7 @@ export const tr = {
   // Navigation
   'nav.about': 'Hakkımızda',
   'nav.services': 'Hizmetlerimiz',
-
+  'nav.contact': 'İletişim',
   'nav.contact_us': 'İLETİŞİME GEÇİN',
   
   // Mega Menu
@@ -24,6 +24,32 @@ export const tr = {
   'megamenu.design_training': 'Tasarım Eğitimleri',
   'megamenu.feasibility_studies': 'Fizibilite Çalışmaları ve Raporlama',
   'megamenu.lean_training': 'Yalın Üretim Yöntemleri Eğitimi',
+  
+  // Ana Kategoriler
+  'megamenu.production_consulting': 'Üretim Danışmanlığı',
+  'megamenu.technology_consulting': 'Teknoloji Danışmanlığı',
+  'megamenu.sectoral_consulting': 'Sektörel Danışmanlık',
+  'megamenu.support_services': 'Destek Hizmetleri',
+  
+  // Üretim Danışmanlığı Alt Başlıkları
+  'megamenu.machinery_manufacturing': 'Makine İmalatı',
+  'megamenu.electrical_manufacturing': 'Elektrik İmalatı',
+  'megamenu.textile_manufacturing': 'Tekstil İmalatı',
+  'megamenu.cnc_machining': 'CNC İşleme',
+  'megamenu.laser_cutting_bending': 'Lazer Kesim & Büküm',
+  
+  // Teknoloji Danışmanlığı Alt Başlıkları
+  'megamenu.website_localization': 'Website & Lokalizasyon',
+  'megamenu.software_design_coding': 'Yazılım Geliştirme',
+  
+  // Sektörel Danışmanlık Alt Başlıkları
+  'megamenu.tourism_consulting': 'Turizm Danışmanlığı',
+  'megamenu.banking_consulting': 'Bankacılık Danışmanlığı',
+  'megamenu.logistics_consulting': 'Lojistik Danışmanlığı',
+  'megamenu.procurement_services': 'Tedarik Hizmetleri',
+  
+  // Destek Hizmetleri Alt Başlıkları
+  'megamenu.photography_videography': 'Fotoğraf & Video Hizmetleri',
   
   // Footer
   'footer.corporate': 'Kurumsal',

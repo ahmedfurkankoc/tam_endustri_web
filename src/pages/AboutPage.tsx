@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import Header from '../components/Header';
+import HeaderNew from '../components/Header';
 import Footer from '../components/Footer';
 import { Users, Target, Award, Globe, Factory, Lightbulb, ArrowRight } from 'lucide-react';
 
@@ -14,7 +14,7 @@ const AboutPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+      <HeaderNew />
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-tam-blue to-tam-dark relative overflow-hidden">
