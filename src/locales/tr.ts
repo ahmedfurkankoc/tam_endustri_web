@@ -133,10 +133,10 @@ export const tr = {
   'testimonial.position': 'Üretim Müdürü, Endüstri A.Ş.',
   
   // CTA
-  'cta.title': 'UZMAN ENDÜSTRİ',
-  'cta.title2': 'DANIŞMANLIĞI ALIN',
+  'cta.title': 'UZMAN ENDÜSTRİ DANIŞMANLIĞI ALIN',
   'cta.description': 'Proje tasarımından imalata, iş geliştirmeden eğitimlere kadar tüm ihtiyaçlarınız için uzman ekibimizle çalışın. İşinizi daha verimli hale getirmek için buradayız.',
-  'cta.button': 'İLETİŞİME GEÇİN',
+  'cta.button_text': 'İLETİŞİME GEÇİN',
+  'cta.button_link': '/contact',
 
   // About Page
   'about.hero.title': 'HAKKIMIZDA',

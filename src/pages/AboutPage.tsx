@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import HeaderNew from '../components/Header';
+import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import { Users, Target, Award, Globe, Factory, Lightbulb, ArrowRight } from 'lucide-react';
 
@@ -13,37 +14,32 @@ const AboutPage: React.FC = () => {
 
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       <HeaderNew />
       
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-tam-blue to-tam-dark relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl text-white mb-6 leading-tight">
-              {t('about.hero.title')}
-            </h1>
-            <p className="text-l text-white/90 max-w-3xl mx-auto leading-relaxed">
-              {t('about.hero_description')}
-            </p>
-          </div>
-        </div>
-      </section>
+      <Hero
+        title={t('about.hero.title')}
+        description={t('about.hero_description')}
+        backgroundType="video"
+        backgroundSrc="/hero.mp4"
+        showScrollIndicator={true}
+        overlayOpacity={0.6}
+      />
 
-      {/* Company Story */}
-      <section className="py-20 bg-gray-50 rounded-t-3xl -mt-8 relative z-10">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-8">
-                {t('about.story.title')}
-              </h2>
-              <div className="space-y-6 text-gray-700 leading-relaxed">
-                <p>{t('about.story.paragraph1')}</p>
-                <p>{t('about.story.paragraph2')}</p>
-                <p>{t('about.story.paragraph3')}</p>
-              </div>
-            </div>
+             {/* Company Story */}
+       <section className="pt-12 md:pt-24 px-4 md:px-6 bg-gray-50 rounded-t-3xl -mt-8 relative z-10">
+         <div className="max-w-7xl mx-auto relative z-10">
+           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+             <div className="max-w-4xl">
+               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 mt-8 leading-tight heading-primary">
+                 {t('about.story.title')}
+               </h2>
+               <div className="space-y-6 text-lg text-tam-blue leading-relaxed font-bold">
+                 <p>{t('about.story.paragraph1')}</p>
+                 <p>{t('about.story.paragraph2')}</p>
+                 <p>{t('about.story.paragraph3')}</p>
+               </div>
+             </div>
             <div className="bg-gradient-to-br from-tam-blue/10 to-tam-accent/10 rounded-2xl p-8 border border-tam-blue/20">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
@@ -83,8 +79,8 @@ const AboutPage: React.FC = () => {
 
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-gray-50 rounded-t-3xl">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="pt-12 md:pt-24 pb-20 md:px-6 bg-gray-50">
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Mission */}
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-accent/5 rounded-2xl p-8 border border-tam-blue/10">

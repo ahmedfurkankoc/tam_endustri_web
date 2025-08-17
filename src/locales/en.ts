@@ -133,10 +133,10 @@ export const en = {
   'testimonial.position': 'Production Manager, Industry Inc.',
   
   // CTA
-  'cta.title': 'GET EXPERT INDUSTRY',
-  'cta.title2': 'CONSULTING',
+  'cta.title': 'GET EXPERT INDUSTRY CONSULTING',
   'cta.description': 'Work with our expert team for all your needs from project design to manufacturing, from business development to training. We are here to make your business more efficient.',
-  'cta.button': 'CONTACT US',
+  'cta.button_text': 'CONTACT US',
+  'cta.button_link': '/contact',
 
   // About Page
   'about.hero.title': 'ABOUT US',

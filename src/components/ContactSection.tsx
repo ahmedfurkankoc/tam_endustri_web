@@ -5,7 +5,7 @@ const ContactSection: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-12 md:py-24 px-4 md:px-6 bg-gradient-to-br from-tam-blue to-tam-accent">
+    <section className="pt-12 md:pt-24 pb-12 md:pb-24 px-4 md:px-6 bg-gradient-to-br from-tam-blue to-tam-accent rounded-t-3xl md:rounded-t-[3rem]">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 md:mb-8 leading-tight heading-primary">
           {t('cta.title')}

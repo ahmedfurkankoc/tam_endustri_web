@@ -24,18 +24,23 @@ const Hero: React.FC<HeroProps> = ({
   const { t } = useLanguage();
 
   const scrollToNextSection = () => {
-    const nextSection = document.getElementById('problem-statement');
-    if (nextSection) {
-      // Lenis smooth scroll
-      const lenis = (window as any).lenis;
-      if (lenis) {
-        lenis.scrollTo(nextSection, {
-          duration: 1.5,
-          easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        });
-      } else {
-        // Fallback to native smooth scroll
-        nextSection.scrollIntoView({ behavior: 'smooth' });
+    // Hero'dan sonraki ilk section'ı bul
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+      const nextElement = heroSection.nextElementSibling as HTMLElement;
+      
+      if (nextElement) {
+        // Lenis smooth scroll
+        const lenis = (window as any).lenis;
+        if (lenis) {
+          lenis.scrollTo(nextElement, {
+            duration: 1.5,
+            easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+          });
+        } else {
+          // Fallback to native smooth scroll
+          nextElement.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     }
   };
