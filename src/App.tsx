@@ -8,6 +8,9 @@ import ContactPage from './pages/ContactPage';
 // Service Pages
 import ThreeDDesignPage from './pages/services/design/3DDesignPage';
 import ThreeDAutomationPage from './pages/services/design/3DAutomationPage';
+import CustomMachinePage from './pages/services/design/CustomMachinePage';
+import FactorySetupPage from './pages/services/design/FactorySetupPage';
+import ReverseEngineeringPage from './pages/services/design/ReverseEngineeringPage';
 import RndMachinePage from './pages/services/design/RndMachinePage';
 import LeanProductionPage from './pages/services/business/LeanProductionPage';
 import MachineryManufacturingPage from './pages/services/consulting/MachineryManufacturingPage';
@@ -53,6 +56,9 @@ const App: React.FC = () => {
         <Route path="/hizmetler/tasarim/3d-tasarim" element={<ThreeDDesignPage />} />
         <Route path="/hizmetler/tasarim/3d-otomasyon" element={<ThreeDAutomationPage />} />
         <Route path="/hizmetler/tasarim/arge-makine" element={<RndMachinePage />} />
+        <Route path="/hizmetler/tasarim/ise-ozel-makine" element={<CustomMachinePage />} />
+        <Route path="/hizmetler/tasarim/fabrika-kurulum" element={<FactorySetupPage />} />
+        <Route path="/hizmetler/tasarim/tersine-muhendislik" element={<ReverseEngineeringPage />} />
         <Route path="/hizmetler/is-gelistirme/yalin-uretim" element={<LeanProductionPage />} />
         <Route path="/hizmetler/danismanlik/makine-imalat" element={<MachineryManufacturingPage />} />
         
@@ -60,6 +66,9 @@ const App: React.FC = () => {
         <Route path="/en/services/design/3d-design" element={<ThreeDDesignPage />} />
         <Route path="/en/services/design/3d-automation" element={<ThreeDAutomationPage />} />
         <Route path="/en/services/design/rnd-machine" element={<RndMachinePage />} />
+        <Route path="/en/services/design/custom-machine" element={<CustomMachinePage />} />
+        <Route path="/en/services/design/factory-setup" element={<FactorySetupPage />} />
+        <Route path="/en/services/design/reverse-engineering" element={<ReverseEngineeringPage />} />
         <Route path="/en/services/business/lean-production" element={<LeanProductionPage />} />
         <Route path="/en/services/consulting/machinery-manufacturing" element={<MachineryManufacturingPage />} />
         

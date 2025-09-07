@@ -95,9 +95,9 @@ const Header: React.FC = () => {
         { title: t('megamenu.3d_design'), href: '/hizmetler/tasarim/3d-tasarim', description: 'Profesyonel 3D tasarım hizmetleri' },
         { title: t('megamenu.3d_automation'), href: '/hizmetler/tasarim/3d-otomasyon', description: 'SolidWorks API ile otomasyon' },
         { title: t('megamenu.rnd_machine'), href: '/hizmetler/tasarim/arge-makine', description: 'AR-GE makine tasarım geliştirme' },
-        { title: t('megamenu.custom_machine'), href: '#custom-machine', description: 'İşe özel makine tasarım projeleri' },
-        { title: t('megamenu.factory_setup'), href: '#factory-setup', description: 'Fabrika kurulum yerleşim planı' },
-        { title: t('megamenu.reverse_engineering'), href: '#reverse-engineering', description: 'Tersine mühendislik tasarımları' },
+        { title: t('megamenu.custom_machine'), href: '/hizmetler/tasarim/ise-ozel-makine', description: 'İşe özel makine tasarım projeleri' },
+        { title: t('megamenu.factory_setup'), href: '/hizmetler/tasarim/fabrika-kurulum', description: 'Fabrika kurulum yerleşim planı' },
+        { title: t('megamenu.reverse_engineering'), href: '/hizmetler/tasarim/tersine-muhendislik', description: 'Tersine mühendislik tasarımları' },
       ]
     },
     {
@@ -168,11 +168,13 @@ const Header: React.FC = () => {
       <nav className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
         <a href={language === 'en' ? '/en' : '/'} className="flex-shrink-0">
-          <img 
-            src="/tam-endustri-logo.png" 
-            alt="Tam Endüstri Logo" 
-            className="h-12 md:h-14" 
-          />
+          <div className={`${isScrolled ? 'h-12 w-36' : 'h-14 w-40'} flex items-center justify-center`}>
+            <img 
+              src={isScrolled ? '/tam-endustri-logo.png' : '/tam-endustri-logo-white.png'} 
+              alt="Tam Endüstri Logo" 
+              className="h-full w-full object-contain block" 
+            />
+          </div>
         </a>
         
         {/* Desktop Menu */}
@@ -364,9 +366,9 @@ const Header: React.FC = () => {
             {/* Mobile Header */}
             <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
               <img 
-                src="/tam-endustri-logo.png" 
+                src={isScrolled ? '/tam-endustri-logo.png' : '/tam-endustri-logo-white.png'} 
                 alt="Tam Endüstri Logo" 
-                className="h-12" 
+                className="h-10 w-32 object-contain" 
               />
               <button
                 onClick={() => setIsMenuOpen(false)}

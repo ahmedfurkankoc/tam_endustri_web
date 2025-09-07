@@ -82,9 +82,11 @@ const Hero: React.FC<HeroProps> = ({
       <div className="max-w-7xl mx-auto px-6 hero-content relative z-10">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-4xl lg:text-6xl text-white hero-text">
-            {title || t('hero.title')}<br />
-            {subtitle || t('hero.title2')}
+            {title || t('hero.title')}
           </h1>
+          <p className="mt-2 mb-6 text-xl md:text-2xl text-white/90">
+            {subtitle || t('hero.title2')}
+          </p>
           
           <div className="flex items-start space-x-6">
             {showScrollIndicator && (
