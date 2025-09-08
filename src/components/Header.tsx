@@ -107,10 +107,10 @@ const Header: React.FC = () => {
       description: 'İş süreçlerini optimize edin',
       items: [
         { title: t('megamenu.lean_production'), href: '/hizmetler/is-gelistirme/yalin-uretim', description: 'Yalın üretim yöntemleri uygulamaları' },
-        { title: t('megamenu.3d_automation'), href: '#3d-automation-2', description: '3D tasarım otomasyonları' },
-        { title: t('megamenu.rnd_machine'), href: '#rnd-machine-2', description: 'AR-GE makine tasarım geliştirme' },
-        { title: t('megamenu.technical_sales'), href: '#technical-sales', description: 'Teknik satış program uygulamaları' },
-        { title: t('megamenu.calculation_reporting'), href: '#calculation-reporting', description: 'Hesaplama ve raporlama uygulamaları' },
+        { title: t('megamenu.3d_automation'), href: '/hizmetler/tasarim/3d-otomasyon', description: '3D tasarım otomasyonları' },
+        { title: t('megamenu.rnd_machine'), href: '/hizmetler/tasarim/arge-makine', description: 'AR-GE makine tasarım geliştirme' },
+        { title: t('megamenu.technical_sales'), href: '/hizmetler/is-gelistirme/teknik-satis', description: 'Teknik satış program uygulamaları' },
+        { title: t('megamenu.calculation_reporting'), href: '/hizmetler/is-gelistirme/hesaplama-raporlama', description: 'Hesaplama ve raporlama uygulamaları' },
       ]
     },
     {

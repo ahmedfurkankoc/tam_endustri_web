@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Mail, MapPin, Clock, Send, MessageSquare, Calendar, Clock as ClockIcon, X, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Mail, MapPin, Send, Calendar, X, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 import HeaderNew from '../components/Header';
+import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 
 const ContactPage: React.FC = () => {
   const { t } = useLanguage();
   const [showAppointment, setShowAppointment] = useState(false);
   const [appointmentSubmitted, setAppointmentSubmitted] = useState(false);
-  const [selectedDate, setSelectedDate] = useState('');
   const [selectedTime, setSelectedTime] = useState('');
   const [currentMonth, setCurrentMonth] = useState(new Date());
   const [selectedDay, setSelectedDay] = useState<Date | null>(null);
@@ -55,11 +55,7 @@ const ContactPage: React.FC = () => {
     '12:00', '12:30' // Öğle arası
   ];
 
-  // Minimum tarih (bugünden itibaren)
-  const getMinDate = () => {
-    const today = new Date();
-    return today.toISOString().split('T')[0];
-  };
+  // Minimum tarih fonksiyonu kaldırıldı (kullanılmıyordu)
 
   // Takvim fonksiyonları
   const getDaysInMonth = (date: Date) => {
@@ -112,7 +108,6 @@ const ContactPage: React.FC = () => {
 
   const handleDateSelect = (date: Date) => {
     setSelectedDay(date);
-    setSelectedDate(date.toISOString().split('T')[0]);
     setSelectedTime('');
   };
 
@@ -122,7 +117,6 @@ const ContactPage: React.FC = () => {
 
   const isTimeAvailable = (time: string) => {
     if (!selectedDay) return false;
-    const selectedDateStr = selectedDay.toISOString().split('T')[0];
     // Burada backend'den kontrol edilebilir
     return !closedTimes.includes(time);
   };
@@ -135,7 +129,6 @@ const ContactPage: React.FC = () => {
     setTimeout(() => {
       setAppointmentSubmitted(false);
       setShowAppointment(false);
-      setSelectedDate('');
       setSelectedTime('');
       setSelectedDay(null);
     }, 3000);
@@ -144,19 +137,16 @@ const ContactPage: React.FC = () => {
   return (
     <div className="min-h-screen">
       <HeaderNew />
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-tam-blue to-tam-dark text-white py-32">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl text-white mb-6 leading-tight">
-              {t('contact.hero.title')}
-            </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              {t('contact.hero.subtitle')}
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Hero */}
+      <Hero
+        title={t('contact.hero.title')}
+        subtitle={t('contact.hero.subtitle')}
+        description={undefined}
+        backgroundType="video"
+        backgroundSrc="/hero.mp4"
+        showScrollIndicator={true}
+        overlayOpacity={0.5}
+      />
 
       {/* Contact Info Section */}
       <section className="py-20 bg-white rounded-t-3xl -mt-8 relative z-10">

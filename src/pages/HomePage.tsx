@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderNew from '../components/Header';
-import Hero from '../components/Hero';
+import Banner from '../components/Banner';
 import Challenges from '../components/Challenges';
 import Services from '../components/Services';
 import DesignManufacturing from '../components/DesignManufacturing';
@@ -14,7 +14,15 @@ const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen">
       <HeaderNew />
-      <Hero />
+      <Banner
+        title="Türkiye Ticaret Danışmanlığı"
+        subtitle="Endüstride TAM Çözümler"
+        description="Tasarım, otomasyon ve danışmanlıkta uçtan uca, hızlı ve sürdürülebilir çözümler."
+        backgroundType="video"
+        backgroundSrc="/hero.mp4"
+        showScrollIndicator={true}
+        overlayOpacity={0.5}
+      />
       <Challenges />
       <Services />
       <DesignManufacturing />

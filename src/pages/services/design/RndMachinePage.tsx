@@ -66,8 +66,9 @@ const RndMachinePage: React.FC = () => {
 
       <section className="py-20 bg-gradient-to-br from-gray-50 via-tam-blue/10 to-indigo-50 relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-tam-blue/10 rounded-full -translate-y-20 translate-x-20"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-200/20 rounded-full translate-y-20 -translate-x-20"></div>
+          <div className="absolute top-10 left-10 w-72 h-72 bg-tam-blue rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+          <div className="absolute top-32 right-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
+          <div className="absolute bottom-10 left-1/2 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative">
@@ -147,22 +148,7 @@ const RndMachinePage: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-indigo-50 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-10 left-10 w-72 h-72 bg-tam-blue rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-          <div className="absolute top-32 right-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
-          <div className="absolute bottom-10 left-1/2 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-6 relative">
-          <div className="text-center mb-10">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Yenilikçi ve Çözüm Odaklı Tasarım</h2>
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Gereken geliştirme ve iyileştirmeleri en iyi bilen sizlersiniz. Sizin yönlendirmeleriniz ve taleplerinizle, imalat yöntemlerine en uygun, ergonomik ve uygulanabilir geliştirme ve iyileştirme tasarımlarını isteklerinize uygun yapacağımızdan emin olabilirsiniz.
-            </p>
-          </div>
-        </div>
-      </section>
+      
       
       <ContactSection />
       <Footer />

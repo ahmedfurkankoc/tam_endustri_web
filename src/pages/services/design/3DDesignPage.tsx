@@ -4,7 +4,7 @@ import Hero from '../../../components/Hero';
 import PageHeader from '../../../components/PageHeader';
 import Footer from '../../../components/Footer';
 import ContactSection from '../../../components/ContactSection';
-import StatsSection from '../../../components/StatsSection';
+// Removed unused StatsSection import
 
 const ThreeDDesignPage: React.FC = () => {
   return (
@@ -68,11 +68,7 @@ const ThreeDDesignPage: React.FC = () => {
 
 
       {/* TAM Endüstri Yardım Bölümü */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 via-tam-blue/10 to-indigo-50 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-tam-blue/10 rounded-full -translate-y-20 translate-x-20"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-200/20 rounded-full translate-y-20 -translate-x-20"></div>
-        </div>
+      <section className="py-20 bg-white relative overflow-hidden">
         
         <div className="max-w-7xl mx-auto px-6 relative">
           {/* Ana Başlık ve Görsel Bölümü */}
@@ -99,8 +95,8 @@ const ThreeDDesignPage: React.FC = () => {
             </div>
             
             {/* Görsel Bölümü */}
-            <div className="relative">
-              <div className="grid grid-cols-2 gap-4">
+            <div className="relative flex justify-center items-center">
+              <div className="grid grid-cols-2 gap-4 mx-auto self-center">
                 <div className="space-y-4">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img 
@@ -309,19 +305,78 @@ const ThreeDDesignPage: React.FC = () => {
             </div>
           </div>
 
-          {/* İstatistik ve Özellikler */}
-          <StatsSection
-            stats={[
-              { value: "15+", label: "Yıllık Tecrübe" },
-              { value: "10K+", label: "Tamamlanan Proje" },
-              { value: "12", label: "Üretim Yöntemi" },
-              { value: "%100", label: "Müşteri Memnuniyeti" }
-            ]}
-          />
         </div>
       </section>
 
 
+
+      {/* TASARIM EĞİTİMLERİ ve DANIŞMANLIK */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 via-tam-blue/10 to-indigo-50 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 relative">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
+            <div>
+              <div className="flex items-start mb-6">
+                <div className="p-4 bg-tam-blue rounded-2xl mr-4 flex-shrink-0">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v8m-4-4h8" />
+                  </svg>
+                </div>
+                <div>
+                  <h2 className="text-4xl font-bold text-gray-900 leading-tight">TASARIM EĞİTİMLERİ</h2>
+                  <p className="text-tam-blue font-semibold mt-1">Tasarım Ekibi Danışmanlığı</p>
+                </div>
+              </div>
+
+              <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+                <p>
+                  Tasarım konusunda çok tecrübeli ekibimiz ile teknik ofis personellerinize ya da istediğiniz bir gruba SolidWorks 3D Tasarım eğitimleri veriyoruz.
+                </p>
+                <p>
+                  Yalnızca SolidWorks yazılımı eğitiminden ziyade, sonuca yönelik temel üretim ve tasarım bilgilerini de içeren içerikler ile doğrudan üretime yönelik çalışmalara kısa sürede başlayabilmenizi hedefliyoruz.
+                </p>
+                <p>
+                  Eğitimlerde pratik kullanımlar, doğru ürün ağacı teknikleri, tasarımda maliyet/bakım yaklaşımı ve kolay üretilebilirlik prensipleriyle çok yönlü doğru tasarıma ulaşmayı öğretiyoruz.
+                </p>
+                <p>
+                  Daha detaylı bilgi almak ya da işinize değer katacak eğitim konseptini birlikte oluşturmak için bizimle iletişime geçebilirsiniz.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative flex justify-center items-center">
+              <div className="relative group overflow-hidden rounded-2xl shadow-xl w-full max-w-2x">
+                <img src="/images/machine-design.webp" alt="Tasarım Eğitimi" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white text-sm font-medium">Tasarım Eğitimleri</div>
+              </div>
+            </div>
+          </div>
+
+          {/* SolidWorks API Eğitimleri ve Danışmanlığı */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2 bg-white p-8 rounded-2xl shadow-xl border border-tam-blue/20">
+              <h3 className="text-2xl font-semibold text-tam-blue mb-3">SolidWorks API Eğitimleri ve Danışmanlığı</h3>
+              <div className="space-y-6 text-tam-blue/80 leading-relaxed">
+                <p>
+                  SolidWorks API (Application Programming Interface), ileri seviyede tasarımlar dizayn etmek ve tasarım programları oluşturmak için kullanılan, SolidWorks içinde Visual Basic tabanlı gömülü bir yazılım sistemidir.
+                </p>
+                <p>
+                  Bu sistem ile tekrarlı tasarımlarınızı bir algoritmaya oturtarak gerekli ölçüleri basit bir arayüze girip tek tuşla saniyeler içinde tamamlayabilirsiniz. “3D Tasarım Otomasyonları” sayfamızdaki ürünleşmiş örneklerin yanında, kendi çözümlerinizi geliştirebilmeniz için eğitimler de veriyoruz.
+                </p>
+                <p>
+                  Bir işi en iyi bilen ve geliştirebilecek olanın o işi yapan olduğuna inandığımız için; algoritmaları anlayabilecek, ileri seviyede SolidWorks’e hâkim müşterilerimize API hizmeti yerine API eğitimini daha değerli buluyoruz.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-xl border border-tam-blue/20">
+              <h4 className="text-xl font-semibold text-tam-blue mb-3 text-center">'TAM' Zamanlı Gelişim</h4>
+              <p className="text-tam-blue/80 leading-relaxed text-center">
+                Doğru yaklaşım ile doğru tasarım: Ekibinizi tasarım ve otomasyon eğitimleriyle destekleyerek hız, kalite ve sürdürülebilirliği birlikte artırıyoruz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <ContactSection />
       

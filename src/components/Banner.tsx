@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
-interface HeroProps {
+interface BannerProps {
   title?: string;
   subtitle?: string;
   description?: string;
@@ -12,7 +12,7 @@ interface HeroProps {
   overlayOpacity?: number;
 }
 
-const Hero: React.FC<HeroProps> = ({
+const Banner: React.FC<BannerProps> = ({
   title,
   subtitle,
   description,
@@ -24,13 +24,10 @@ const Hero: React.FC<HeroProps> = ({
   const { t } = useLanguage();
 
   const scrollToNextSection = () => {
-    // Hero'dan sonraki ilk section'ı bul
     const heroSection = document.querySelector('.hero-section');
     if (heroSection) {
       const nextElement = heroSection.nextElementSibling as HTMLElement;
-      
       if (nextElement) {
-        // Lenis smooth scroll
         const lenis = (window as any).lenis;
         if (lenis) {
           lenis.scrollTo(nextElement, {
@@ -38,7 +35,6 @@ const Hero: React.FC<HeroProps> = ({
             easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
           });
         } else {
-          // Fallback to native smooth scroll
           nextElement.scrollIntoView({ behavior: 'smooth' });
         }
       }
@@ -46,8 +42,7 @@ const Hero: React.FC<HeroProps> = ({
   };
 
   return (
-    <section className="max-h-[60vh] relative flex items-center hero-section overflow-hidden">
-      {/* Background */}
+    <section className="h-screen relative flex items-center hero-section overflow-hidden">
       {backgroundType === 'video' ? (
         <video
           autoPlay
@@ -69,8 +64,6 @@ const Hero: React.FC<HeroProps> = ({
           }}
         />
       )}
-      
-      {/* Overlay */}
       <div 
         className="absolute inset-0 bg-black" 
         style={{ 
@@ -78,7 +71,6 @@ const Hero: React.FC<HeroProps> = ({
           opacity: overlayOpacity
         }}
       />
-      
       <div className="max-w-7xl mx-auto px-6 hero-content relative z-10">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-4xl lg:text-6xl text-white hero-text">
@@ -87,7 +79,6 @@ const Hero: React.FC<HeroProps> = ({
           <p className="mt-2 mb-6 text-xl md:text-2xl text-white/90">
             {subtitle || t('hero.title2')}
           </p>
-          
           <div className="flex items-start space-x-6">
             {showScrollIndicator && (
               <button
@@ -108,4 +99,6 @@ const Hero: React.FC<HeroProps> = ({
   );
 };
 
-export default Hero; 
+export default Banner; 
+
+

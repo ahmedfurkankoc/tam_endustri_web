@@ -13,6 +13,8 @@ import FactorySetupPage from './pages/services/design/FactorySetupPage';
 import ReverseEngineeringPage from './pages/services/design/ReverseEngineeringPage';
 import RndMachinePage from './pages/services/design/RndMachinePage';
 import LeanProductionPage from './pages/services/business/LeanProductionPage';
+import TechnicalSalesPage from './pages/services/business/TechnicalSalesPage';
+import CalculationReportingPage from './pages/services/business/CalculationReportingPage';
 import MachineryManufacturingPage from './pages/services/consulting/MachineryManufacturingPage';
 
 import Lenis from 'lenis';
@@ -60,6 +62,8 @@ const App: React.FC = () => {
         <Route path="/hizmetler/tasarim/fabrika-kurulum" element={<FactorySetupPage />} />
         <Route path="/hizmetler/tasarim/tersine-muhendislik" element={<ReverseEngineeringPage />} />
         <Route path="/hizmetler/is-gelistirme/yalin-uretim" element={<LeanProductionPage />} />
+        <Route path="/hizmetler/is-gelistirme/teknik-satis" element={<TechnicalSalesPage />} />
+        <Route path="/hizmetler/is-gelistirme/hesaplama-raporlama" element={<CalculationReportingPage />} />
         <Route path="/hizmetler/danismanlik/makine-imalat" element={<MachineryManufacturingPage />} />
         
         {/* Service Pages - English */}
@@ -70,6 +74,8 @@ const App: React.FC = () => {
         <Route path="/en/services/design/factory-setup" element={<FactorySetupPage />} />
         <Route path="/en/services/design/reverse-engineering" element={<ReverseEngineeringPage />} />
         <Route path="/en/services/business/lean-production" element={<LeanProductionPage />} />
+        <Route path="/en/services/business/technical-sales" element={<TechnicalSalesPage />} />
+        <Route path="/en/services/business/calculation-reporting" element={<CalculationReportingPage />} />
         <Route path="/en/services/consulting/machinery-manufacturing" element={<MachineryManufacturingPage />} />
         
         <Route path="*" element={<Navigate to="/" replace />} />

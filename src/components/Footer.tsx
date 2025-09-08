@@ -1,9 +1,9 @@
 import React from 'react';
-import { Mail, ArrowRight, MapPin, Phone, Clock } from 'lucide-react';
+import { Mail, ArrowRight, MapPin, Phone } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer: React.FC = () => {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
 
   return (
     <footer className="bg-tam-dark text-white pt-20 pb-10 px-6">
@@ -137,26 +137,34 @@ const Footer: React.FC = () => {
                 </ul>
               </div>
               
-              {/* Danışmanlık */}
+              {/* Danışmanlık - 4 Ana Başlık */}
               <div>
-                <h4 className="font-semibold mb-6 text-lg text-tam-blue">{t('footer.consulting')}</h4>
+                <h4 className="font-semibold mb-6 text-lg text-tam-blue">{t('megamenu.consulting_training')}</h4>
                 <ul className="space-y-4 text-gray-300">
-                  <li><a href="#" className="hover:text-white transition-colors flex items-center group">
-                    <ArrowRight className="w-4 h-4 mr-3 text-tam-blue group-hover:translate-x-1 transition-transform duration-200 flex-shrink-0" />
-                    <span className="text-sm">{t('footer.turkey_business_consulting')}</span>
-                  </a></li>
-                  <li><a href="#" className="hover:text-white transition-colors flex items-center group">
-                    <ArrowRight className="w-4 h-4 mr-3 text-tam-blue group-hover:translate-x-1 transition-transform duration-200 flex-shrink-0" />
-                    <span className="text-sm">{t('footer.design_training')}</span>
-                  </a></li>
-                  <li><a href="#" className="hover:text-white transition-colors flex items-center group">
-                    <ArrowRight className="w-4 h-4 mr-3 text-tam-blue group-hover:translate-x-1 transition-transform duration-200 flex-shrink-0" />
-                    <span className="text-sm">{t('footer.feasibility_studies')}</span>
-                  </a></li>
-                  <li><a href="#" className="hover:text-white transition-colors flex items-center group">
-                    <ArrowRight className="w-4 h-4 mr-3 text-tam-blue group-hover:translate-x-1 transition-transform duration-200 flex-shrink-0" />
-                    <span className="text-sm">{t('footer.lean_production_training')}</span>
-                  </a></li>
+                  <li>
+                    <a href="#" className="hover:text-white transition-colors flex items-center group">
+                      <ArrowRight className="w-4 h-4 mr-3 text-tam-blue group-hover:translate-x-1 transition-transform duration-200 flex-shrink-0" />
+                      <span className="text-sm">{t('megamenu.production_consulting')}</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-white transition-colors flex items-center group">
+                      <ArrowRight className="w-4 h-4 mr-3 text-tam-blue group-hover:translate-x-1 transition-transform duration-200 flex-shrink-0" />
+                      <span className="text-sm">{t('megamenu.technology_consulting')}</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-white transition-colors flex items-center group">
+                      <ArrowRight className="w-4 h-4 mr-3 text-tam-blue group-hover:translate-x-1 transition-transform duration-200 flex-shrink-0" />
+                      <span className="text-sm">{t('megamenu.sectoral_consulting')}</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-white transition-colors flex items-center group">
+                      <ArrowRight className="w-4 h-4 mr-3 text-tam-blue group-hover:translate-x-1 transition-transform duration-200 flex-shrink-0" />
+                      <span className="text-sm">{t('megamenu.support_services')}</span>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
