@@ -142,25 +142,25 @@ const Footer: React.FC = () => {
                 <h4 className="font-semibold mb-6 text-lg text-tam-blue">{t('megamenu.consulting_training')}</h4>
                 <ul className="space-y-4 text-gray-300">
                   <li>
-                    <a href="#" className="hover:text-white transition-colors flex items-center group">
+                    <a href="/hizmetler/danismanlik/makine-imalat" className="hover:text-white transition-colors flex items-center group">
                       <ArrowRight className="w-4 h-4 mr-3 text-tam-blue group-hover:translate-x-1 transition-transform duration-200 flex-shrink-0" />
                       <span className="text-sm">{t('megamenu.production_consulting')}</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-white transition-colors flex items-center group">
+                    <a href="/hizmetler/danismanlik/website-lokalizasyon" className="hover:text-white transition-colors flex items-center group">
                       <ArrowRight className="w-4 h-4 mr-3 text-tam-blue group-hover:translate-x-1 transition-transform duration-200 flex-shrink-0" />
                       <span className="text-sm">{t('megamenu.technology_consulting')}</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-white transition-colors flex items-center group">
+                    <a href="/hizmetler/danismanlik/turizm-danismanlik" className="hover:text-white transition-colors flex items-center group">
                       <ArrowRight className="w-4 h-4 mr-3 text-tam-blue group-hover:translate-x-1 transition-transform duration-200 flex-shrink-0" />
                       <span className="text-sm">{t('megamenu.sectoral_consulting')}</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-white transition-colors flex items-center group">
+                    <a href="/hizmetler/danismanlik/satis-danismanlik" className="hover:text-white transition-colors flex items-center group">
                       <ArrowRight className="w-4 h-4 mr-3 text-tam-blue group-hover:translate-x-1 transition-transform duration-200 flex-shrink-0" />
                       <span className="text-sm">{t('megamenu.support_services')}</span>
                     </a>

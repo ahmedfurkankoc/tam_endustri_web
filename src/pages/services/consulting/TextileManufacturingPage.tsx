@@ -5,48 +5,48 @@ import PageHeader from '../../../components/PageHeader';
 import ContactSection from '../../../components/ContactSection';
 import Footer from '../../../components/Footer';
 import { useLanguage } from '../../../contexts/LanguageContext';
-import { CheckCircle, Plus, Settings, FileText, Users, BarChart, Building2, RotateCcw, Bot } from 'lucide-react';
+import { CheckCircle, Plus, Leaf, BarChart } from 'lucide-react';
 
-const MachineryManufacturingPage: React.FC = () => {
+const TextileManufacturingPage: React.FC = () => {
   const { t } = useLanguage();
 
   return (
     <div className="min-h-screen">
       <Header />
       <Hero
-        title="Makine İmalat Danışmanlığı"
-        subtitle="Profesyonel Makine Üretim Rehberliği"
-        description="Makine imalat süreçlerinizi optimize edin, kaliteyi artırın ve verimliliği maksimize edin."
+        title="Tekstil İmalat Danışmanlığı"
+        subtitle="Tekstil Üretim Süreçleri Rehberliği"
+        description="Tekstil imalat süreçlerinizi modernize edin, kaliteyi artırın ve sürdürülebilir üretim sağlayın."
         backgroundType="image"
-        backgroundSrc="/images/business-consulting.webp"
+        backgroundSrc="/images/training-service.webp"
         showScrollIndicator={true}
       />
       
       <PageHeader
-        title="Makine İmalat Danışmanlığı"
+        title="Tekstil İmalat Danışmanlığı"
         description={[
-          "Endüstriyel makine üretiminde uzman ekibimizle birlikte, üretim süreçlerinizi modernize edin ve rekabet avantajı elde edin."
+          "Tekstil ve konfeksiyon üretiminde uzman ekibimizle birlikte, verimli ve sürdürülebilir üretim süreçleri kurabilirsiniz."
         ]}
         cards={[
           {
             title: "Üretim Planlama",
-            description: "Verimli üretim planları ve süreç optimizasyonu",
-            image: "/images/project-design.webp",
+            description: "Verimli tekstil üretim planları",
+            image: "/images/training-service.webp",
             icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Kalite Sistemleri",
-            description: "ISO standartlarında kalite kontrol ve dokümantasyon",
+            title: "Kalite Yönetimi",
+            description: "Tekstil kalite standartları ve kontrol",
             image: "/images/improvement-service.webp",
             icon: <Plus className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Aparat & Makine",
-            description: "Verimi artıran aparat ve özel makine tasarımları",
-            image: "/images/machine-design.webp",
-            icon: <Settings className="w-5 h-5 md:w-6 md:h-6 text-white" />,
+            title: "Sürdürülebilirlik",
+            description: "Çevre dostu üretim uygulamaları",
+            image: "/images/project-design.webp",
+            icon: <Leaf className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
           }
         ]}
@@ -57,38 +57,38 @@ const MachineryManufacturingPage: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Makine İmalatında Uzman Rehberlik
+                Tekstil İmalatında Uzman Rehberlik
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Modern endüstriyel makine üretiminde karşılaştığınız tüm zorluklara çözüm sunuyoruz. 
-                Üretim süreçlerinizi optimize ederek, kalite standartlarını yükseltirken maliyetleri 
-                düşürmenize yardımcı oluyoruz.
+                Tekstil ve konfeksiyon sektöründe karşılaştığınız üretim zorluklarına 
+                çözüm sunuyoruz. Modern teknolojiler ve sürdürülebilir yaklaşımlarla 
+                üretim süreçlerinizi optimize ediyoruz.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Üretim Planlama:</strong> Verimli üretim planları ve kaynak optimizasyonu
+                    <strong>Üretim Optimizasyonu:</strong> Verimli tekstil üretim süreçleri
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Kalite Yönetimi:</strong> ISO standartlarında kalite kontrol sistemleri
+                    <strong>Kalite Yönetimi:</strong> Tekstil kalite standartları ve kontrol
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Teknoloji Entegrasyonu:</strong> Modern üretim teknolojilerinin entegrasyonu
+                    <strong>Sürdürülebilirlik:</strong> Çevre dostu üretim süreçleri
                   </p>
                 </div>
               </div>
             </div>
             <div className="relative">
               <img
-                src="/images/machine-design.webp"
-                alt="Makine İmalat Danışmanlığı"
+                src="/images/training-service.webp"
+                alt="Tekstil İmalat Danışmanlığı"
                 className="rounded-xl shadow-lg w-full h-96 object-cover"
               />
             </div>
@@ -103,68 +103,68 @@ const MachineryManufacturingPage: React.FC = () => {
               Hizmet Alanlarımız
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Makine imalat süreçlerinizin her aşamasında yanınızdayız
+              Tekstil imalat süreçlerinizin her aşamasında yanınızdayız
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <Building2 className="w-6 h-6" />
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 7c0 3.866-3.582 7-8 7S4 10.866 4 7"/><path d="M4 7V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2"/><path d="M12 14v7"/><path d="M9 21h6"/></svg>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Fabrika Kurulumu
+                İplik Üretimi
               </h3>
               <p className="text-gray-600">
-                Yeni makine imalat tesislerinin kurulumu ve mevcut tesislerin modernizasyonu
+                Yüksek kaliteli iplik üretim süreçleri ve kalite kontrol sistemleri
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <RotateCcw className="w-6 h-6" />
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21V8l7 5V8l7 5V8l4 3v10z"/></svg>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Süreç Optimizasyonu
+                Kumaş Üretimi
               </h3>
               <p className="text-gray-600">
-                Mevcut üretim süreçlerinizin analizi ve verimlilik artırma çalışmaları
+                Dokuma ve örme kumaş üretim süreçlerinin optimizasyonu
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <FileText className="w-6 h-6" />
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 3l5 3-3 4v11H6V10L3 6l5-3 4 3 4-3z"/></svg>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Kalite Sistemleri
+                Konfeksiyon
               </h3>
               <p className="text-gray-600">
-                ISO 9001 ve diğer kalite standartlarına uygun sistem kurulumu
+                Hazır giyim üretim süreçleri ve kalite yönetimi
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <Bot className="w-6 h-6" />
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3a9 9 0 1 0 9 9h-3a6 6 0 1 1-6-6V3z"/></svg>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Otomasyon
+                Boyama ve Baskı
               </h3>
               <p className="text-gray-600">
-                Üretim hatlarının otomasyonu ve akıllı üretim sistemleri
+                Tekstil boyama ve baskı süreçlerinin modernizasyonu
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <Users className="w-6 h-6" />
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22V12"/><path d="M7 7c3 0 5 2 5 5-3 0-5-2-5-5z"/><path d="M17 5c-3 0-5 2-5 5 3 0 5-2 5-5z"/></svg>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Eğitim Programları
+                Sürdürülebilir Üretim
               </h3>
               <p className="text-gray-600">
-                Personel eğitimleri ve teknik yetkinlik geliştirme programları
+                Çevre dostu ve sürdürülebilir tekstil üretim süreçleri
               </p>
             </div>
             
@@ -173,10 +173,10 @@ const MachineryManufacturingPage: React.FC = () => {
                 <BarChart className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Performans Analizi
+                Kalite Analizi
               </h3>
               <p className="text-gray-600">
-                Üretim performansı ölçümü ve sürekli iyileştirme çalışmaları
+                Tekstil kalite testleri ve performans analizi sistemleri
               </p>
             </div>
           </div>
@@ -189,4 +189,4 @@ const MachineryManufacturingPage: React.FC = () => {
   );
 };
 
-export default MachineryManufacturingPage;
+export default TextileManufacturingPage;

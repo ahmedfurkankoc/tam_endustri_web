@@ -123,36 +123,35 @@ const Header: React.FC = () => {
           title: t('megamenu.production_consulting'),
           items: [
             { title: t('megamenu.machinery_manufacturing'), href: '/hizmetler/danismanlik/makine-imalat', description: 'Makine imalat danışmanlığı' },
-            { title: t('megamenu.electrical_manufacturing'), href: '#electrical-manufacturing', description: 'Elektrik imalat danışmanlığı' },
-            { title: t('megamenu.textile_manufacturing'), href: '#textile-manufacturing', description: 'Tekstil imalat danışmanlığı' },
-            { title: t('megamenu.cnc_machining'), href: '#cnc-machining', description: 'CNC işleme parça üretimi' },
-            { title: t('megamenu.laser_cutting_bending'), href: '#laser-cutting-bending', description: 'Lazer kesim ve büküm operasyonları' },
+            { title: t('megamenu.electrical_manufacturing'), href: '/hizmetler/danismanlik/elektrik-imalat', description: 'Elektrik imalat danışmanlığı' },
+            { title: t('megamenu.textile_manufacturing'), href: '/hizmetler/danismanlik/tekstil-imalat', description: 'Tekstil imalat danışmanlığı' },
+            { title: t('megamenu.cnc_machining'), href: '/hizmetler/danismanlik/cnc-isleme', description: 'CNC işleme parça üretimi' },
+            { title: t('megamenu.laser_cutting_bending'), href: '/hizmetler/danismanlik/lazer-kesim-bukme', description: 'Lazer kesim ve büküm operasyonları' },
           ]
         },
         {
           title: t('megamenu.technology_consulting'),
           items: [
-            { title: t('megamenu.website_localization'), href: '#website-localization', description: 'Website ve Türkçe lokalizasyon' },
-            { title: t('megamenu.software_design_coding'), href: '#software-design-coding', description: 'Yazılım tasarım ve geliştirme' },
+            { title: t('megamenu.website_localization'), href: '/hizmetler/danismanlik/website-lokalizasyon', description: 'Website ve Türkçe lokalizasyon' },
+            { title: t('megamenu.software_design_coding'), href: '/hizmetler/danismanlik/yazilim-tasarim', description: 'Yazılım tasarım ve geliştirme' },
           ]
         },
         {
           title: t('megamenu.sectoral_consulting'),
           items: [
-            { title: t('megamenu.tourism_consulting'), href: '#tourism-consulting', description: 'Turizm danışmanlığı ve hizmetleri' },
-            { title: t('megamenu.banking_consulting'), href: '#banking-consulting', description: 'Faizsiz bankacılık danışmanlığı' },
-            { title: t('megamenu.logistics_consulting'), href: '#logistics-consulting', description: 'Lojistik danışmanlığı' },
-            { title: t('megamenu.procurement_services'), href: '#procurement-services', description: 'Tedarik hizmetleri' },
+            { title: t('megamenu.tourism_consulting'), href: '/hizmetler/danismanlik/turizm-danismanlik', description: 'Turizm danışmanlığı ve hizmetleri' },
+            { title: t('megamenu.banking_consulting'), href: '/hizmetler/danismanlik/bankacilik-danismanlik', description: 'Bankacılık danışmanlığı' },
+            { title: t('megamenu.islamic_banking_consulting'), href: '/hizmetler/danismanlik/faizsiz-bankacilik', description: 'Türk bankaları için faizsiz bankacılık danışmanlığı' },
+            { title: t('megamenu.logistics_consulting'), href: '/hizmetler/danismanlik/lojistik-danismanlik', description: 'Lojistik danışmanlığı' },
+            { title: t('megamenu.procurement_services'), href: '/hizmetler/danismanlik/tedarik-hizmetleri', description: 'Tedarik hizmetleri' },
           ]
         },
         {
           title: t('megamenu.support_services'),
           items: [
-            { title: t('megamenu.sales_consulting'), href: '#sales-consulting', description: 'Satış danışmanlığı hizmetleri' },
-            { title: t('megamenu.design_training'), href: '#design-training', description: 'Tasarım eğitimleri' },
-            { title: t('megamenu.feasibility_studies'), href: '#feasibility-studies', description: 'Fizibilite çalışmaları ve raporlama' },
-            { title: t('megamenu.lean_training'), href: '#lean-training', description: 'Yalın üretim yöntemleri eğitimi' },
-            { title: t('megamenu.photography_videography'), href: '#photography-videography', description: 'Fotoğraf ve video çekim hizmetleri' },
+            { title: t('megamenu.sales_consulting'), href: '/hizmetler/danismanlik/satis-danismanlik', description: 'Satış danışmanlığı hizmetleri' },
+            { title: t('megamenu.feasibility_studies'), href: '/hizmetler/danismanlik/fizibilite-calismalari', description: 'Fizibilite çalışmaları ve raporlama' },
+            { title: t('megamenu.photography_videography'), href: '/hizmetler/danismanlik/fotograf-video', description: 'Fotoğraf ve video çekim hizmetleri' },
           ]
         }
       ]
@@ -168,7 +167,7 @@ const Header: React.FC = () => {
       <nav className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
         <a href={language === 'en' ? '/en' : '/'} className="flex-shrink-0">
-          <div className={`${isScrolled ? 'h-12 w-36' : 'h-14 w-40'} flex items-center justify-center`}>
+          <div className={`${isScrolled ? 'h-12 w-36' : 'h-20 w-60'} flex items-center justify-center`}>
             <img 
               src={isScrolled ? '/tam-endustri-logo.png' : '/tam-endustri-logo-white.png'} 
               alt="Tam Endüstri Logo" 

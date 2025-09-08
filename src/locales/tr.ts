@@ -45,6 +45,7 @@ export const tr = {
   // Sektörel Danışmanlık Alt Başlıkları
   'megamenu.tourism_consulting': 'Turizm Danışmanlığı',
   'megamenu.banking_consulting': 'Bankacılık Danışmanlığı',
+  'megamenu.islamic_banking_consulting': 'Faizsiz Bankacılık Danışmanlığı',
   'megamenu.logistics_consulting': 'Lojistik Danışmanlığı',
   'megamenu.procurement_services': 'Tedarik Hizmetleri',
   

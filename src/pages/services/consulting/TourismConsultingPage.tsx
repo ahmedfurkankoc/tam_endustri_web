@@ -5,47 +5,47 @@ import PageHeader from '../../../components/PageHeader';
 import ContactSection from '../../../components/ContactSection';
 import Footer from '../../../components/Footer';
 import { useLanguage } from '../../../contexts/LanguageContext';
-import { CheckCircle, Plus, Settings, FileText, Users, BarChart, Building2, RotateCcw, Bot } from 'lucide-react';
+import { CheckCircle, Plus, Settings, Target, Users, BarChart, Hotel, Plane, Globe } from 'lucide-react';
 
-const MachineryManufacturingPage: React.FC = () => {
+const TourismConsultingPage: React.FC = () => {
   const { t } = useLanguage();
 
   return (
     <div className="min-h-screen">
       <Header />
       <Hero
-        title="Makine İmalat Danışmanlığı"
-        subtitle="Profesyonel Makine Üretim Rehberliği"
-        description="Makine imalat süreçlerinizi optimize edin, kaliteyi artırın ve verimliliği maksimize edin."
+        title="Turizm Danışmanlığı ve Hizmetleri"
+        subtitle="Professional Tourism Consulting"
+        description="Turizm işletmenizi büyütün, müşteri deneyimini artırın ve rekabet avantajı elde edin."
         backgroundType="image"
         backgroundSrc="/images/business-consulting.webp"
         showScrollIndicator={true}
       />
       
       <PageHeader
-        title="Makine İmalat Danışmanlığı"
+        title="Turizm Danışmanlığı ve Hizmetleri"
         description={[
-          "Endüstriyel makine üretiminde uzman ekibimizle birlikte, üretim süreçlerinizi modernize edin ve rekabet avantajı elde edin."
+          "Turizm sektöründe uzman ekibimizle birlikte, işletmenizi büyütün ve müşteri memnuniyetini artırın."
         ]}
         cards={[
           {
-            title: "Üretim Planlama",
-            description: "Verimli üretim planları ve süreç optimizasyonu",
+            title: "İşletme Planlama",
+            description: "Turizm işletmesi kurulum ve planlama",
             image: "/images/project-design.webp",
             icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Kalite Sistemleri",
-            description: "ISO standartlarında kalite kontrol ve dokümantasyon",
+            title: "Pazarlama Stratejisi",
+            description: "Etkili turizm pazarlama çözümleri",
             image: "/images/improvement-service.webp",
             icon: <Plus className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Aparat & Makine",
-            description: "Verimi artıran aparat ve özel makine tasarımları",
-            image: "/images/machine-design.webp",
+            title: "Operasyon Yönetimi",
+            description: "Verimli turizm operasyonları",
+            image: "/images/training-service.webp",
             icon: <Settings className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
           }
@@ -57,38 +57,38 @@ const MachineryManufacturingPage: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Makine İmalatında Uzman Rehberlik
+                Turizm Sektöründe Uzman Rehberlik
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Modern endüstriyel makine üretiminde karşılaştığınız tüm zorluklara çözüm sunuyoruz. 
-                Üretim süreçlerinizi optimize ederek, kalite standartlarını yükseltirken maliyetleri 
-                düşürmenize yardımcı oluyoruz.
+                Turizm sektöründe karşılaştığınız işletme zorluklarına çözüm sunuyoruz. 
+                Müşteri deneyimini artırarak, operasyonel verimliliği yükseltirken 
+                karlılığınızı artırmanıza yardımcı oluyoruz.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Üretim Planlama:</strong> Verimli üretim planları ve kaynak optimizasyonu
+                    <strong>İşletme Yönetimi:</strong> Otel ve turizm işletmeleri operasyon yönetimi
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Kalite Yönetimi:</strong> ISO standartlarında kalite kontrol sistemleri
+                    <strong>Müşteri Deneyimi:</strong> Misafir memnuniyeti ve hizmet kalitesi artırma
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Teknoloji Entegrasyonu:</strong> Modern üretim teknolojilerinin entegrasyonu
+                    <strong>Pazarlama Stratejisi:</strong> Dijital pazarlama ve müşteri kazanma
                   </p>
                 </div>
               </div>
             </div>
             <div className="relative">
               <img
-                src="/images/machine-design.webp"
-                alt="Makine İmalat Danışmanlığı"
+                src="/images/business-consulting.webp"
+                alt="Turizm Danışmanlığı ve Hizmetleri"
                 className="rounded-xl shadow-lg w-full h-96 object-cover"
               />
             </div>
@@ -103,56 +103,44 @@ const MachineryManufacturingPage: React.FC = () => {
               Hizmet Alanlarımız
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Makine imalat süreçlerinizin her aşamasında yanınızdayız
+              Turizm işletmenizin her aşamasında yanınızdayız
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <Building2 className="w-6 h-6" />
+                <Hotel className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Fabrika Kurulumu
+                Otel İşletmeciliği
               </h3>
               <p className="text-gray-600">
-                Yeni makine imalat tesislerinin kurulumu ve mevcut tesislerin modernizasyonu
+                Otel kurulumu, operasyon yönetimi ve personel eğitimi danışmanlığı
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <RotateCcw className="w-6 h-6" />
+                <Plane className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Süreç Optimizasyonu
+                Seyahat Acentesi
               </h3>
               <p className="text-gray-600">
-                Mevcut üretim süreçlerinizin analizi ve verimlilik artırma çalışmaları
+                Seyahat acentesi kurulumu ve işletme süreçleri danışmanlığı
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <FileText className="w-6 h-6" />
+                <Target className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Kalite Sistemleri
+                Dijital Pazarlama
               </h3>
               <p className="text-gray-600">
-                ISO 9001 ve diğer kalite standartlarına uygun sistem kurulumu
-              </p>
-            </div>
-            
-            <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
-              <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <Bot className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Otomasyon
-              </h3>
-              <p className="text-gray-600">
-                Üretim hatlarının otomasyonu ve akıllı üretim sistemleri
+                Online rezervasyon sistemleri ve dijital pazarlama stratejileri
               </p>
             </div>
             
@@ -161,10 +149,10 @@ const MachineryManufacturingPage: React.FC = () => {
                 <Users className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Eğitim Programları
+                Müşteri Hizmetleri
               </h3>
               <p className="text-gray-600">
-                Personel eğitimleri ve teknik yetkinlik geliştirme programları
+                Misafir memnuniyeti ve müşteri hizmetleri süreçleri iyileştirme
               </p>
             </div>
             
@@ -176,7 +164,19 @@ const MachineryManufacturingPage: React.FC = () => {
                 Performans Analizi
               </h3>
               <p className="text-gray-600">
-                Üretim performansı ölçümü ve sürekli iyileştirme çalışmaları
+                İşletme performansı analizi ve karlılık artırma stratejileri
+              </p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
+              <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
+                <Globe className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Uluslararası Standartlar
+              </h3>
+              <p className="text-gray-600">
+                Turizm kalite standartları ve sertifikasyon süreçleri
               </p>
             </div>
           </div>
@@ -189,4 +189,4 @@ const MachineryManufacturingPage: React.FC = () => {
   );
 };
 
-export default MachineryManufacturingPage;
+export default TourismConsultingPage;

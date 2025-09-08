@@ -5,47 +5,48 @@ import PageHeader from '../../../components/PageHeader';
 import ContactSection from '../../../components/ContactSection';
 import Footer from '../../../components/Footer';
 import { useLanguage } from '../../../contexts/LanguageContext';
-import { CheckCircle, Plus, Settings, FileText, Users, BarChart, Building2, RotateCcw, Bot } from 'lucide-react';
+import { CheckCircle, Plus, Settings, FileText, Users, BarChart, Landmark, Briefcase, ShieldCheck } from 'lucide-react';
 
-const MachineryManufacturingPage: React.FC = () => {
+const BankingConsultingPage: React.FC = () => {
   const { t } = useLanguage();
 
   return (
     <div className="min-h-screen">
       <Header />
       <Hero
-        title="Makine İmalat Danışmanlığı"
-        subtitle="Profesyonel Makine Üretim Rehberliği"
-        description="Makine imalat süreçlerinizi optimize edin, kaliteyi artırın ve verimliliği maksimize edin."
+        title="Bankacılık Danışmanlığı"
+        subtitle="Banking Transformation & Compliance"
+        description="Bankacılık süreçlerinizi modernleştirin: risk, uyumluluk ve dijital dönüşüm ile verimliliği artırın."
         backgroundType="image"
         backgroundSrc="/images/business-consulting.webp"
         showScrollIndicator={true}
       />
       
       <PageHeader
-        title="Makine İmalat Danışmanlığı"
+        title="Bankacılık Danışmanlığı"
         description={[
-          "Endüstriyel makine üretiminde uzman ekibimizle birlikte, üretim süreçlerinizi modernize edin ve rekabet avantajı elde edin."
+          "Bankacılık ve finans sektöründe risk yönetimi, dijital dönüşüm ve uyumluluk alanlarında uçtan uca danışmanlık sunuyoruz.",
+          "Operasyonel verimlilik, müşteri deneyimi ve regülasyon uyumluluğu odaklı, sürdürülebilir çözümler geliştiriyoruz."
         ]}
         cards={[
           {
-            title: "Üretim Planlama",
-            description: "Verimli üretim planları ve süreç optimizasyonu",
+            title: "Risk Yönetimi",
+            description: "Kapsamlı risk analizi ve yönetimi",
             image: "/images/project-design.webp",
             icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Kalite Sistemleri",
-            description: "ISO standartlarında kalite kontrol ve dokümantasyon",
+            title: "Dijital Dönüşüm",
+            description: "Modern bankacılık teknolojileri",
             image: "/images/improvement-service.webp",
             icon: <Plus className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Aparat & Makine",
-            description: "Verimi artıran aparat ve özel makine tasarımları",
-            image: "/images/machine-design.webp",
+            title: "Uyumluluk",
+            description: "Regülasyon ve uyumluluk danışmanlığı",
+            image: "/images/training-service.webp",
             icon: <Settings className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
           }
@@ -57,38 +58,37 @@ const MachineryManufacturingPage: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Makine İmalatında Uzman Rehberlik
+                Bankacılıkta Uzman Rehberlik
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Modern endüstriyel makine üretiminde karşılaştığınız tüm zorluklara çözüm sunuyoruz. 
-                Üretim süreçlerinizi optimize ederek, kalite standartlarını yükseltirken maliyetleri 
-                düşürmenize yardımcı oluyoruz.
+                Bankacılık operasyonlarınızda karşılaştığınız zorluklara çözüm sunuyoruz. 
+                Regülasyon uyumluluğu, risk yönetimi ve dijital dönüşüm ile performansı ve müşteri memnuniyetini artırmanıza yardımcı oluyoruz.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Üretim Planlama:</strong> Verimli üretim planları ve kaynak optimizasyonu
+                    <strong>Ürün ve Kanallar:</strong> Kredi, mevduat, ödeme, mobil ve internet bankacılığı
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Kalite Yönetimi:</strong> ISO standartlarında kalite kontrol sistemleri
+                    <strong>Uyumluluk Yönetimi:</strong> BDDK, MASAK, KVKK ve uluslararası standartlar
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Teknoloji Entegrasyonu:</strong> Modern üretim teknolojilerinin entegrasyonu
+                    <strong>Risk Yönetimi:</strong> Kredi, operasyonel ve piyasa riski yönetimi
                   </p>
                 </div>
               </div>
             </div>
             <div className="relative">
               <img
-                src="/images/machine-design.webp"
-                alt="Makine İmalat Danışmanlığı"
+                src="/images/business-consulting.webp"
+                alt="Bankacılık Danışmanlığı"
                 className="rounded-xl shadow-lg w-full h-96 object-cover"
               />
             </div>
@@ -103,32 +103,20 @@ const MachineryManufacturingPage: React.FC = () => {
               Hizmet Alanlarımız
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Makine imalat süreçlerinizin her aşamasında yanınızdayız
+              Bankacılık dönüşümünüzün her aşamasında yanınızdayız
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <Building2 className="w-6 h-6" />
+                <Landmark className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Fabrika Kurulumu
+                Bankacılık Operasyonları
               </h3>
               <p className="text-gray-600">
-                Yeni makine imalat tesislerinin kurulumu ve mevcut tesislerin modernizasyonu
-              </p>
-            </div>
-            
-            <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
-              <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <RotateCcw className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Süreç Optimizasyonu
-              </h3>
-              <p className="text-gray-600">
-                Mevcut üretim süreçlerinizin analizi ve verimlilik artırma çalışmaları
+                Şube, çağrı merkezi ve operasyon süreçlerinin verimlileştirilmesi
               </p>
             </div>
             
@@ -137,22 +125,34 @@ const MachineryManufacturingPage: React.FC = () => {
                 <FileText className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Kalite Sistemleri
+                Uyumluluk Danışmanlığı
               </h3>
               <p className="text-gray-600">
-                ISO 9001 ve diğer kalite standartlarına uygun sistem kurulumu
+                Regülasyonlara uyumluluk, KYC/AML ve dokümantasyon
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <Bot className="w-6 h-6" />
+                <Briefcase className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Otomasyon
+                Ürün Geliştirme
               </h3>
               <p className="text-gray-600">
-                Üretim hatlarının otomasyonu ve akıllı üretim sistemleri
+                Bankacılık ürünleri tasarımı ve geliştirme süreçleri
+              </p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
+              <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
+                <ShieldCheck className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Risk Yönetimi
+              </h3>
+              <p className="text-gray-600">
+                Kredi, operasyonel ve piyasa riski yönetimi ve kontrol sistemleri
               </p>
             </div>
             
@@ -161,10 +161,10 @@ const MachineryManufacturingPage: React.FC = () => {
                 <Users className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Eğitim Programları
+                Personel Eğitimi
               </h3>
               <p className="text-gray-600">
-                Personel eğitimleri ve teknik yetkinlik geliştirme programları
+                Bankacılık süreçleri, uyumluluk ve teknoloji eğitim programları
               </p>
             </div>
             
@@ -176,7 +176,7 @@ const MachineryManufacturingPage: React.FC = () => {
                 Performans Analizi
               </h3>
               <p className="text-gray-600">
-                Üretim performansı ölçümü ve sürekli iyileştirme çalışmaları
+                Performans analizi ve sürekli iyileştirme önerileri
               </p>
             </div>
           </div>
@@ -189,4 +189,4 @@ const MachineryManufacturingPage: React.FC = () => {
   );
 };
 
-export default MachineryManufacturingPage;
+export default BankingConsultingPage;

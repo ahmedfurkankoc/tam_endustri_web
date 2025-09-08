@@ -5,47 +5,47 @@ import PageHeader from '../../../components/PageHeader';
 import ContactSection from '../../../components/ContactSection';
 import Footer from '../../../components/Footer';
 import { useLanguage } from '../../../contexts/LanguageContext';
-import { CheckCircle, Plus, Settings, FileText, Users, BarChart, Building2, RotateCcw, Bot } from 'lucide-react';
+import { CheckCircle, Plus, Settings, ShoppingCart, BarChart, Globe, Paintbrush, Smartphone, Search } from 'lucide-react';
 
-const MachineryManufacturingPage: React.FC = () => {
+const WebsiteLocalizationPage: React.FC = () => {
   const { t } = useLanguage();
 
   return (
     <div className="min-h-screen">
       <Header />
       <Hero
-        title="Makine İmalat Danışmanlığı"
-        subtitle="Profesyonel Makine Üretim Rehberliği"
-        description="Makine imalat süreçlerinizi optimize edin, kaliteyi artırın ve verimliliği maksimize edin."
+        title="Website ve Türkçe Lokalizasyon"
+        subtitle="Professional Website Localization"
+        description="Web sitenizi Türkçe'ye lokalize edin, yerel pazara uygun hale getirin ve kullanıcı deneyimini artırın."
         backgroundType="image"
         backgroundSrc="/images/business-consulting.webp"
         showScrollIndicator={true}
       />
       
       <PageHeader
-        title="Makine İmalat Danışmanlığı"
+        title="Website ve Türkçe Lokalizasyon"
         description={[
-          "Endüstriyel makine üretiminde uzman ekibimizle birlikte, üretim süreçlerinizi modernize edin ve rekabet avantajı elde edin."
+          "Web sitenizi Türkçe'ye lokalize ederek yerel pazarda güçlü bir varlık oluşturun. Uzman ekibimizle birlikte, kültürel ve dilsel uyum sağlayabilirsiniz."
         ]}
         cards={[
           {
-            title: "Üretim Planlama",
-            description: "Verimli üretim planları ve süreç optimizasyonu",
+            title: "Çoklu Dil Desteği",
+            description: "Profesyonel çeviri ve lokalizasyon",
             image: "/images/project-design.webp",
             icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Kalite Sistemleri",
-            description: "ISO standartlarında kalite kontrol ve dokümantasyon",
+            title: "Kültürel Uyarlama",
+            description: "Hedef pazar kültürüne uygun içerik",
             image: "/images/improvement-service.webp",
             icon: <Plus className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Aparat & Makine",
-            description: "Verimi artıran aparat ve özel makine tasarımları",
-            image: "/images/machine-design.webp",
+            title: "SEO Optimizasyonu",
+            description: "Yerel arama motoru optimizasyonu",
+            image: "/images/training-service.webp",
             icon: <Settings className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
           }
@@ -57,38 +57,37 @@ const MachineryManufacturingPage: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Makine İmalatında Uzman Rehberlik
+                Website Lokalizasyonunda Uzman Rehberlik
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Modern endüstriyel makine üretiminde karşılaştığınız tüm zorluklara çözüm sunuyoruz. 
-                Üretim süreçlerinizi optimize ederek, kalite standartlarını yükseltirken maliyetleri 
-                düşürmenize yardımcı oluyoruz.
+                Web sitenizi Türkçe'ye lokalize ederek yerel pazarda güçlü bir varlık oluşturun. 
+                Sadece çeviri değil, kültürel uyum ve yerel kullanıcı deneyimi odaklı çözümler sunuyoruz.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Üretim Planlama:</strong> Verimli üretim planları ve kaynak optimizasyonu
+                    <strong>Profesyonel Çeviri:</strong> Teknik ve ticari içerik çevirisi
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Kalite Yönetimi:</strong> ISO standartlarında kalite kontrol sistemleri
+                    <strong>Kültürel Adaptasyon:</strong> Yerel kültüre uygun içerik düzenleme
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Teknoloji Entegrasyonu:</strong> Modern üretim teknolojilerinin entegrasyonu
+                    <strong>SEO Optimizasyonu:</strong> Türkçe arama motoru optimizasyonu
                   </p>
                 </div>
               </div>
             </div>
             <div className="relative">
               <img
-                src="/images/machine-design.webp"
-                alt="Makine İmalat Danışmanlığı"
+                src="/images/business-consulting.webp"
+                alt="Website ve Türkçe Lokalizasyon"
                 className="rounded-xl shadow-lg w-full h-96 object-cover"
               />
             </div>
@@ -103,68 +102,68 @@ const MachineryManufacturingPage: React.FC = () => {
               Hizmet Alanlarımız
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Makine imalat süreçlerinizin her aşamasında yanınızdayız
+              Website lokalizasyon süreçlerinizin her aşamasında yanınızdayız
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <Building2 className="w-6 h-6" />
+                <Globe className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Fabrika Kurulumu
+                Web Sitesi Çevirisi
               </h3>
               <p className="text-gray-600">
-                Yeni makine imalat tesislerinin kurulumu ve mevcut tesislerin modernizasyonu
+                Tüm web sitesi içeriklerinin profesyonel Türkçe çevirisi
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <RotateCcw className="w-6 h-6" />
+                <Paintbrush className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Süreç Optimizasyonu
+                Tasarım Adaptasyonu
               </h3>
               <p className="text-gray-600">
-                Mevcut üretim süreçlerinizin analizi ve verimlilik artırma çalışmaları
+                Yerel kullanıcı tercihlerine uygun tasarım düzenlemeleri
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <FileText className="w-6 h-6" />
+                <Smartphone className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Kalite Sistemleri
+                Mobil Uyumluluk
               </h3>
               <p className="text-gray-600">
-                ISO 9001 ve diğer kalite standartlarına uygun sistem kurulumu
+                Mobil cihazlarda optimal görüntüleme ve kullanım deneyimi
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <Bot className="w-6 h-6" />
+                <Search className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Otomasyon
+                SEO Optimizasyonu
               </h3>
               <p className="text-gray-600">
-                Üretim hatlarının otomasyonu ve akıllı üretim sistemleri
+                Türkçe arama motorları için SEO optimizasyonu ve anahtar kelime stratejisi
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <Users className="w-6 h-6" />
+                <ShoppingCart className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Eğitim Programları
+                E-ticaret Lokalizasyonu
               </h3>
               <p className="text-gray-600">
-                Personel eğitimleri ve teknik yetkinlik geliştirme programları
+                E-ticaret sitelerinin yerel pazara uygun hale getirilmesi
               </p>
             </div>
             
@@ -176,7 +175,7 @@ const MachineryManufacturingPage: React.FC = () => {
                 Performans Analizi
               </h3>
               <p className="text-gray-600">
-                Üretim performansı ölçümü ve sürekli iyileştirme çalışmaları
+                Lokalize edilmiş sitenin performans analizi ve iyileştirme önerileri
               </p>
             </div>
           </div>
@@ -189,4 +188,4 @@ const MachineryManufacturingPage: React.FC = () => {
   );
 };
 
-export default MachineryManufacturingPage;
+export default WebsiteLocalizationPage;

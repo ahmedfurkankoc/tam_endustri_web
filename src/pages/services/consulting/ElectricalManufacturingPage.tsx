@@ -5,48 +5,48 @@ import PageHeader from '../../../components/PageHeader';
 import ContactSection from '../../../components/ContactSection';
 import Footer from '../../../components/Footer';
 import { useLanguage } from '../../../contexts/LanguageContext';
-import { CheckCircle, Plus, Settings, FileText, Users, BarChart, Building2, RotateCcw, Bot } from 'lucide-react';
+import { CheckCircle, Plus, Shield, Plug, Lightbulb, Battery, ShieldCheck, Radio, Zap } from 'lucide-react';
 
-const MachineryManufacturingPage: React.FC = () => {
+const ElectricalManufacturingPage: React.FC = () => {
   const { t } = useLanguage();
 
   return (
     <div className="min-h-screen">
       <Header />
       <Hero
-        title="Makine İmalat Danışmanlığı"
-        subtitle="Profesyonel Makine Üretim Rehberliği"
-        description="Makine imalat süreçlerinizi optimize edin, kaliteyi artırın ve verimliliği maksimize edin."
+        title="Elektrik İmalat Danışmanlığı"
+        subtitle="Elektrik Sistemleri Üretim Rehberliği"
+        description="Elektrik imalat süreçlerinizi modernize edin, güvenlik standartlarını yükseltin ve verimliliği artırın."
         backgroundType="image"
-        backgroundSrc="/images/business-consulting.webp"
+        backgroundSrc="/images/improvement-service.webp"
         showScrollIndicator={true}
       />
       
       <PageHeader
-        title="Makine İmalat Danışmanlığı"
+        title="Elektrik İmalat Danışmanlığı"
         description={[
-          "Endüstriyel makine üretiminde uzman ekibimizle birlikte, üretim süreçlerinizi modernize edin ve rekabet avantajı elde edin."
+          "Elektrik ve elektronik ürün üretiminde uzman ekibimizle birlikte, güvenli ve verimli üretim süreçleri kurabilirsiniz."
         ]}
         cards={[
           {
-            title: "Üretim Planlama",
-            description: "Verimli üretim planları ve süreç optimizasyonu",
-            image: "/images/project-design.webp",
+            title: "Elektrik Sistemleri",
+            description: "Güvenli ve verimli elektrik sistem tasarımları",
+            image: "/images/improvement-service.webp",
             icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Kalite Sistemleri",
-            description: "ISO standartlarında kalite kontrol ve dokümantasyon",
-            image: "/images/improvement-service.webp",
+            title: "Elektronik Üretim",
+            description: "Modern elektronik ürün üretim süreçleri",
+            image: "/images/project-design.webp",
             icon: <Plus className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Aparat & Makine",
-            description: "Verimi artıran aparat ve özel makine tasarımları",
-            image: "/images/machine-design.webp",
-            icon: <Settings className="w-5 h-5 md:w-6 md:h-6 text-white" />,
+            title: "Güvenlik Standartları",
+            description: "CE, UL ve diğer standartlar için uyumluluk",
+            image: "/images/training-service.webp",
+            icon: <Shield className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
           }
         ]}
@@ -57,38 +57,38 @@ const MachineryManufacturingPage: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Makine İmalatında Uzman Rehberlik
+                Elektrik İmalatında Uzman Rehberlik
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Modern endüstriyel makine üretiminde karşılaştığınız tüm zorluklara çözüm sunuyoruz. 
-                Üretim süreçlerinizi optimize ederek, kalite standartlarını yükseltirken maliyetleri 
-                düşürmenize yardımcı oluyoruz.
+                Elektrik ve elektronik ürün üretiminde karşılaştığınız teknik zorluklara 
+                çözüm sunuyoruz. Güvenlik standartlarını en üst seviyede tutarak, 
+                kaliteli ve verimli üretim süreçleri kurmanıza yardımcı oluyoruz.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Üretim Planlama:</strong> Verimli üretim planları ve kaynak optimizasyonu
+                    <strong>Elektrik Sistem Tasarımı:</strong> Güvenli ve verimli elektrik sistemleri
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Kalite Yönetimi:</strong> ISO standartlarında kalite kontrol sistemleri
+                    <strong>Elektronik Üretim:</strong> Modern elektronik ürün üretim süreçleri
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-600">
-                    <strong>Teknoloji Entegrasyonu:</strong> Modern üretim teknolojilerinin entegrasyonu
+                    <strong>Güvenlik Standartları:</strong> CE, UL ve diğer uluslararası standartlar
                   </p>
                 </div>
               </div>
             </div>
             <div className="relative">
               <img
-                src="/images/machine-design.webp"
-                alt="Makine İmalat Danışmanlığı"
+                src="/images/improvement-service.webp"
+                alt="Elektrik İmalat Danışmanlığı"
                 className="rounded-xl shadow-lg w-full h-96 object-cover"
               />
             </div>
@@ -103,80 +103,80 @@ const MachineryManufacturingPage: React.FC = () => {
               Hizmet Alanlarımız
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Makine imalat süreçlerinizin her aşamasında yanınızdayız
+              Elektrik imalat süreçlerinizin her aşamasında yanınızdayız
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <Building2 className="w-6 h-6" />
+                <Plug className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Fabrika Kurulumu
+                Elektrik Panoları
               </h3>
               <p className="text-gray-600">
-                Yeni makine imalat tesislerinin kurulumu ve mevcut tesislerin modernizasyonu
+                Endüstriyel elektrik panolarının tasarımı ve üretim süreçleri
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <RotateCcw className="w-6 h-6" />
+                <Lightbulb className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Süreç Optimizasyonu
+                LED Sistemleri
               </h3>
               <p className="text-gray-600">
-                Mevcut üretim süreçlerinizin analizi ve verimlilik artırma çalışmaları
+                Enerji verimli LED aydınlatma sistemleri tasarımı ve üretimi
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <FileText className="w-6 h-6" />
+                <Battery className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Kalite Sistemleri
+                Batarya Sistemleri
               </h3>
               <p className="text-gray-600">
-                ISO 9001 ve diğer kalite standartlarına uygun sistem kurulumu
+                Güvenli ve verimli batarya üretim süreçleri ve test sistemleri
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <Bot className="w-6 h-6" />
+                <ShieldCheck className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Otomasyon
+                Güvenlik Sistemleri
               </h3>
               <p className="text-gray-600">
-                Üretim hatlarının otomasyonu ve akıllı üretim sistemleri
+                Elektriksel güvenlik sistemleri ve koruma cihazları üretimi
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <Users className="w-6 h-6" />
+                <Radio className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Eğitim Programları
+                Elektronik Kartlar
               </h3>
               <p className="text-gray-600">
-                Personel eğitimleri ve teknik yetkinlik geliştirme programları
+                PCB tasarımı ve elektronik kart üretim süreçleri
               </p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
-                <BarChart className="w-6 h-6" />
+                <Zap className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Performans Analizi
+                Güç Sistemleri
               </h3>
               <p className="text-gray-600">
-                Üretim performansı ölçümü ve sürekli iyileştirme çalışmaları
+                Güç dağıtım sistemleri ve enerji yönetimi çözümleri
               </p>
             </div>
           </div>
@@ -189,4 +189,4 @@ const MachineryManufacturingPage: React.FC = () => {
   );
 };
 
-export default MachineryManufacturingPage;
+export default ElectricalManufacturingPage;

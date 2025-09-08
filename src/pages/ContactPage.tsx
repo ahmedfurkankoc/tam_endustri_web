@@ -149,7 +149,7 @@ const ContactPage: React.FC = () => {
       />
 
       {/* Contact Info Section */}
-      <section className="py-20 bg-white rounded-t-3xl -mt-8 relative z-10">
+      <section className="py-20 bg-white rounded-t-3xl -mt-10 relative z-10 pt-10 pb-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">

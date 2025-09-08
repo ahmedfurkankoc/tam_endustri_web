@@ -45,6 +45,7 @@ export const en = {
   // Sectoral Consulting Sub-items
   'megamenu.tourism_consulting': 'Tourism Consulting',
   'megamenu.banking_consulting': 'Banking Consulting',
+  'megamenu.islamic_banking_consulting': 'Islamic Banking Consulting',
   'megamenu.logistics_consulting': 'Logistics Consulting',
   'megamenu.procurement_services': 'Procurement Services',
   
