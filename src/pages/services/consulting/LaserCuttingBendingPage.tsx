@@ -14,37 +14,35 @@ const LaserCuttingBendingPage: React.FC = () => {
     <div className="min-h-screen">
       <Header />
       <Hero
-        title="Lazer Kesim ve Büküm Operasyonları"
-        subtitle="Precision Laser Cutting & Bending"
-        description="Lazer kesim ve büküm süreçlerinizi optimize edin, hassasiyeti artırın ve üretim verimliliğini maksimize edin."
+        title={t('consulting.laser.hero.title')}
+        subtitle={t('consulting.laser.hero.subtitle')}
+        description={t('consulting.laser.hero.description')}
         backgroundType="image"
         backgroundSrc="/images/improvement-service.webp"
         showScrollIndicator={true}
       />
       
       <PageHeader
-        title="Lazer Kesim ve Büküm Operasyonları"
-        description={[
-          "Modern lazer kesim ve büküm teknolojilerinde uzman ekibimizle birlikte, yüksek kaliteli ve hassas metal işleme sağlayabilirsiniz."
-        ]}
+        title={t('consulting.laser.header.title')}
+        description={[t('consulting.laser.header.desc1')]}
         cards={[
           {
-            title: "Lazer Kesim",
-            description: "Hassas lazer kesim teknolojileri",
+            title: t('consulting.laser.cards.cut.title'),
+            description: t('consulting.laser.cards.cut.desc'),
             image: "/images/machine-design.webp",
             icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Metal Büküm",
-            description: "Profesyonel metal büküm işlemleri",
+            title: t('consulting.laser.cards.bend.title'),
+            description: t('consulting.laser.cards.bend.desc'),
             image: "/images/project-design.webp",
             icon: <Plus className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Kalite Kontrol",
-            description: "İleri seviye kalite kontrol sistemleri",
+            title: t('consulting.laser.cards.qc.title'),
+            description: t('consulting.laser.cards.qc.desc'),
             image: "/images/improvement-service.webp",
             icon: <Settings className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
@@ -56,32 +54,22 @@ const LaserCuttingBendingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Lazer Kesim ve Bükümde Uzman Rehberlik
-              </h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('consulting.laser.section.expertise.title')}</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Lazer kesim ve büküm operasyonlarında karşılaştığınız teknik zorluklara 
-                çözüm sunuyoruz. Modern lazer teknolojileri ve optimizasyon teknikleriyle, 
-                yüksek kaliteli ve hassas metal işleme sağlıyoruz.
+                {t('consulting.laser.section.expertise.p1')}
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Hassas Kesim:</strong> Mikron seviyesinde hassasiyetli lazer kesim
-                  </p>
+                  <p className="text-gray-600">{t('consulting.laser.section.expertise.bullets.precision')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Kompleks Şekiller:</strong> Karmaşık geometrili parça kesimi
-                  </p>
+                  <p className="text-gray-600">{t('consulting.laser.section.expertise.bullets.geometry')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Malzeme Çeşitliliği:</strong> Çelik, alüminyum, paslanmaz çelik ve özel alaşımlar
-                  </p>
+                  <p className="text-gray-600">{t('consulting.laser.section.expertise.bullets.materials')}</p>
                 </div>
               </div>
             </div>
@@ -99,12 +87,8 @@ const LaserCuttingBendingPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Hizmet Alanlarımız
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Lazer kesim ve büküm süreçlerinizin her aşamasında yanınızdayız
-            </p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('consulting.laser.services.title')}</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">{t('consulting.laser.services.subtitle')}</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -112,72 +96,48 @@ const LaserCuttingBendingPage: React.FC = () => {
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Zap className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                CO2 Lazer Kesim
-              </h3>
-              <p className="text-gray-600">
-                Yüksek güçlü CO2 lazer ile kalın malzeme kesimi ve işleme
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.laser.services.co2.title')}</h3>
+              <p className="text-gray-600">{t('consulting.laser.services.co2.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Flame className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Fiber Lazer Kesim
-              </h3>
-              <p className="text-gray-600">
-                Yüksek hassasiyetli fiber lazer ile ince malzeme kesimi
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.laser.services.fiber.title')}</h3>
+              <p className="text-gray-600">{t('consulting.laser.services.fiber.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Ruler className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Büküm İşlemleri
-              </h3>
-              <p className="text-gray-600">
-                Hassas büküm makineleri ile metal şekillendirme
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.laser.services.bending.title')}</h3>
+              <p className="text-gray-600">{t('consulting.laser.services.bending.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Target className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Hassas Kesim
-              </h3>
-              <p className="text-gray-600">
-                Mikron seviyesinde hassasiyetli kesim ve işleme
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.laser.services.precision.title')}</h3>
+              <p className="text-gray-600">{t('consulting.laser.services.precision.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Wrench className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Kalite Kontrol
-              </h3>
-              <p className="text-gray-600">
-                Hassas ölçüm ve kalite kontrol sistemleri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.laser.services.qc.title')}</h3>
+              <p className="text-gray-600">{t('consulting.laser.services.qc.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Factory className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Seri Üretim
-              </h3>
-              <p className="text-gray-600">
-                Yüksek hacimli seri üretim süreçleri ve optimizasyon
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.laser.services.mass.title')}</h3>
+              <p className="text-gray-600">{t('consulting.laser.services.mass.desc')}</p>
             </div>
           </div>
         </div>

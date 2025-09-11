@@ -14,38 +14,35 @@ const BankingConsultingPage: React.FC = () => {
     <div className="min-h-screen">
       <Header />
       <Hero
-        title="Bankacılık Danışmanlığı"
-        subtitle="Banking Transformation & Compliance"
-        description="Bankacılık süreçlerinizi modernleştirin: risk, uyumluluk ve dijital dönüşüm ile verimliliği artırın."
+        title={t('consulting.banking.hero.title')}
+        subtitle={t('consulting.banking.hero.subtitle')}
+        description={t('consulting.banking.hero.description')}
         backgroundType="image"
         backgroundSrc="/images/business-consulting.webp"
         showScrollIndicator={true}
       />
       
       <PageHeader
-        title="Bankacılık Danışmanlığı"
-        description={[
-          "Bankacılık ve finans sektöründe risk yönetimi, dijital dönüşüm ve uyumluluk alanlarında uçtan uca danışmanlık sunuyoruz.",
-          "Operasyonel verimlilik, müşteri deneyimi ve regülasyon uyumluluğu odaklı, sürdürülebilir çözümler geliştiriyoruz."
-        ]}
+        title={t('consulting.banking.header.title')}
+        description={[t('consulting.banking.header.desc1'), t('consulting.banking.header.desc2')]}
         cards={[
           {
-            title: "Risk Yönetimi",
-            description: "Kapsamlı risk analizi ve yönetimi",
+            title: t('consulting.banking.cards.risk.title'),
+            description: t('consulting.banking.cards.risk.desc'),
             image: "/images/project-design.webp",
             icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Dijital Dönüşüm",
-            description: "Modern bankacılık teknolojileri",
+            title: t('consulting.banking.cards.digital.title'),
+            description: t('consulting.banking.cards.digital.desc'),
             image: "/images/improvement-service.webp",
             icon: <Plus className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Uyumluluk",
-            description: "Regülasyon ve uyumluluk danışmanlığı",
+            title: t('consulting.banking.cards.compliance.title'),
+            description: t('consulting.banking.cards.compliance.desc'),
             image: "/images/training-service.webp",
             icon: <Settings className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
@@ -57,31 +54,22 @@ const BankingConsultingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Bankacılıkta Uzman Rehberlik
-              </h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('consulting.banking.section.expertise.title')}</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Bankacılık operasyonlarınızda karşılaştığınız zorluklara çözüm sunuyoruz. 
-                Regülasyon uyumluluğu, risk yönetimi ve dijital dönüşüm ile performansı ve müşteri memnuniyetini artırmanıza yardımcı oluyoruz.
+                {t('consulting.banking.section.expertise.p1')}
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Ürün ve Kanallar:</strong> Kredi, mevduat, ödeme, mobil ve internet bankacılığı
-                  </p>
+                  <p className="text-gray-600">{t('consulting.banking.section.expertise.bullets.products')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Uyumluluk Yönetimi:</strong> BDDK, MASAK, KVKK ve uluslararası standartlar
-                  </p>
+                  <p className="text-gray-600">{t('consulting.banking.section.expertise.bullets.compliance')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Risk Yönetimi:</strong> Kredi, operasyonel ve piyasa riski yönetimi
-                  </p>
+                  <p className="text-gray-600">{t('consulting.banking.section.expertise.bullets.risk')}</p>
                 </div>
               </div>
             </div>
@@ -99,12 +87,8 @@ const BankingConsultingPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Hizmet Alanlarımız
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Bankacılık dönüşümünüzün her aşamasında yanınızdayız
-            </p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('consulting.banking.services.title')}</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">{t('consulting.banking.services.subtitle')}</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -112,72 +96,48 @@ const BankingConsultingPage: React.FC = () => {
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Landmark className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Bankacılık Operasyonları
-              </h3>
-              <p className="text-gray-600">
-                Şube, çağrı merkezi ve operasyon süreçlerinin verimlileştirilmesi
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.banking.services.ops.title')}</h3>
+              <p className="text-gray-600">{t('consulting.banking.services.ops.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <FileText className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Uyumluluk Danışmanlığı
-              </h3>
-              <p className="text-gray-600">
-                Regülasyonlara uyumluluk, KYC/AML ve dokümantasyon
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.banking.services.compliance.title')}</h3>
+              <p className="text-gray-600">{t('consulting.banking.services.compliance.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Briefcase className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Ürün Geliştirme
-              </h3>
-              <p className="text-gray-600">
-                Bankacılık ürünleri tasarımı ve geliştirme süreçleri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.banking.services.product.title')}</h3>
+              <p className="text-gray-600">{t('consulting.banking.services.product.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <ShieldCheck className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Risk Yönetimi
-              </h3>
-              <p className="text-gray-600">
-                Kredi, operasyonel ve piyasa riski yönetimi ve kontrol sistemleri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.banking.services.risk.title')}</h3>
+              <p className="text-gray-600">{t('consulting.banking.services.risk.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Users className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Personel Eğitimi
-              </h3>
-              <p className="text-gray-600">
-                Bankacılık süreçleri, uyumluluk ve teknoloji eğitim programları
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.banking.services.training.title')}</h3>
+              <p className="text-gray-600">{t('consulting.banking.services.training.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <BarChart className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Performans Analizi
-              </h3>
-              <p className="text-gray-600">
-                Performans analizi ve sürekli iyileştirme önerileri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.banking.services.performance.title')}</h3>
+              <p className="text-gray-600">{t('consulting.banking.services.performance.desc')}</p>
             </div>
           </div>
         </div>

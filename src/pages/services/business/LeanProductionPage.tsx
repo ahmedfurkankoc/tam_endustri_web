@@ -4,16 +4,18 @@ import Hero from '../../../components/Hero';
 import PageHeader from '../../../components/PageHeader';
 import ContactSection from '../../../components/ContactSection';
 import Footer from '../../../components/Footer';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const LeanProductionPage: React.FC = () => {
+  const { t } = useLanguage();
   return (
     <div className="min-h-screen">
       <Header />
       
       <Hero
-        title="Yalın Üretim Yöntemleri Uygulamaları"
-        subtitle="Daha Az Efor ile Daha Çok Verim"
-        description="Hata, maliyet, stok, fire ve memnuniyetsizliği azaltan; verimliliği ve sürdürülebilirliği artıran yalın çözümler."
+        title={t('business.lean.hero.title')}
+        subtitle={t('business.lean.hero.subtitle')}
+        description={t('business.lean.hero.description')}
         backgroundType="image"
         backgroundSrc="/hero-lean-production.jpg"
         showScrollIndicator={true}
@@ -21,15 +23,12 @@ const LeanProductionPage: React.FC = () => {
       />
 
       <PageHeader
-        title="Yalın Üretim Yöntemleri Uygulamaları"
-        description={[
-          "Yalın Üretim; gereksiz unsurlardan arındırılmış, hata, maliyet, işçilik, stok, geliştirme süresi, fire, üretim alanı ve memnuniyetsizliği en aza indiren üretim sistemidir.",
-          "Bu yaklaşımı yalnızca üretim sahasına değil; ofis iş yüklerine de uygulayarak, size özel yazılım ve uygulamalarla verimlilik ve sürdürülebilirliği artırıyoruz."
-        ]}
+        title={t('business.lean.header.title')}
+        description={[t('business.lean.header.desc1'), t('business.lean.header.desc2')]}
         cards={[
           {
-            title: "Sürekli İyileştirme (Kaizen)",
-            description: "İdealin olmadığı varsayımı ile her gün daha iyiye giden süreçler",
+            title: t('business.lean.cards.kaizen.title'),
+            description: t('business.lean.cards.kaizen.desc'),
             image: "/images/improvement-service.webp",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -39,8 +38,8 @@ const LeanProductionPage: React.FC = () => {
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Size Özel Uygulamalar",
-            description: "Tekrarlı ofis işleri için sadeleştirilmiş yazılım ve otomasyon",
+            title: t('business.lean.cards.apps.title'),
+            description: t('business.lean.cards.apps.desc'),
             image: "/images/lean.webp",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,8 +49,8 @@ const LeanProductionPage: React.FC = () => {
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Aparat & Makine Tasarımları",
-            description: "Sahada verimi artıran aparat, fikstür ve makine geliştirmeleri",
+            title: t('business.lean.cards.fixtures.title'),
+            description: t('business.lean.cards.fixtures.desc'),
             image: "/images/machine-design.webp",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -73,40 +72,28 @@ const LeanProductionPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 leading-tight">İşinize Değer Katıyoruz</h2>
+              <h2 className="text-4xl font-bold text-gray-900 leading-tight">{t('business.lean.section.value.title')}</h2>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed mt-3">
-                <p>
-                  Market, kafe, lojistik gibi standart uygulamaların aksine; sanayide işler genellikle size özgü yöntemlerle yürür. Bu nedenle size özel uygulamalar ve yazılımlar, verimlilik ve sürdürülebilirlik için kaçınılmazdır.
-                </p>
-                <p>
-                  Sizin katkılarınız olmadan ideal çözümün gelişmeyeceğine inanıyor; tekrarlı ofis ve saha işleri için bilgisayarları sizin adınıza çalıştıracak yalın uygulamalar tasarlıyoruz.
-                </p>
-                <p>
-                  En doğru ve basite indirgenmiş program ve uygulamayı, sizinle fikir alışverişi yaparak birlikte ortaya çıkarıyoruz.
-                </p>
+                <p>{t('business.lean.section.value.p1')}</p>
+                <p>{t('business.lean.section.value.p2')}</p>
+                <p>{t('business.lean.section.value.p3')}</p>
               </div>
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-xl border border-tam-blue/20">
-              <h3 className="text-2xl font-semibold text-tam-blue mb-3">Yalın Üretim Aparat - Makine Tasarım ve Üretimleri</h3>
-              <p className="text-tam-blue/80 leading-relaxed">
-                Üretiminizi hangi yöntemler ve makinelerle daha verimli ve sürdürülebilir hale getireceğimizi konuşmak için bizi tesisinize davet edin. Beraber keşfedelim.
-              </p>
+              <h3 className="text-2xl font-semibold text-tam-blue mb-3">{t('business.lean.panel.shopfloor.title')}</h3>
+              <p className="text-tam-blue/80 leading-relaxed">{t('business.lean.panel.shopfloor.desc')}</p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Zaman Kazancı Örneği</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Raftan alınan iki parçanın bir vida ile birleştirildiği, çevrimi 10 saniye olan bir operasyonda günlük ideal adet 8 saatte 2880’dir. Basit bir aparat ve otomatik vidalama ile çevrimi 8 saniyeye indirirseniz, kümülatif olarak bir günde 96 dakika kazanır ve yaklaşık 720 adet ek üretim yapabilirsiniz.
-              </p>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">{t('business.lean.section.saving.title')}</h3>
+              <p className="text-gray-700 leading-relaxed">{t('business.lean.section.saving.desc')}</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-xl border border-tam-blue/20">
-              <h4 className="text-xl font-semibold text-tam-blue mb-3">Daha Az Efor ile Daha Çok Verim</h4>
-              <p className="text-tam-blue/80 leading-relaxed">
-                Süreçlerinize dışarıdan bakarak verimlilik ve sürdürülebilirliği artıracak mekanik, elektronik ve yazılımsal çözümleri tasarlar ve uygularız.
-              </p>
+              <h4 className="text-xl font-semibold text-tam-blue mb-3">{t('business.lean.panel.less_effort.title')}</h4>
+              <p className="text-tam-blue/80 leading-relaxed">{t('business.lean.panel.less_effort.desc')}</p>
             </div>
           </div>
         </div>
@@ -129,15 +116,11 @@ const LeanProductionPage: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h2 className="text-4xl font-bold text-gray-900 leading-tight">Yalın Üretim Yöntemleri Eğitimi</h2>
+                <h2 className="text-4xl font-bold text-gray-900 leading-tight">{t('business.lean.training.title')}</h2>
               </div>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-                <p>
-                  Yalın Üretim (Lean Manufacturing), gereksiz unsur taşımayan; hata, maliyet, işçilik, stok, geliştirme süreci, fire, üretim alanı ve müşteri memnuniyetsizliği unsurlarını en aza indirmeyi hedefleyen bir üretim sistemidir.
-                </p>
-                <p>
-                  Üretim alanındaki makineleriniz, üretim akışınız, stoklarınız ve yerleşimleriniz ideal mi? Kaizen yaklaşımı, idealin olmadığını; bu yüzden sürekli değişim ve iyileştirmenin zorunlu olduğunu savunur.
-                </p>
+                <p>{t('business.lean.training.p1')}</p>
+                <p>{t('business.lean.training.p2')}</p>
               </div>
             </div>
 
@@ -152,7 +135,7 @@ const LeanProductionPage: React.FC = () => {
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                    <div className="absolute bottom-3 left-3 text-white text-sm font-medium">Sürekli İyileştirme</div>
+                    <div className="absolute bottom-3 left-3 text-white text-sm font-medium">{t('business.lean.grid.kaizen')}</div>
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img 
@@ -161,7 +144,7 @@ const LeanProductionPage: React.FC = () => {
                       className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                    <div className="absolute bottom-3 left-3 text-white text-sm font-medium">Yalın Uygulamalar</div>
+                    <div className="absolute bottom-3 left-3 text-white text-sm font-medium">{t('business.lean.grid.lean_apps')}</div>
                   </div>
                 </div>
                 <div className="space-y-4 pt-8">
@@ -172,7 +155,7 @@ const LeanProductionPage: React.FC = () => {
                       className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                    <div className="absolute bottom-3 left-3 text-white text-sm font-medium">Aparat & Makine</div>
+                    <div className="absolute bottom-3 left-3 text-white text-sm font-medium">{t('business.lean.grid.fixtures')}</div>
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img 
@@ -181,7 +164,7 @@ const LeanProductionPage: React.FC = () => {
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                    <div className="absolute bottom-3 left-3 text-white text-sm font-medium">Akış & Yerleşim</div>
+                    <div className="absolute bottom-3 left-3 text-white text-sm font-medium">{t('business.lean.grid.flow_layout')}</div>
                   </div>
                 </div>
               </div>
@@ -190,17 +173,15 @@ const LeanProductionPage: React.FC = () => {
               <div className="absolute -top-4 -right-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-tam-blue/20">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-tam-blue">Kaizen</div>
-                  <div className="text-xs text-gray-600">Sürekli İyileştirme</div>
+                  <div className="text-xs text-gray-600">{t('business.lean.float.kaizen')}</div>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="bg-white p-8 rounded-2xl shadow-xl border border-tam-blue/20">
-            <h3 className="text-2xl font-semibold text-tam-blue mb-3">Yalın Üretim ile Tanışın!</h3>
-            <p className="text-tam-blue/80 leading-relaxed">
-              Sizin için Yalın Üretim uygulamaları, aparat ve makineleri geliştirebiliriz. Ancak daha değerlisi, Yalın Üretim sistemlerini ekibinizle tanıştırarak geliştirilecek alanları kendinizin tespit edip hayata geçirmenizi sağlamak.
-            </p>
+            <h3 className="text-2xl font-semibold text-tam-blue mb-3">{t('business.lean.cta.title')}</h3>
+            <p className="text-tam-blue/80 leading-relaxed">{t('business.lean.cta.desc')}</p>
           </div>
         </div>
       </section>

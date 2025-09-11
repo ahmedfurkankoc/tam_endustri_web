@@ -14,37 +14,35 @@ const CncMachiningPage: React.FC = () => {
     <div className="min-h-screen">
       <Header />
       <Hero
-        title="CNC İşleme Parça Üretimi"
-        subtitle="Precision CNC Machining Solutions"
-        description="CNC işleme süreçlerinizi optimize edin, hassasiyeti artırın ve üretim verimliliğini maksimize edin."
+        title={t('consulting.cnc.hero.title')}
+        subtitle={t('consulting.cnc.hero.subtitle')}
+        description={t('consulting.cnc.hero.description')}
         backgroundType="image"
         backgroundSrc="/images/machine-design.webp"
         showScrollIndicator={true}
       />
       
       <PageHeader
-        title="CNC İşleme Parça Üretimi"
-        description={[
-          "Yüksek hassasiyetli CNC işleme süreçlerinde uzman ekibimizle birlikte, kaliteli ve verimli parça üretimi sağlayabilirsiniz."
-        ]}
+        title={t('consulting.cnc.header.title')}
+        description={[t('consulting.cnc.header.desc1')]}
         cards={[
           {
-            title: "Hassas İşleme",
-            description: "Mikron seviyesinde hassasiyetli işleme",
+            title: t('consulting.cnc.cards.precision.title'),
+            description: t('consulting.cnc.cards.precision.desc'),
             image: "/images/machine-design.webp",
             icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Programlama",
-            description: "CAD/CAM programlama ve optimizasyon",
+            title: t('consulting.cnc.cards.programming.title'),
+            description: t('consulting.cnc.cards.programming.desc'),
             image: "/images/project-design.webp",
             icon: <Plus className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Kalite Kontrol",
-            description: "İleri seviye kalite kontrol sistemleri",
+            title: t('consulting.cnc.cards.quality.title'),
+            description: t('consulting.cnc.cards.quality.desc'),
             image: "/images/improvement-service.webp",
             icon: <Settings className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
@@ -56,32 +54,22 @@ const CncMachiningPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                CNC İşlemede Uzman Rehberlik
-              </h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('consulting.cnc.section.expertise.title')}</h2>
               <p className="text-lg text-gray-600 mb-6">
-                CNC işleme süreçlerinde karşılaştığınız teknik zorluklara çözüm sunuyoruz. 
-                Modern CNC teknolojileri ve optimizasyon teknikleriyle, yüksek kaliteli 
-                ve hassas parça üretimi sağlıyoruz.
+                {t('consulting.cnc.section.expertise.p1')}
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Hassas İşleme:</strong> Mikron seviyesinde hassasiyetli işleme
-                  </p>
+                  <p className="text-gray-600">{t('consulting.cnc.section.expertise.bullets.precision')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Kompleks Geometriler:</strong> Karmaşık şekilli parça üretimi
-                  </p>
+                  <p className="text-gray-600">{t('consulting.cnc.section.expertise.bullets.geometry')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Malzeme Çeşitliliği:</strong> Çelik, alüminyum, titanyum ve özel alaşımlar
-                  </p>
+                  <p className="text-gray-600">{t('consulting.cnc.section.expertise.bullets.materials')}</p>
                 </div>
               </div>
             </div>
@@ -99,12 +87,8 @@ const CncMachiningPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Hizmet Alanlarımız
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              CNC işleme süreçlerinizin her aşamasında yanınızdayız
-            </p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('consulting.cnc.services.title')}</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">{t('consulting.cnc.services.subtitle')}</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -112,72 +96,48 @@ const CncMachiningPage: React.FC = () => {
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Wrench className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Frezeleme
-              </h3>
-              <p className="text-gray-600">
-                3 eksenli ve 5 eksenli frezeleme işlemleri ile kompleks parça üretimi
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.cnc.services.milling.title')}</h3>
+              <p className="text-gray-600">{t('consulting.cnc.services.milling.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Cog className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Tornalama
-              </h3>
-              <p className="text-gray-600">
-                Yüksek hassasiyetli tornalama işlemleri ve silindirik parça üretimi
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.cnc.services.turning.title')}</h3>
+              <p className="text-gray-600">{t('consulting.cnc.services.turning.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Hammer className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Delme ve Talaşlı İşleme
-              </h3>
-              <p className="text-gray-600">
-                Hassas delme, raybalama ve diğer talaşlı işleme operasyonları
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.cnc.services.drilling.title')}</h3>
+              <p className="text-gray-600">{t('consulting.cnc.services.drilling.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Ruler className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Kalite Kontrol
-              </h3>
-              <p className="text-gray-600">
-                CMM ölçümleri ve hassas kalite kontrol sistemleri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.cnc.services.qc.title')}</h3>
+              <p className="text-gray-600">{t('consulting.cnc.services.qc.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Target className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Prototip Üretimi
-              </h3>
-              <p className="text-gray-600">
-                Hızlı prototip üretimi ve test parçaları imalatı
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.cnc.services.prototype.title')}</h3>
+              <p className="text-gray-600">{t('consulting.cnc.services.prototype.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <RotateCcw className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Seri Üretim
-              </h3>
-              <p className="text-gray-600">
-                Yüksek hacimli seri üretim süreçleri ve optimizasyon
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.cnc.services.mass.title')}</h3>
+              <p className="text-gray-600">{t('consulting.cnc.services.mass.desc')}</p>
             </div>
           </div>
         </div>

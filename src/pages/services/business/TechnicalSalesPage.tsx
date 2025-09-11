@@ -4,16 +4,18 @@ import Hero from '../../../components/Hero';
 import PageHeader from '../../../components/PageHeader';
 import ContactSection from '../../../components/ContactSection';
 import Footer from '../../../components/Footer';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const TechnicalSalesPage: React.FC = () => {
+  const { t } = useLanguage();
   return (
     <div className="min-h-screen">
       <Header />
 
       <Hero
-        title="Teknik Satış Program - Uygulamaları"
-        subtitle="Sizin için Özel Olarak Programlıyoruz!"
-        description="Teknik satışı doğru kurgulayın; tekliften kuruluma kadar tutarlı, profesyonel ve verimli bir satış deneyimi sağlayın."
+        title={t('business.sales.hero.title')}
+        subtitle={t('business.sales.hero.subtitle')}
+        description={t('business.sales.hero.description')}
         backgroundType="image"
         backgroundSrc="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
         showScrollIndicator={true}
@@ -21,15 +23,12 @@ const TechnicalSalesPage: React.FC = () => {
       />
 
       <PageHeader
-        title="Teknik Satış Program - Uygulamaları"
-        description={[
-          "Müşterilerinize özel makine ya da sistemler üretiyor veya her müşteri için modifikasyonlar yapıyorsanız satış organizasyonunuzun zorluklarını çok iyi anlıyoruz.",
-          "Ticari satışın sağlıklı sonuçlanabilmesi için Teknik satışın önce doğru kurgulanması gerekir. Biz, satışta kullandığınız bilgileri derleyerek yine sizin çerçevenizde Teknik Satış programları hazırlıyoruz."
-        ]}
+        title={t('business.sales.header.title')}
+        description={[t('business.sales.header.desc1'), t('business.sales.header.desc2')]}
         cards={[
           {
-            title: "Sunum İçerikleri",
-            description: "Fotoğraflar, videolar ve tanıtıcı içeriklerin profesyonel sunumu",
+            title: t('business.sales.cards.presentation.title'),
+            description: t('business.sales.cards.presentation.desc'),
             image: "/images/project-design.webp",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -39,8 +38,8 @@ const TechnicalSalesPage: React.FC = () => {
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Layout & Dokümanlar",
-            description: "Yerleşim planları, teknik resimler ve açıklamalar bir arada",
+            title: t('business.sales.cards.layout_docs.title'),
+            description: t('business.sales.cards.layout_docs.desc'),
             image: "/images/machine-design.webp",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,8 +49,8 @@ const TechnicalSalesPage: React.FC = () => {
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Hesap & Fizibilite",
-            description: "Fiyat hesaplayıcı arayüzler, çalışma prensipleri ve fizibilite detayları",
+            title: t('business.sales.cards.calc_feas.title'),
+            description: t('business.sales.cards.calc_feas.desc'),
             image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,21 +67,15 @@ const TechnicalSalesPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 leading-tight">Verimli ve Profesyonel</h2>
+              <h2 className="text-4xl font-bold text-gray-900 leading-tight">{t('business.sales.section.efficient.title')}</h2>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed mt-3">
-                <p>
-                  Hazır paketlerin uymadığı durumlarda, dağınık bilgi ve dosyalamayı düzenleyip satış toplantılarında güçlü el avantajınızı koruyacak bütünleşik bir sunum ortamı kuruyoruz.
-                </p>
-                <p>
-                  Fotoğraf, video, layout, teknik resim ve açıklamalar; mümkünse fiyat hesaplayıcı arayüzler ve fizibilite detayları tek yerde, en net ifadesiyle müşteriye aktarılır.
-                </p>
+                <p>{t('business.sales.section.efficient.p1')}</p>
+                <p>{t('business.sales.section.efficient.p2')}</p>
               </div>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-xl border border-tam-blue/20">
-              <h3 className="text-2xl font-semibold text-tam-blue mb-3">Kontrolü Elinizde Tutun</h3>
-              <p className="text-tam-blue/80 leading-relaxed">
-                Doğru bir Teknik Satış Programı için birlikte çalışmaya hazırız. Tereddüt etmeden bizimle iletişime geçebilirsiniz; sizinle tanışmak için heyecanlıyız!
-              </p>
+              <h3 className="text-2xl font-semibold text-tam-blue mb-3">{t('business.sales.panel.control.title')}</h3>
+              <p className="text-tam-blue/80 leading-relaxed">{t('business.sales.panel.control.desc')}</p>
             </div>
           </div>
         </div>

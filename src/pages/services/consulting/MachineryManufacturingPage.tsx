@@ -14,37 +14,35 @@ const MachineryManufacturingPage: React.FC = () => {
     <div className="min-h-screen">
       <Header />
       <Hero
-        title="Makine İmalat Danışmanlığı"
-        subtitle="Profesyonel Makine Üretim Rehberliği"
-        description="Makine imalat süreçlerinizi optimize edin, kaliteyi artırın ve verimliliği maksimize edin."
+        title={t('consulting.machinery.hero.title')}
+        subtitle={t('consulting.machinery.hero.subtitle')}
+        description={t('consulting.machinery.hero.description')}
         backgroundType="image"
         backgroundSrc="/images/business-consulting.webp"
         showScrollIndicator={true}
       />
       
       <PageHeader
-        title="Makine İmalat Danışmanlığı"
-        description={[
-          "Endüstriyel makine üretiminde uzman ekibimizle birlikte, üretim süreçlerinizi modernize edin ve rekabet avantajı elde edin."
-        ]}
+        title={t('consulting.machinery.header.title')}
+        description={[t('consulting.machinery.header.desc1')]}
         cards={[
           {
-            title: "Üretim Planlama",
-            description: "Verimli üretim planları ve süreç optimizasyonu",
+            title: t('consulting.machinery.cards.planning.title'),
+            description: t('consulting.machinery.cards.planning.desc'),
             image: "/images/project-design.webp",
             icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Kalite Sistemleri",
-            description: "ISO standartlarında kalite kontrol ve dokümantasyon",
+            title: t('consulting.machinery.cards.quality.title'),
+            description: t('consulting.machinery.cards.quality.desc'),
             image: "/images/improvement-service.webp",
             icon: <Plus className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Aparat & Makine",
-            description: "Verimi artıran aparat ve özel makine tasarımları",
+            title: t('consulting.machinery.cards.fixtures.title'),
+            description: t('consulting.machinery.cards.fixtures.desc'),
             image: "/images/machine-design.webp",
             icon: <Settings className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
@@ -56,32 +54,22 @@ const MachineryManufacturingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Makine İmalatında Uzman Rehberlik
-              </h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('consulting.machinery.section.expertise.title')}</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Modern endüstriyel makine üretiminde karşılaştığınız tüm zorluklara çözüm sunuyoruz. 
-                Üretim süreçlerinizi optimize ederek, kalite standartlarını yükseltirken maliyetleri 
-                düşürmenize yardımcı oluyoruz.
+                {t('consulting.machinery.section.expertise.p1')}
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Üretim Planlama:</strong> Verimli üretim planları ve kaynak optimizasyonu
-                  </p>
+                  <p className="text-gray-600">{t('consulting.machinery.section.expertise.bullets.planning')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Kalite Yönetimi:</strong> ISO standartlarında kalite kontrol sistemleri
-                  </p>
+                  <p className="text-gray-600">{t('consulting.machinery.section.expertise.bullets.quality')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Teknoloji Entegrasyonu:</strong> Modern üretim teknolojilerinin entegrasyonu
-                  </p>
+                  <p className="text-gray-600">{t('consulting.machinery.section.expertise.bullets.tech')}</p>
                 </div>
               </div>
             </div>
@@ -99,12 +87,8 @@ const MachineryManufacturingPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Hizmet Alanlarımız
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Makine imalat süreçlerinizin her aşamasında yanınızdayız
-            </p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('consulting.machinery.services.title')}</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">{t('consulting.machinery.services.subtitle')}</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -112,72 +96,48 @@ const MachineryManufacturingPage: React.FC = () => {
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Building2 className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Fabrika Kurulumu
-              </h3>
-              <p className="text-gray-600">
-                Yeni makine imalat tesislerinin kurulumu ve mevcut tesislerin modernizasyonu
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.machinery.services.factory.title')}</h3>
+              <p className="text-gray-600">{t('consulting.machinery.services.factory.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <RotateCcw className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Süreç Optimizasyonu
-              </h3>
-              <p className="text-gray-600">
-                Mevcut üretim süreçlerinizin analizi ve verimlilik artırma çalışmaları
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.machinery.services.process.title')}</h3>
+              <p className="text-gray-600">{t('consulting.machinery.services.process.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <FileText className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Kalite Sistemleri
-              </h3>
-              <p className="text-gray-600">
-                ISO 9001 ve diğer kalite standartlarına uygun sistem kurulumu
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.machinery.services.quality.title')}</h3>
+              <p className="text-gray-600">{t('consulting.machinery.services.quality.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Bot className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Otomasyon
-              </h3>
-              <p className="text-gray-600">
-                Üretim hatlarının otomasyonu ve akıllı üretim sistemleri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.machinery.services.automation.title')}</h3>
+              <p className="text-gray-600">{t('consulting.machinery.services.automation.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Users className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Eğitim Programları
-              </h3>
-              <p className="text-gray-600">
-                Personel eğitimleri ve teknik yetkinlik geliştirme programları
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.machinery.services.training.title')}</h3>
+              <p className="text-gray-600">{t('consulting.machinery.services.training.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <BarChart className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Performans Analizi
-              </h3>
-              <p className="text-gray-600">
-                Üretim performansı ölçümü ve sürekli iyileştirme çalışmaları
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.machinery.services.performance.title')}</h3>
+              <p className="text-gray-600">{t('consulting.machinery.services.performance.desc')}</p>
             </div>
           </div>
         </div>

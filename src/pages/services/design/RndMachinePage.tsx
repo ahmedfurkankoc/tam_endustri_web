@@ -4,16 +4,18 @@ import Hero from '../../../components/Hero';
 import PageHeader from '../../../components/PageHeader';
 import ContactSection from '../../../components/ContactSection';
 import Footer from '../../../components/Footer';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const RndMachinePage: React.FC = () => {
+  const { t } = useLanguage();
   return (
     <div className="min-h-screen">
       <Header />
       
       <Hero
-        title="AR-GE Makine Tasarım Geliştirme - İyileştirme"
-        subtitle="Sizin için Araştırıyor ve Geliştiriyoruz!"
-        description="Yoğun iş temposunda fırsat bulamadığınız AR-GE ve iyileştirme çalışmalarını biz üstlenelim."
+        title={t('design.rnd.hero.title')}
+        subtitle={t('design.rnd.hero.subtitle')}
+        description={t('design.rnd.hero.description')}
         backgroundType="image"
         backgroundSrc="https://images.unsplash.com/photo-1542206395-9feb3edaa68e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
         showScrollIndicator={true}
@@ -21,15 +23,12 @@ const RndMachinePage: React.FC = () => {
       />
 
       <PageHeader
-        title="AR-GE Makine Tasarım Geliştirme"
-        description={[
-          "Halihazırda bir Tasarım ekibiniz var ancak yoğunluktan istediğiniz AR-GE çalışmalarını yapamıyor, makinelerinizde iyileştirmelere gidemiyor musunuz?",
-          "Gün içi telaşı, acil yetişmesi gereken işlerin çokluğu ve yetersiz vakit… Gelin, bu AR-GE ve iyileştirme çalışmalarını sizin için biz gerçekleştirelim."
-        ]}
+        title={t('design.rnd.header.title')}
+        description={[t('design.rnd.header.desc1'), t('design.rnd.header.desc2')]}
         cards={[
           {
-            title: "Uzmanlık, Bilgi ve Tecrübe",
-            description: "Mekanik, Elektronik, Pnömatik/Hidrolik ve çeşitli üretim yöntemlerinde geniş deneyim",
+            title: t('design.rnd.cards.expertise.title'),
+            description: t('design.rnd.cards.expertise.desc'),
             image: "/images/machine-design.webp",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -39,8 +38,8 @@ const RndMachinePage: React.FC = () => {
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Tasarımlarınıza Değer Katın",
-            description: "Bilgiyi paylaşarak çoğaltıyor, ekibinizle birlikte kazanım sağlıyoruz",
+            title: t('design.rnd.cards.value.title'),
+            description: t('design.rnd.cards.value.desc'),
             image: "/images/project-design.webp",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,8 +49,8 @@ const RndMachinePage: React.FC = () => {
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Yenilikçi ve Çözüm Odaklı",
-            description: "Sizin yönlendirmelerinizle ergonomik, uygulanabilir geliştirme ve iyileştirme",
+            title: t('design.rnd.cards.innovative.title'),
+            description: t('design.rnd.cards.innovative.desc'),
             image: "https://images.unsplash.com/photo-1603706581674-8d9a75b9f4d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -74,14 +73,10 @@ const RndMachinePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 leading-tight">Uzmanlık, Bilgi ve Tecrübe</h2>
+              <h2 className="text-4xl font-bold text-gray-900 leading-tight">{t('design.rnd.section.expertise.title')}</h2>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed mt-3">
-                <p>
-                  Biriktirdiğimiz tecrübelerimizle tasarımlarınıza bilgi ve zekâ katarak karşılıklı faydanın sağlanacağı çalışmaların içinde bulunmak istiyoruz. Mekanik, Elektronik, Pnömatik ve Hidrolik sistemlerin yanında Talaşlı İşleme Yöntemleri (İşleme Merkezi, Torna), Lazer Kesim-Markalama, Abkant Büküm, Pres, Tel Erezyon, Sıvama, Kaynak ve daha fazla üretim yöntemiyle çalışmış olmanın verdiği özgüven ve getirdiği tecrübe ile en doğru çözüme ulaşmayı hedefliyoruz.
-                </p>
-                <p>
-                  Derin malzeme bilgisi, yüzey kaplamaları ve işlemleri konusundaki tecrübemize; mukavemet hesaplarının yanında hız, devir, güç, kuvvet ve verimlilik hesaplarındaki bilgi birikimimizi de ekleyerek tüm bakış açılarından tasarıma yaklaşıyoruz.
-                </p>
+                <p>{t('design.rnd.section.p1')}</p>
+                <p>{t('design.rnd.section.p2')}</p>
               </div>
             </div>
 
@@ -96,7 +91,7 @@ const RndMachinePage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">AR-GE Süreçleri</p>
+                      <p className="text-sm font-medium">{t('design.rnd.grid.rnd_process')}</p>
                     </div>
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
@@ -107,7 +102,7 @@ const RndMachinePage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">Makine İyileştirme</p>
+                      <p className="text-sm font-medium">{t('design.rnd.grid.machine_improve')}</p>
                     </div>
                   </div>
                 </div>
@@ -120,7 +115,7 @@ const RndMachinePage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">Analiz & Hesap</p>
+                      <p className="text-sm font-medium">{t('design.rnd.grid.analysis_calc')}</p>
                     </div>
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
@@ -131,7 +126,7 @@ const RndMachinePage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">Yüzey & Malzeme</p>
+                      <p className="text-sm font-medium">{t('design.rnd.grid.surface_material')}</p>
                     </div>
                   </div>
                 </div>
@@ -140,10 +135,8 @@ const RndMachinePage: React.FC = () => {
           </div>
 
           <div className="bg-white p-8 rounded-2xl shadow-xl border border-tam-blue/20">
-            <h3 className="text-2xl font-semibold text-tam-blue mb-3">Tasarımlarınıza Değer Katın!</h3>
-            <p className="text-tam-black/80 leading-relaxed">
-              Bilginin paylaştıkça çoğaldığına olan inancımızla yaptıklarımızı gizlemiyor ve müşterilerimizle gönül rahatlığıyla paylaşıyoruz. Siz ve ekibinizin de bu ortak çalışmalardan fayda sağlayacağını rahatça söyleyebiliriz.
-            </p>
+            <h3 className="text-2xl font-semibold text-tam-blue mb-3">{t('design.rnd.panel.value.title')}</h3>
+            <p className="text-tam-black/80 leading-relaxed">{t('design.rnd.panel.value.desc')}</p>
           </div>
         </div>
       </section>

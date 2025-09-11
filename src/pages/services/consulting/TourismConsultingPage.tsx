@@ -14,37 +14,35 @@ const TourismConsultingPage: React.FC = () => {
     <div className="min-h-screen">
       <Header />
       <Hero
-        title="Turizm Danışmanlığı ve Hizmetleri"
-        subtitle="Professional Tourism Consulting"
-        description="Turizm işletmenizi büyütün, müşteri deneyimini artırın ve rekabet avantajı elde edin."
+        title={t('consulting.tourism.hero.title')}
+        subtitle={t('consulting.tourism.hero.subtitle')}
+        description={t('consulting.tourism.hero.description')}
         backgroundType="image"
         backgroundSrc="/images/business-consulting.webp"
         showScrollIndicator={true}
       />
       
       <PageHeader
-        title="Turizm Danışmanlığı ve Hizmetleri"
-        description={[
-          "Turizm sektöründe uzman ekibimizle birlikte, işletmenizi büyütün ve müşteri memnuniyetini artırın."
-        ]}
+        title={t('consulting.tourism.header.title')}
+        description={[t('consulting.tourism.header.desc1')]}
         cards={[
           {
-            title: "İşletme Planlama",
-            description: "Turizm işletmesi kurulum ve planlama",
+            title: t('consulting.tourism.cards.planning.title'),
+            description: t('consulting.tourism.cards.planning.desc'),
             image: "/images/project-design.webp",
             icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Pazarlama Stratejisi",
-            description: "Etkili turizm pazarlama çözümleri",
+            title: t('consulting.tourism.cards.marketing.title'),
+            description: t('consulting.tourism.cards.marketing.desc'),
             image: "/images/improvement-service.webp",
             icon: <Plus className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Operasyon Yönetimi",
-            description: "Verimli turizm operasyonları",
+            title: t('consulting.tourism.cards.ops.title'),
+            description: t('consulting.tourism.cards.ops.desc'),
             image: "/images/training-service.webp",
             icon: <Settings className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
@@ -56,32 +54,22 @@ const TourismConsultingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Turizm Sektöründe Uzman Rehberlik
-              </h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('consulting.tourism.section.expertise.title')}</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Turizm sektöründe karşılaştığınız işletme zorluklarına çözüm sunuyoruz. 
-                Müşteri deneyimini artırarak, operasyonel verimliliği yükseltirken 
-                karlılığınızı artırmanıza yardımcı oluyoruz.
+                {t('consulting.tourism.section.expertise.p1')}
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>İşletme Yönetimi:</strong> Otel ve turizm işletmeleri operasyon yönetimi
-                  </p>
+                  <p className="text-gray-600">{t('consulting.tourism.section.expertise.bullets.ops')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Müşteri Deneyimi:</strong> Misafir memnuniyeti ve hizmet kalitesi artırma
-                  </p>
+                  <p className="text-gray-600">{t('consulting.tourism.section.expertise.bullets.cx')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Pazarlama Stratejisi:</strong> Dijital pazarlama ve müşteri kazanma
-                  </p>
+                  <p className="text-gray-600">{t('consulting.tourism.section.expertise.bullets.mkt')}</p>
                 </div>
               </div>
             </div>
@@ -99,12 +87,8 @@ const TourismConsultingPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Hizmet Alanlarımız
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Turizm işletmenizin her aşamasında yanınızdayız
-            </p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('consulting.tourism.services.title')}</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">{t('consulting.tourism.services.subtitle')}</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -112,72 +96,48 @@ const TourismConsultingPage: React.FC = () => {
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Hotel className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Otel İşletmeciliği
-              </h3>
-              <p className="text-gray-600">
-                Otel kurulumu, operasyon yönetimi ve personel eğitimi danışmanlığı
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.tourism.services.hotel.title')}</h3>
+              <p className="text-gray-600">{t('consulting.tourism.services.hotel.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Plane className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Seyahat Acentesi
-              </h3>
-              <p className="text-gray-600">
-                Seyahat acentesi kurulumu ve işletme süreçleri danışmanlığı
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.tourism.services.agency.title')}</h3>
+              <p className="text-gray-600">{t('consulting.tourism.services.agency.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Target className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Dijital Pazarlama
-              </h3>
-              <p className="text-gray-600">
-                Online rezervasyon sistemleri ve dijital pazarlama stratejileri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.tourism.services.digital.title')}</h3>
+              <p className="text-gray-600">{t('consulting.tourism.services.digital.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Users className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Müşteri Hizmetleri
-              </h3>
-              <p className="text-gray-600">
-                Misafir memnuniyeti ve müşteri hizmetleri süreçleri iyileştirme
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.tourism.services.cs.title')}</h3>
+              <p className="text-gray-600">{t('consulting.tourism.services.cs.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <BarChart className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Performans Analizi
-              </h3>
-              <p className="text-gray-600">
-                İşletme performansı analizi ve karlılık artırma stratejileri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.tourism.services.performance.title')}</h3>
+              <p className="text-gray-600">{t('consulting.tourism.services.performance.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Globe className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Uluslararası Standartlar
-              </h3>
-              <p className="text-gray-600">
-                Turizm kalite standartları ve sertifikasyon süreçleri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.tourism.services.standards.title')}</h3>
+              <p className="text-gray-600">{t('consulting.tourism.services.standards.desc')}</p>
             </div>
           </div>
         </div>

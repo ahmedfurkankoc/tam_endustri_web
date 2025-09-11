@@ -14,37 +14,35 @@ const PhotographyVideographyPage: React.FC = () => {
     <div className="min-h-screen">
       <Header />
       <Hero
-        title="Fotoğraf ve Video Çekim Hizmetleri"
-        subtitle="Professional Photography & Videography"
-        description="Profesyonel fotoğraf ve video çekim hizmetleri ile markanızı güçlendirin ve görsel içeriklerinizi zenginleştirin."
+        title={t('consulting.photo.hero.title')}
+        subtitle={t('consulting.photo.hero.subtitle')}
+        description={t('consulting.photo.hero.description')}
         backgroundType="image"
         backgroundSrc="/images/improvement-service.webp"
         showScrollIndicator={true}
       />
       
       <PageHeader
-        title="Fotoğraf ve Video Çekim Hizmetleri"
-        description={[
-          "Profesyonel fotoğraf ve video çekim hizmetlerinde uzman ekibimizle birlikte, markanızı güçlendiren görsel içerikler üretebilirsiniz."
-        ]}
+        title={t('consulting.photo.header.title')}
+        description={[t('consulting.photo.header.desc1')]}
         cards={[
           {
-            title: "Ürün Fotoğrafçılığı",
-            description: "Profesyonel ürün fotoğraf çekimi ve retuş hizmetleri",
+            title: t('consulting.photo.cards.product.title'),
+            description: t('consulting.photo.cards.product.desc'),
             image: "/images/project-design.webp",
             icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Kurumsal Video",
-            description: "Kurumsal tanıtım videoları ve reklam filmleri",
+            title: t('consulting.photo.cards.corporate.title'),
+            description: t('consulting.photo.cards.corporate.desc'),
             image: "/images/improvement-service.webp",
             icon: <Plus className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Etkinlik Çekimi",
-            description: "Konferans, seminer ve etkinlik fotoğraf/video çekimi",
+            title: t('consulting.photo.cards.event.title'),
+            description: t('consulting.photo.cards.event.desc'),
             image: "/images/training-service.webp",
             icon: <Settings className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
@@ -56,32 +54,22 @@ const PhotographyVideographyPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Fotoğraf ve Video Çekimde Uzman Rehberlik
-              </h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('consulting.photo.section.expertise.title')}</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Profesyonel fotoğraf ve video çekim hizmetlerinde karşılaştığınız 
-                görsel içerik zorluklarına çözüm sunuyoruz. Yaratıcı ve etkili 
-                görsel içeriklerle markanızı güçlendirmenize yardımcı oluyoruz.
+                {t('consulting.photo.section.expertise.p1')}
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Ürün Fotoğrafçılığı:</strong> Profesyonel ürün fotoğraf çekimi ve retuş hizmetleri
-                  </p>
+                  <p className="text-gray-600">{t('consulting.photo.section.expertise.bullets.product')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Kurumsal Video:</strong> Kurumsal tanıtım videoları ve reklam filmleri
-                  </p>
+                  <p className="text-gray-600">{t('consulting.photo.section.expertise.bullets.corporate')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Etkinlik Çekimi:</strong> Konferans, seminer ve etkinlik fotoğraf/video çekimi
-                  </p>
+                  <p className="text-gray-600">{t('consulting.photo.section.expertise.bullets.event')}</p>
                 </div>
               </div>
             </div>
@@ -99,12 +87,8 @@ const PhotographyVideographyPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Hizmet Alanlarımız
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Fotoğraf ve video çekim süreçlerinizin her aşamasında yanınızdayız
-            </p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('consulting.photo.services.title')}</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">{t('consulting.photo.services.subtitle')}</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -112,72 +96,48 @@ const PhotographyVideographyPage: React.FC = () => {
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Camera className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Ürün Fotoğrafçılığı
-              </h3>
-              <p className="text-gray-600">
-                E-ticaret ve katalog için profesyonel ürün fotoğraf çekimi
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.photo.services.product.title')}</h3>
+              <p className="text-gray-600">{t('consulting.photo.services.product.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Video className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Kurumsal Video
-              </h3>
-              <p className="text-gray-600">
-                Kurumsal tanıtım videoları, reklam filmleri ve sosyal medya içerikleri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.photo.services.corporate.title')}</h3>
+              <p className="text-gray-600">{t('consulting.photo.services.corporate.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Users className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Etkinlik Çekimi
-              </h3>
-              <p className="text-gray-600">
-                Konferans, seminer, düğün ve özel etkinlik fotoğraf/video çekimi
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.photo.services.event.title')}</h3>
+              <p className="text-gray-600">{t('consulting.photo.services.event.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 🏢
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Kurumsal Fotoğrafçılık
-              </h3>
-              <p className="text-gray-600">
-                Portre, grup fotoğrafları ve kurumsal etkinlik çekimleri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.photo.services.corporatePhoto.title')}</h3>
+              <p className="text-gray-600">{t('consulting.photo.services.corporatePhoto.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 ✨
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Post-Production
-              </h3>
-              <p className="text-gray-600">
-                Fotoğraf retuş, video montaj ve renk düzeltme hizmetleri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.photo.services.post.title')}</h3>
+              <p className="text-gray-600">{t('consulting.photo.services.post.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Video className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Drone Çekimi
-              </h3>
-              <p className="text-gray-600">
-                Havadan fotoğraf ve video çekimi, drone ile etkinlik kayıtları
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.photo.services.drone.title')}</h3>
+              <p className="text-gray-600">{t('consulting.photo.services.drone.desc')}</p>
             </div>
           </div>
         </div>

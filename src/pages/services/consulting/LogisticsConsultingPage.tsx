@@ -14,37 +14,35 @@ const LogisticsConsultingPage: React.FC = () => {
     <div className="min-h-screen">
       <Header />
       <Hero
-        title="Lojistik Danışmanlığı"
-        subtitle="Professional Logistics Consulting"
-        description="Lojistik süreçlerinizi optimize edin, maliyetleri düşürün ve müşteri memnuniyetini artırın."
+        title={t('consulting.logistics.hero.title')}
+        subtitle={t('consulting.logistics.hero.subtitle')}
+        description={t('consulting.logistics.hero.description')}
         backgroundType="image"
         backgroundSrc="/images/improvement-service.webp"
         showScrollIndicator={true}
       />
       
       <PageHeader
-        title="Lojistik Danışmanlığı"
-        description={[
-          "Lojistik ve tedarik zinciri yönetiminde uzman ekibimizle birlikte, verimli ve maliyet etkin çözümler geliştirebilirsiniz."
-        ]}
+        title={t('consulting.logistics.header.title')}
+        description={[t('consulting.logistics.header.desc1')]}
         cards={[
           {
-            title: "Tedarik Zinciri",
-            description: "Tedarik zinciri optimizasyonu ve yönetim sistemleri",
+            title: t('consulting.logistics.cards.supply.title'),
+            description: t('consulting.logistics.cards.supply.desc'),
             image: "/images/project-design.webp",
             icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Depo Yönetimi",
-            description: "Depo operasyonları ve envanter yönetimi",
+            title: t('consulting.logistics.cards.warehouse.title'),
+            description: t('consulting.logistics.cards.warehouse.desc'),
             image: "/images/improvement-service.webp",
             icon: <Plus className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Nakliye",
-            description: "Nakliye optimizasyonu ve rota planlama",
+            title: t('consulting.logistics.cards.transport.title'),
+            description: t('consulting.logistics.cards.transport.desc'),
             image: "/images/training-service.webp",
             icon: <Settings className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
@@ -56,32 +54,22 @@ const LogisticsConsultingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Lojistik Sektöründe Uzman Rehberlik
-              </h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('consulting.logistics.section.expertise.title')}</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Lojistik ve tedarik zinciri yönetiminde karşılaştığınız operasyonel 
-                zorluklara çözüm sunuyoruz. Verimliliği artırarak, maliyetleri düşürürken 
-                müşteri memnuniyetini yükseltmenize yardımcı oluyoruz.
+                {t('consulting.logistics.section.expertise.p1')}
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Tedarik Zinciri Optimizasyonu:</strong> End-to-end tedarik zinciri yönetimi
-                  </p>
+                  <p className="text-gray-600">{t('consulting.logistics.section.expertise.bullets.supply')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Depo Yönetimi:</strong> Modern depo operasyonları ve envanter kontrolü
-                  </p>
+                  <p className="text-gray-600">{t('consulting.logistics.section.expertise.bullets.wms')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Nakliye Optimizasyonu:</strong> Rota planlama ve taşıma maliyeti optimizasyonu
-                  </p>
+                  <p className="text-gray-600">{t('consulting.logistics.section.expertise.bullets.transport')}</p>
                 </div>
               </div>
             </div>
@@ -99,12 +87,8 @@ const LogisticsConsultingPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Hizmet Alanlarımız
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Lojistik süreçlerinizin her aşamasında yanınızdayız
-            </p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('consulting.logistics.services.title')}</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">{t('consulting.logistics.services.subtitle')}</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -112,72 +96,48 @@ const LogisticsConsultingPage: React.FC = () => {
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Truck className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Tedarik Zinciri
-              </h3>
-              <p className="text-gray-600">
-                End-to-end tedarik zinciri tasarımı ve optimizasyonu
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.logistics.services.supply.title')}</h3>
+              <p className="text-gray-600">{t('consulting.logistics.services.supply.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Package className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Depo Yönetimi
-              </h3>
-              <p className="text-gray-600">
-                Depo operasyonları, envanter yönetimi ve WMS sistemleri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.logistics.services.warehouse.title')}</h3>
+              <p className="text-gray-600">{t('consulting.logistics.services.warehouse.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Truck className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Nakliye
-              </h3>
-              <p className="text-gray-600">
-                Rota optimizasyonu, taşıma maliyeti düşürme ve 3PL yönetimi
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.logistics.services.transport.title')}</h3>
+              <p className="text-gray-600">{t('consulting.logistics.services.transport.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <BarChart className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Performans Analizi
-              </h3>
-              <p className="text-gray-600">
-                Lojistik performans ölçümü ve KPI yönetimi
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.logistics.services.performance.title')}</h3>
+              <p className="text-gray-600">{t('consulting.logistics.services.performance.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 🌍
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Uluslararası Lojistik
-              </h3>
-              <p className="text-gray-600">
-                Gümrük işlemleri, uluslararası taşıma ve compliance
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.logistics.services.international.title')}</h3>
+              <p className="text-gray-600">{t('consulting.logistics.services.international.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 💻
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Teknoloji Entegrasyonu
-              </h3>
-              <p className="text-gray-600">
-                Lojistik yazılımları ve otomasyon sistemleri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.logistics.services.tech.title')}</h3>
+              <p className="text-gray-600">{t('consulting.logistics.services.tech.desc')}</p>
             </div>
           </div>
         </div>

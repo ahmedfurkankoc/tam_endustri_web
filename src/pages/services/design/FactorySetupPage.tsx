@@ -4,16 +4,18 @@ import Hero from '../../../components/Hero';
 import PageHeader from '../../../components/PageHeader';
 import ContactSection from '../../../components/ContactSection';
 import Footer from '../../../components/Footer';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const FactorySetupPage: React.FC = () => {
+  const { t } = useLanguage();
   return (
     <div className="min-h-screen">
       <Header />
 
       <Hero
-        title="Fabrika Kurulum ve Yerleşim Planı"
-        subtitle="Fabrika Kurulum ve Koordinasyonda Çözüm Ortağınız"
-        description="Yeni fabrikanız için makine, sistem yerleşimi ve elektronik haberleşme koordinasyonunda öngörülebilir ve verimli çözümler sunuyoruz."
+        title={t('design.factory.hero.title')}
+        subtitle={t('design.factory.hero.subtitle')}
+        description={t('design.factory.hero.description')}
         backgroundType="image"
         backgroundSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
         showScrollIndicator={true}
@@ -21,15 +23,12 @@ const FactorySetupPage: React.FC = () => {
       />
 
       <PageHeader
-        title="Fabrika Kurulum ve Yerleşim Planı"
-        description={[
-          "Yeni bir girişim – üretim – fabrika planınız var fakat makineleri ve sistemleri nasıl konumlandıracağınız, elektronik olarak nasıl haberleştireceğiniz ve tüm koordinasyonu nasıl yöneteceğiniz konusunda tereddütleriniz mi var?",
-          "Sizin için yeni fabrikanızın yerleşim planını (Layout) 2 ya da 3 boyutlu çizebilir, kurulacak makine ve sistemleri istekleriniz doğrultusunda yerleştirebilir, otomasyon ve haberleşme kurgusunu organize edebiliriz."
-        ]}
+        title={t('design.factory.header.title')}
+        description={[t('design.factory.header.desc1'), t('design.factory.header.desc2')]}
         cards={[
           {
-            title: "Yerleşim (Layout) Planı",
-            description: "2D/3D layout ve ekipman konumlandırma, akış ve güvenlik alanları",
+            title: t('design.factory.cards.layout.title'),
+            description: t('design.factory.cards.layout.desc'),
             image: "/images/project-design.webp",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -39,8 +38,8 @@ const FactorySetupPage: React.FC = () => {
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Haberleşme & Otomasyon",
-            description: "Cihazlar arası ağ topolojisi, IoT/SCADA entegrasyonu, etiketleme",
+            title: t('design.factory.cards.comm.title'),
+            description: t('design.factory.cards.comm.desc'),
             image: "/images/machine-design.webp",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,8 +49,8 @@ const FactorySetupPage: React.FC = () => {
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Koordinasyon & Uygulama",
-            description: "Satınalma bilgileri, yerinde kurulum rehberliği, validasyon",
+            title: t('design.factory.cards.coord.title'),
+            description: t('design.factory.cards.coord.desc'),
             image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -74,14 +73,10 @@ const FactorySetupPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 leading-tight">Öngörülebilir Yerleşim ve Doğru Planlama</h2>
+              <h2 className="text-4xl font-bold text-gray-900 leading-tight">{t('design.factory.section.title')}</h2>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed mt-3">
-                <p>
-                  Sizin için yeni fabrikanızın Yerleşim Planını (Layout) 2 ya da 3 boyutlu çizebilir, kurulacak makine ve sistemlerin bilgilerini satın alınacak firmalardan alarak istekleriniz doğrultusunda yerleştirebilir, TAM otomasyon çözümleri için fabrika içindeki cihazların haberleşmesini organize edebiliriz.
-                </p>
-                <p>
-                  Bu sayede sürprizleri en aza indirip, sonuçları yüksek öngörü ile hesaplanmış, hedefe uygun, verimli ve sürdürülebilir bir fabrika kurulumunda size rehberlik yapabiliriz.
-                </p>
+                <p>{t('design.factory.section.p1')}</p>
+                <p>{t('design.factory.section.p2')}</p>
               </div>
             </div>
 
@@ -96,7 +91,7 @@ const FactorySetupPage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">Layout Planı</p>
+                      <p className="text-sm font-medium">{t('design.factory.grid.layout')}</p>
                     </div>
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
@@ -107,7 +102,7 @@ const FactorySetupPage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">Makine Konumlandırma</p>
+                      <p className="text-sm font-medium">{t('design.factory.grid.machine_place')}</p>
                     </div>
                   </div>
                 </div>
@@ -120,7 +115,7 @@ const FactorySetupPage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">Haberleşme Ağı</p>
+                      <p className="text-sm font-medium">{t('design.factory.grid.network')}</p>
                     </div>
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
@@ -131,7 +126,7 @@ const FactorySetupPage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">Otomasyon Kurgusu</p>
+                      <p className="text-sm font-medium">{t('design.factory.grid.automation')}</p>
                     </div>
                   </div>
                 </div>
@@ -140,10 +135,8 @@ const FactorySetupPage: React.FC = () => {
           </div>
 
           <div className="bg-white p-8 rounded-2xl shadow-xl border border-tam-blue/20">
-            <h3 className="text-2xl font-semibold text-tam-blue mb-3">Sürdürülebilir Üretim için Tam Endüstri Yanınızda!</h3>
-            <p className="text-tam-black/80 leading-relaxed">
-              Sizinle çalışmaya enerjik ve dinamik bir şekilde hazırız. Tereddüt etmeden bizimle iletişime geçebilirsiniz. Sizinle tanışmak için heyecanlıyız!
-            </p>
+            <h3 className="text-2xl font-semibold text-tam-blue mb-3">{t('design.factory.panel.support.title')}</h3>
+            <p className="text-tam-black/80 leading-relaxed">{t('design.factory.panel.support.desc')}</p>
           </div>
         </div>
       </section>

@@ -14,38 +14,35 @@ const IslamicBankingConsultingPage: React.FC = () => {
     <div className="min-h-screen">
       <Header />
       <Hero
-        title="Faizsiz Bankacılık Danışmanlığı"
-        subtitle="Islamic Banking Consulting for Turkish Banks"
-        description="Katılım bankacılığı prensiplerine uygun süreç tasarımları, ürün geliştirme ve uyumluluk danışmanlığı."
+        title={t('consulting.islamic.hero.title')}
+        subtitle={t('consulting.islamic.hero.subtitle')}
+        description={t('consulting.islamic.hero.description')}
         backgroundType="image"
         backgroundSrc="/images/business-consulting.webp"
         showScrollIndicator={true}
       />
       
       <PageHeader
-        title="Faizsiz Bankacılık Danışmanlığı"
-        description={[
-          "Türk bankaları için faizsiz bankacılık (katılım bankacılığı) prensiplerine uygun süreç ve ürün danışmanlığı sunuyoruz.",
-          "Şeriat uyumluluğu, iç kontrol mekanizmaları ve risk yönetimi kapsamında uçtan uca dönüşüm desteği veriyoruz."
-        ]}
+        title={t('consulting.islamic.header.title')}
+        description={[t('consulting.islamic.header.desc1'), t('consulting.islamic.header.desc2')]}
         cards={[
           {
-            title: "Uyumluluk ve Yönetmelikler",
-            description: "Şeriat uyum kurulu süreçleri ve iç kontrol mekanizmaları",
+            title: t('consulting.islamic.cards.compliance.title'),
+            description: t('consulting.islamic.cards.compliance.desc'),
             image: "/images/project-design.webp",
             icon: <Shield className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Ürün Geliştirme",
-            description: "Murabaha, Mudaraba, İjara vb. ürün tasarımı",
+            title: t('consulting.islamic.cards.product.title'),
+            description: t('consulting.islamic.cards.product.desc'),
             image: "/images/improvement-service.webp",
             icon: <Plus className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Risk ve Raporlama",
-            description: "Risk yönetimi, performans analizi ve raporlama",
+            title: t('consulting.islamic.cards.risk.title'),
+            description: t('consulting.islamic.cards.risk.desc'),
             image: "/images/training-service.webp",
             icon: <BarChart className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
@@ -57,31 +54,22 @@ const IslamicBankingConsultingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Katılım Bankacılığında Uzman Rehberlik
-              </h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('consulting.islamic.section.expertise.title')}</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Faizsiz bankacılık prensiplerine uygun süreçleri tasarlıyor; ürün geliştirme, uyumluluk ve raporlama alanlarında
-                kurum içi ekiplerinizi güçlendiriyoruz.
+                {t('consulting.islamic.section.expertise.p1')}
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Şeriat Uyum Süreçleri:</strong> Kurul işleyişi, belge akışları ve denetim
-                  </p>
+                  <p className="text-gray-600">{t('consulting.islamic.section.expertise.bullets.sharia')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Ürün Yaşam Döngüsü:</strong> Gereksinim, tasarım, test ve canlıya geçiş
-                  </p>
+                  <p className="text-gray-600">{t('consulting.islamic.section.expertise.bullets.lifecycle')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Risk ve Raporlama:</strong> Operasyonel risk, müşteri şikayetleri ve KPI takibi
-                  </p>
+                  <p className="text-gray-600">{t('consulting.islamic.section.expertise.bullets.risk')}</p>
                 </div>
               </div>
             </div>

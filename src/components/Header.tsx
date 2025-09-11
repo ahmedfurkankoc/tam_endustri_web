@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, ChevronRight, Settings, TrendingUp, GraduationCap } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { mapLocalePath, localHref as localHrefUtil } from '../utils/localeRoutes';
 
 // SVG Bayrak Bileşenleri
 const TurkishFlag: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
@@ -58,18 +59,7 @@ const Header: React.FC = () => {
     const newLanguage = language === 'tr' ? 'en' : 'tr';
     setLanguage(newLanguage);
     
-    const urlMap: Record<string, string> = {
-      '/': '/en',
-      '/hakkimizda': '/en/about',
-      '/hizmetlerimiz': '/en/services',
-      '/iletisim': '/en/contact',
-      '/en': '/',
-      '/en/about': '/hakkimizda',
-      '/en/services': '/hizmetlerimiz',
-      '/en/contact': '/iletisim'
-    };
-    
-    const newPath = urlMap[location.pathname] || (newLanguage === 'en' ? '/en' : '/');
+    const newPath = mapLocalePath(location.pathname, newLanguage as 'tr' | 'en');
     navigate(newPath);
   };
 
@@ -85,73 +75,74 @@ const Header: React.FC = () => {
   };
 
   // Menü verileri
+  const localHref = (trHref: string, enHref: string) => localHrefUtil(trHref, enHref, language as 'tr' | 'en');
   const menuItems = [
     {
       id: 'design',
       title: t('megamenu.design_manufacturing'),
       icon: <Settings className="w-5 h-5" />,
-      description: '3D tasarım ve imalat çözümleri',
+      description: t('megamenu.desc.design'),
       items: [
-        { title: t('megamenu.3d_design'), href: '/hizmetler/tasarim/3d-tasarim', description: 'Profesyonel 3D tasarım hizmetleri' },
-        { title: t('megamenu.3d_automation'), href: '/hizmetler/tasarim/3d-otomasyon', description: 'SolidWorks API ile otomasyon' },
-        { title: t('megamenu.rnd_machine'), href: '/hizmetler/tasarim/arge-makine', description: 'AR-GE makine tasarım geliştirme' },
-        { title: t('megamenu.custom_machine'), href: '/hizmetler/tasarim/ise-ozel-makine', description: 'İşe özel makine tasarım projeleri' },
-        { title: t('megamenu.factory_setup'), href: '/hizmetler/tasarim/fabrika-kurulum', description: 'Fabrika kurulum yerleşim planı' },
-        { title: t('megamenu.reverse_engineering'), href: '/hizmetler/tasarim/tersine-muhendislik', description: 'Tersine mühendislik tasarımları' },
+        { title: t('megamenu.3d_design'), href: localHref('/tasarim/3d-tasarim', '/en/design/3d-design'), description: t('megamenu.itemdesc.3d_design') },
+        { title: t('megamenu.3d_automation'), href: localHref('/tasarim/3d-otomasyon', '/en/design/3d-automation'), description: t('megamenu.itemdesc.3d_automation') },
+        { title: t('megamenu.rnd_machine'), href: localHref('/tasarim/arge-makine', '/en/design/rnd-machine'), description: t('megamenu.itemdesc.rnd_machine') },
+        { title: t('megamenu.custom_machine'), href: localHref('/tasarim/ise-ozel-makine', '/en/design/custom-machine'), description: t('megamenu.itemdesc.custom_machine') },
+        { title: t('megamenu.factory_setup'), href: localHref('/tasarim/fabrika-kurulum', '/en/design/factory-setup'), description: t('megamenu.itemdesc.factory_setup') },
+        { title: t('megamenu.reverse_engineering'), href: localHref('/tasarim/tersine-muhendislik', '/en/design/reverse-engineering'), description: t('megamenu.itemdesc.reverse_engineering') },
       ]
     },
     {
       id: 'business',
       title: t('megamenu.business_improvement'),
       icon: <TrendingUp className="w-5 h-5" />,
-      description: 'İş süreçlerini optimize edin',
+      description: t('megamenu.desc.business'),
       items: [
-        { title: t('megamenu.lean_production'), href: '/hizmetler/is-gelistirme/yalin-uretim', description: 'Yalın üretim yöntemleri uygulamaları' },
-        { title: t('megamenu.3d_automation'), href: '/hizmetler/tasarim/3d-otomasyon', description: '3D tasarım otomasyonları' },
-        { title: t('megamenu.rnd_machine'), href: '/hizmetler/tasarim/arge-makine', description: 'AR-GE makine tasarım geliştirme' },
-        { title: t('megamenu.technical_sales'), href: '/hizmetler/is-gelistirme/teknik-satis', description: 'Teknik satış program uygulamaları' },
-        { title: t('megamenu.calculation_reporting'), href: '/hizmetler/is-gelistirme/hesaplama-raporlama', description: 'Hesaplama ve raporlama uygulamaları' },
+        { title: t('megamenu.lean_production'), href: localHref('/is-gelistirme/yalin-uretim', '/en/business/lean-production'), description: t('megamenu.itemdesc.lean_production') },
+        { title: t('megamenu.3d_automation'), href: localHref('/tasarim/3d-otomasyon', '/en/design/3d-automation'), description: t('megamenu.itemdesc.3d_automation') },
+        { title: t('megamenu.rnd_machine'), href: localHref('/tasarim/arge-makine', '/en/design/rnd-machine'), description: t('megamenu.itemdesc.rnd_machine') },
+        { title: t('megamenu.technical_sales'), href: localHref('/is-gelistirme/teknik-satis', '/en/business/technical-sales'), description: t('megamenu.itemdesc.technical_sales') },
+        { title: t('megamenu.calculation_reporting'), href: localHref('/is-gelistirme/hesaplama-raporlama', '/en/business/calculation-reporting'), description: t('megamenu.itemdesc.calculation_reporting') },
       ]
     },
     {
       id: 'consulting',
       title: t('megamenu.consulting_training'),
       icon: <GraduationCap className="w-5 h-5" />,
-      description: 'Danışmanlık ve eğitim hizmetleri',
+      description: t('megamenu.desc.consulting'),
       categories: [
         {
           title: t('megamenu.production_consulting'),
           items: [
-            { title: t('megamenu.machinery_manufacturing'), href: '/hizmetler/danismanlik/makine-imalat', description: 'Makine imalat danışmanlığı' },
-            { title: t('megamenu.electrical_manufacturing'), href: '/hizmetler/danismanlik/elektrik-imalat', description: 'Elektrik imalat danışmanlığı' },
-            { title: t('megamenu.textile_manufacturing'), href: '/hizmetler/danismanlik/tekstil-imalat', description: 'Tekstil imalat danışmanlığı' },
-            { title: t('megamenu.cnc_machining'), href: '/hizmetler/danismanlik/cnc-isleme', description: 'CNC işleme parça üretimi' },
-            { title: t('megamenu.laser_cutting_bending'), href: '/hizmetler/danismanlik/lazer-kesim-bukme', description: 'Lazer kesim ve büküm operasyonları' },
+            { title: t('megamenu.machinery_manufacturing'), href: localHref('/danismanlik/makine-imalat', '/en/consulting/machinery-manufacturing'), description: t('megamenu.itemdesc.machinery_manufacturing') },
+            { title: t('megamenu.electrical_manufacturing'), href: localHref('/danismanlik/elektrik-imalat', '/en/consulting/electrical-manufacturing'), description: t('megamenu.itemdesc.electrical_manufacturing') },
+            { title: t('megamenu.textile_manufacturing'), href: localHref('/danismanlik/tekstil-imalat', '/en/consulting/textile-manufacturing'), description: t('megamenu.itemdesc.textile_manufacturing') },
+            { title: t('megamenu.cnc_machining'), href: localHref('/danismanlik/cnc-isleme', '/en/consulting/cnc-machining'), description: t('megamenu.itemdesc.cnc_machining') },
+            { title: t('megamenu.laser_cutting_bending'), href: localHref('/danismanlik/lazer-kesim-bukme', '/en/consulting/laser-cutting-bending'), description: t('megamenu.itemdesc.laser_cutting_bending') },
           ]
         },
         {
           title: t('megamenu.technology_consulting'),
           items: [
-            { title: t('megamenu.website_localization'), href: '/hizmetler/danismanlik/website-lokalizasyon', description: 'Website ve Türkçe lokalizasyon' },
-            { title: t('megamenu.software_design_coding'), href: '/hizmetler/danismanlik/yazilim-tasarim', description: 'Yazılım tasarım ve geliştirme' },
+            { title: t('megamenu.website_localization'), href: localHref('/danismanlik/website-lokalizasyon', '/en/consulting/website-localization'), description: t('megamenu.itemdesc.website_localization') },
+            { title: t('megamenu.software_design_coding'), href: localHref('/danismanlik/yazilim-tasarim', '/en/consulting/software-design-coding'), description: t('megamenu.itemdesc.software_design_coding') },
           ]
         },
         {
           title: t('megamenu.sectoral_consulting'),
           items: [
-            { title: t('megamenu.tourism_consulting'), href: '/hizmetler/danismanlik/turizm-danismanlik', description: 'Turizm danışmanlığı ve hizmetleri' },
-            { title: t('megamenu.banking_consulting'), href: '/hizmetler/danismanlik/bankacilik-danismanlik', description: 'Bankacılık danışmanlığı' },
-            { title: t('megamenu.islamic_banking_consulting'), href: '/hizmetler/danismanlik/faizsiz-bankacilik', description: 'Türk bankaları için faizsiz bankacılık danışmanlığı' },
-            { title: t('megamenu.logistics_consulting'), href: '/hizmetler/danismanlik/lojistik-danismanlik', description: 'Lojistik danışmanlığı' },
-            { title: t('megamenu.procurement_services'), href: '/hizmetler/danismanlik/tedarik-hizmetleri', description: 'Tedarik hizmetleri' },
+            { title: t('megamenu.tourism_consulting'), href: localHref('/danismanlik/turizm-danismanlik', '/en/consulting/tourism-consulting'), description: t('megamenu.itemdesc.tourism_consulting') },
+            { title: t('megamenu.banking_consulting'), href: localHref('/danismanlik/bankacilik-danismanlik', '/en/consulting/banking-consulting'), description: t('megamenu.itemdesc.banking_consulting') },
+            { title: t('megamenu.islamic_banking_consulting'), href: localHref('/danismanlik/faizsiz-bankacilik', '/en/consulting/islamic-banking'), description: t('megamenu.itemdesc.islamic_banking_consulting') },
+            { title: t('megamenu.logistics_consulting'), href: localHref('/danismanlik/lojistik-danismanlik', '/en/consulting/logistics-consulting'), description: t('megamenu.itemdesc.logistics_consulting') },
+            { title: t('megamenu.procurement_services'), href: localHref('/danismanlik/tedarik-hizmetleri', '/en/consulting/procurement-services'), description: t('megamenu.itemdesc.procurement_services') },
           ]
         },
         {
           title: t('megamenu.support_services'),
           items: [
-            { title: t('megamenu.sales_consulting'), href: '/hizmetler/danismanlik/satis-danismanlik', description: 'Satış danışmanlığı hizmetleri' },
-            { title: t('megamenu.feasibility_studies'), href: '/hizmetler/danismanlik/fizibilite-calismalari', description: 'Fizibilite çalışmaları ve raporlama' },
-            { title: t('megamenu.photography_videography'), href: '/hizmetler/danismanlik/fotograf-video', description: 'Fotoğraf ve video çekim hizmetleri' },
+            { title: t('megamenu.sales_consulting'), href: localHref('/danismanlik/satis-danismanlik', '/en/consulting/sales-consulting'), description: t('megamenu.itemdesc.sales_consulting') },
+            { title: t('megamenu.feasibility_studies'), href: localHref('/danismanlik/fizibilite-calismalari', '/en/consulting/feasibility-studies'), description: t('megamenu.itemdesc.feasibility_studies') },
+            { title: t('megamenu.photography_videography'), href: localHref('/danismanlik/fotograf-video', '/en/consulting/photography-videography'), description: t('megamenu.itemdesc.photography_videography') },
           ]
         }
       ]
@@ -164,7 +155,7 @@ const Header: React.FC = () => {
         ? 'bg-white shadow-lg' 
         : 'bg-transparent'
     }`}>
-      <nav className="flex items-center justify-between max-w-7xl mx-auto">
+      <nav className={`flex items-center justify-between ${language === 'en' ? 'max-w-[1400px]' : 'max-w-7xl'} mx-auto`}>
         {/* Logo */}
         <a href={language === 'en' ? '/en' : '/'} className="flex-shrink-0">
           <div className={`${isScrolled ? 'h-12 w-36' : 'h-20 w-60'} flex items-center justify-center`}>

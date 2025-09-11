@@ -68,61 +68,61 @@ const App: React.FC = () => {
         <Route path="/iletisim" element={<ContactPage />} />
         <Route path="/en/contact" element={<ContactPage />} />
         
-        {/* Service Pages - Turkish */}
-        <Route path="/hizmetler/tasarim/3d-tasarim" element={<ThreeDDesignPage />} />
-        <Route path="/hizmetler/tasarim/3d-otomasyon" element={<ThreeDAutomationPage />} />
-        <Route path="/hizmetler/tasarim/arge-makine" element={<RndMachinePage />} />
-        <Route path="/hizmetler/tasarim/ise-ozel-makine" element={<CustomMachinePage />} />
-        <Route path="/hizmetler/tasarim/fabrika-kurulum" element={<FactorySetupPage />} />
-        <Route path="/hizmetler/tasarim/tersine-muhendislik" element={<ReverseEngineeringPage />} />
-        <Route path="/hizmetler/is-gelistirme/yalin-uretim" element={<LeanProductionPage />} />
-        <Route path="/hizmetler/is-gelistirme/teknik-satis" element={<TechnicalSalesPage />} />
-        <Route path="/hizmetler/is-gelistirme/hesaplama-raporlama" element={<CalculationReportingPage />} />
-        <Route path="/hizmetler/danismanlik/makine-imalat" element={<MachineryManufacturingPage />} />
-        <Route path="/hizmetler/danismanlik/elektrik-imalat" element={<ElectricalManufacturingPage />} />
-        <Route path="/hizmetler/danismanlik/tekstil-imalat" element={<TextileManufacturingPage />} />
-        <Route path="/hizmetler/danismanlik/cnc-isleme" element={<CncMachiningPage />} />
-        <Route path="/hizmetler/danismanlik/lazer-kesim-bukme" element={<LaserCuttingBendingPage />} />
-        <Route path="/hizmetler/danismanlik/website-lokalizasyon" element={<WebsiteLocalizationPage />} />
-        <Route path="/hizmetler/danismanlik/yazilim-tasarim" element={<SoftwareDesignCodingPage />} />
-        <Route path="/hizmetler/danismanlik/turizm-danismanlik" element={<TourismConsultingPage />} />
-        <Route path="/hizmetler/danismanlik/bankacilik-danismanlik" element={<BankingConsultingPage />} />
-        <Route path="/hizmetler/danismanlik/faizsiz-bankacilik" element={<IslamicBankingConsultingPage />} />
-        <Route path="/hizmetler/danismanlik/lojistik-danismanlik" element={<LogisticsConsultingPage />} />
-        <Route path="/hizmetler/danismanlik/tedarik-hizmetleri" element={<ProcurementServicesPage />} />
-        <Route path="/hizmetler/danismanlik/satis-danismanlik" element={<SalesConsultingPage />} />
+        {/* Service Pages - Turkish (no 'hizmetler' segment) */}
+        <Route path="/tasarim/3d-tasarim" element={<ThreeDDesignPage />} />
+        <Route path="/tasarim/3d-otomasyon" element={<ThreeDAutomationPage />} />
+        <Route path="/tasarim/arge-makine" element={<RndMachinePage />} />
+        <Route path="/tasarim/ise-ozel-makine" element={<CustomMachinePage />} />
+        <Route path="/tasarim/fabrika-kurulum" element={<FactorySetupPage />} />
+        <Route path="/tasarim/tersine-muhendislik" element={<ReverseEngineeringPage />} />
+        <Route path="/is-gelistirme/yalin-uretim" element={<LeanProductionPage />} />
+        <Route path="/is-gelistirme/teknik-satis" element={<TechnicalSalesPage />} />
+        <Route path="/is-gelistirme/hesaplama-raporlama" element={<CalculationReportingPage />} />
+        <Route path="/danismanlik/makine-imalat" element={<MachineryManufacturingPage />} />
+        <Route path="/danismanlik/elektrik-imalat" element={<ElectricalManufacturingPage />} />
+        <Route path="/danismanlik/tekstil-imalat" element={<TextileManufacturingPage />} />
+        <Route path="/danismanlik/cnc-isleme" element={<CncMachiningPage />} />
+        <Route path="/danismanlik/lazer-kesim-bukme" element={<LaserCuttingBendingPage />} />
+        <Route path="/danismanlik/website-lokalizasyon" element={<WebsiteLocalizationPage />} />
+        <Route path="/danismanlik/yazilim-tasarim" element={<SoftwareDesignCodingPage />} />
+        <Route path="/danismanlik/turizm-danismanlik" element={<TourismConsultingPage />} />
+        <Route path="/danismanlik/bankacilik-danismanlik" element={<BankingConsultingPage />} />
+        <Route path="/danismanlik/faizsiz-bankacilik" element={<IslamicBankingConsultingPage />} />
+        <Route path="/danismanlik/lojistik-danismanlik" element={<LogisticsConsultingPage />} />
+        <Route path="/danismanlik/tedarik-hizmetleri" element={<ProcurementServicesPage />} />
+        <Route path="/danismanlik/satis-danismanlik" element={<SalesConsultingPage />} />
         
-        <Route path="/hizmetler/danismanlik/fizibilite-calismalari" element={<FeasibilityStudiesPage />} />
+        <Route path="/danismanlik/fizibilite-calismalari" element={<FeasibilityStudiesPage />} />
         
-        <Route path="/hizmetler/danismanlik/fotograf-video" element={<PhotographyVideographyPage />} />
+        <Route path="/danismanlik/fotograf-video" element={<PhotographyVideographyPage />} />
         
-        {/* Service Pages - English */}
-        <Route path="/en/services/design/3d-design" element={<ThreeDDesignPage />} />
-        <Route path="/en/services/design/3d-automation" element={<ThreeDAutomationPage />} />
-        <Route path="/en/services/design/rnd-machine" element={<RndMachinePage />} />
-        <Route path="/en/services/design/custom-machine" element={<CustomMachinePage />} />
-        <Route path="/en/services/design/factory-setup" element={<FactorySetupPage />} />
-        <Route path="/en/services/design/reverse-engineering" element={<ReverseEngineeringPage />} />
-        <Route path="/en/services/business/lean-production" element={<LeanProductionPage />} />
-        <Route path="/en/services/business/technical-sales" element={<TechnicalSalesPage />} />
-        <Route path="/en/services/business/calculation-reporting" element={<CalculationReportingPage />} />
-        <Route path="/en/services/consulting/machinery-manufacturing" element={<MachineryManufacturingPage />} />
-        <Route path="/en/services/consulting/electrical-manufacturing" element={<ElectricalManufacturingPage />} />
-        <Route path="/en/services/consulting/textile-manufacturing" element={<TextileManufacturingPage />} />
-        <Route path="/en/services/consulting/cnc-machining" element={<CncMachiningPage />} />
-        <Route path="/en/services/consulting/laser-cutting-bending" element={<LaserCuttingBendingPage />} />
-        <Route path="/en/services/consulting/website-localization" element={<WebsiteLocalizationPage />} />
-        <Route path="/en/services/consulting/software-design-coding" element={<SoftwareDesignCodingPage />} />
-        <Route path="/en/services/consulting/tourism-consulting" element={<TourismConsultingPage />} />
-        <Route path="/en/services/consulting/banking-consulting" element={<BankingConsultingPage />} />
-        <Route path="/en/services/consulting/islamic-banking" element={<IslamicBankingConsultingPage />} />
-        <Route path="/en/services/consulting/logistics-consulting" element={<LogisticsConsultingPage />} />
-        <Route path="/en/services/consulting/procurement-services" element={<ProcurementServicesPage />} />
-        <Route path="/en/services/consulting/sales-consulting" element={<SalesConsultingPage />} />
+        {/* Service Pages - English (no '/services' segment) */}
+        <Route path="/en/design/3d-design" element={<ThreeDDesignPage />} />
+        <Route path="/en/design/3d-automation" element={<ThreeDAutomationPage />} />
+        <Route path="/en/design/rnd-machine" element={<RndMachinePage />} />
+        <Route path="/en/design/custom-machine" element={<CustomMachinePage />} />
+        <Route path="/en/design/factory-setup" element={<FactorySetupPage />} />
+        <Route path="/en/design/reverse-engineering" element={<ReverseEngineeringPage />} />
+        <Route path="/en/business/lean-production" element={<LeanProductionPage />} />
+        <Route path="/en/business/technical-sales" element={<TechnicalSalesPage />} />
+        <Route path="/en/business/calculation-reporting" element={<CalculationReportingPage />} />
+        <Route path="/en/consulting/machinery-manufacturing" element={<MachineryManufacturingPage />} />
+        <Route path="/en/consulting/electrical-manufacturing" element={<ElectricalManufacturingPage />} />
+        <Route path="/en/consulting/textile-manufacturing" element={<TextileManufacturingPage />} />
+        <Route path="/en/consulting/cnc-machining" element={<CncMachiningPage />} />
+        <Route path="/en/consulting/laser-cutting-bending" element={<LaserCuttingBendingPage />} />
+        <Route path="/en/consulting/website-localization" element={<WebsiteLocalizationPage />} />
+        <Route path="/en/consulting/software-design-coding" element={<SoftwareDesignCodingPage />} />
+        <Route path="/en/consulting/tourism-consulting" element={<TourismConsultingPage />} />
+        <Route path="/en/consulting/banking-consulting" element={<BankingConsultingPage />} />
+        <Route path="/en/consulting/islamic-banking" element={<IslamicBankingConsultingPage />} />
+        <Route path="/en/consulting/logistics-consulting" element={<LogisticsConsultingPage />} />
+        <Route path="/en/consulting/procurement-services" element={<ProcurementServicesPage />} />
+        <Route path="/en/consulting/sales-consulting" element={<SalesConsultingPage />} />
         
-        <Route path="/en/services/consulting/feasibility-studies" element={<FeasibilityStudiesPage />} />
+        <Route path="/en/consulting/feasibility-studies" element={<FeasibilityStudiesPage />} />
         
-        <Route path="/en/services/consulting/photography-videography" element={<PhotographyVideographyPage />} />
+        <Route path="/en/consulting/photography-videography" element={<PhotographyVideographyPage />} />
         
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

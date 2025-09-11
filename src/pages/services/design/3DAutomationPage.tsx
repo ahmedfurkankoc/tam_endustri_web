@@ -5,16 +5,18 @@ import PageHeader from '../../../components/PageHeader';
 import Footer from '../../../components/Footer';
 import ContactSection from '../../../components/ContactSection';
 import StatsSection from '../../../components/StatsSection';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const ThreeDAutomationPage: React.FC = () => {
+  const { t } = useLanguage();
   return (
     <div className="min-h-screen">
       <Header />
       
       <Hero
-        title="3D Tasarım Otomasyonları"
-        subtitle="Tasarımda Hız, Verimlilik ve Sürdürülebilirlik"
-        description="SolidWorks API ile tekrarlayan işleri otomatikleştirerek hataları azaltın, hız ve verimliliği artırın."
+        title={t('design.3d_automation.hero.title')}
+        subtitle={t('design.3d_automation.hero.subtitle')}
+        description={t('design.3d_automation.hero.description')}
         backgroundType="image"
         backgroundSrc="https://images.unsplash.com/photo-1581093588401-8630a18f6d1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
         showScrollIndicator={true}
@@ -22,15 +24,15 @@ const ThreeDAutomationPage: React.FC = () => {
       />
 
       <PageHeader
-        title="3D Tasarım Otomasyonları"
+        title={t('design.3d_automation.header.title')}
         description={[
-          "Çağ gereksinimleri artık hız, verimlilik ve sürdürülebilirlik. Tasarımlarda da hızlı olurken, hatasız sonuç almak ve bunu aynı dinamizm ve istek ile sürekli hale getirmek zaruri bir ihtiyaç oldu.",
-          "Sürekli tekrar eden tasarımlar, üretim resimleri ve listeleri, işleme dosyaları ile geçen zamanı SolidWorks API tabanlı özel arayüzlerle ciddi ölçüde azaltabilirsiniz."
+          t('design.3d_automation.header.desc1'),
+          t('design.3d_automation.header.desc2')
         ]}
         cards={[
           {
-            title: "Hataları Minimize Edin",
-            description: "SolidWorks API ile özel arayüzler sayesinde kontrolleri bilgisayara bırakın",
+            title: t('design.3d_automation.cards.minimize_errors.title'),
+            description: t('design.3d_automation.cards.minimize_errors.desc'),
             image: "/images/machine-design.webp",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,8 +42,8 @@ const ThreeDAutomationPage: React.FC = () => {
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Basit Örnek: Mil Çizimi",
-            description: "7 adımlık çevrimi arayüzle 5 saniyeye indirin; yorgunluğu azaltın",
+            title: t('design.3d_automation.cards.simple_example.title'),
+            description: t('design.3d_automation.cards.simple_example.desc'),
             image: "/images/project-design.webp",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,8 +53,8 @@ const ThreeDAutomationPage: React.FC = () => {
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
           },
           {
-            title: "Zaman Kazancı",
-            description: "50 dakikalık işi 8,5 dakikaya düşürerek 5x hız ve sürdürülebilirlik",
+            title: t('design.3d_automation.cards.time_saving.title'),
+            description: t('design.3d_automation.cards.time_saving.desc'),
             image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -75,24 +77,16 @@ const ThreeDAutomationPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 leading-tight">3D Tasarım Otomasyonları (SolidWorks API)</h2>
-              <p className="text-indigo-600 font-semibold mt-3">Tasarımda Hız, Verimlilik ve Sürdürülebilirlik</p>
+              <h2 className="text-4xl font-bold text-gray-900 leading-tight">{t('design.3d_automation.section.title')}</h2>
+              <p className="text-indigo-600 font-semibold mt-3">{t('design.3d_automation.section.subtitle')}</p>
 
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-                <p>
-                  Çağ gereksinimleri artık hız, verimlilik ve sürdürülebilirlik. Tasarımlarda da hızlı olurken, hatasız sonuç almak ve bunu aynı dinamizm ve istek ile sürekli hale getirmek zaruri bir ihtiyaç oldu.
-                </p>
-                <p>
-                  Kendinizi zorlayarak ancak yetiştirebileceğiniz termin sürelerini 3 - 5 gün daha geri çekmek için can atan müşterileriniz var biliyoruz. Sürekli tekrar eden tasarımlar, üretim resimleri ve listeleri, işleme dosyaları hazırlamakla gününüzün tıka basa dolu olduğunun da farkındayız.
-                </p>
-                <h3 className="text-2xl font-semibold text-tam-blue">Hataları Minimize Edin.</h3>
-                <p>
-                  Hata yapmadan aynı verimlilikle sürekli bir şekilde tüm bu yükü sırtımızda taşıyamayız. Bu yüzden sizi SolidWorks(API) ile tanıştırmak istiyoruz. “Application Programming Interface” yani Aplikasyon Programlama Arayüzü, tasarımlarınızı size özel arayüzlerle bilgisayara yaptırılabilecek hesap ve kontrollerin yükü altında kalmadan otomatik olarak yaptırmaya yarar.
-                </p>
-                <h3 className="text-2xl font-semibold text-tam-blue">Vaktinizin Ne Kadar Değerli Olduğunu Biliyoruz.</h3>
-                <p>
-                  Yalın Üretim Sistemleri (Lean Manufacturing) ve Japon “Kaizen” yaklaşımlarının belirttiği gibi gün içinde harcadığınız değer üretilemeyen zamanı en iyi tespit edebilecek kişi, o işi yapan kişidir.
-                </p>
+                <p>{t('design.3d_automation.section.p1')}</p>
+                <p>{t('design.3d_automation.section.p2')}</p>
+                <h3 className="text-2xl font-semibold text-tam-blue">{t('design.3d_automation.section.h1')}</h3>
+                <p>{t('design.3d_automation.section.p3')}</p>
+                <h3 className="text-2xl font-semibold text-tam-blue">{t('design.3d_automation.section.h2')}</h3>
+                <p>{t('design.3d_automation.section.p4')}</p>
               </div>
             </div>
 
@@ -107,7 +101,7 @@ const ThreeDAutomationPage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">CAD Otomasyon</p>
+                      <p className="text-sm font-medium">{t('design.3d_automation.grid.cad_automation')}</p>
                     </div>
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
@@ -118,7 +112,7 @@ const ThreeDAutomationPage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">Tekrarlayan İşler</p>
+                      <p className="text-sm font-medium">{t('design.3d_automation.grid.repetitive_tasks')}</p>
                     </div>
                   </div>
                 </div>
@@ -131,7 +125,7 @@ const ThreeDAutomationPage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">Kontrol & Hesap</p>
+                      <p className="text-sm font-medium">{t('design.3d_automation.grid.control_calc')}</p>
                     </div>
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
@@ -142,7 +136,7 @@ const ThreeDAutomationPage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">Sürdürülebilirlik</p>
+                      <p className="text-sm font-medium">{t('design.3d_automation.grid.sustainability')}</p>
                     </div>
                   </div>
                 </div>
@@ -156,7 +150,7 @@ const ThreeDAutomationPage: React.FC = () => {
                     <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div>
                     <div className="absolute left-5 bottom-5 text-white">
                       <p className="text-sm uppercase tracking-wider opacity-90">SolidWorks API</p>
-                      <h4 className="text-xl md:text-2xl font-semibold">Hızlı Çevrim • Düşük Hata • Sürdürülebilirlik</h4>
+                      <h4 className="text-xl md:text-2xl font-semibold">{t('design.3d_automation.grid.banner_line')}</h4>
                     </div>
                   </div>
                 </div>
@@ -164,14 +158,14 @@ const ThreeDAutomationPage: React.FC = () => {
 
               <div className="absolute -top-4 -right-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-tam-blue/20">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-tam-blue">%80’e kadar</div>
-                  <div className="text-xs text-gray-600">Zaman Kazancı</div>
+                  <div className="text-2xl font-bold text-tam-blue">{t('design.3d_automation.badge.time_gain')}</div>
+                  <div className="text-xs text-gray-600">{t('design.3d_automation.badge.time_gain_label')}</div>
                 </div>
               </div>
               <div className="absolute -bottom-4 -left-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-purple-100">
           <div className="text-center">
-                  <div className="text-2xl font-bold text-purple-600">Daha Az</div>
-                  <div className="text-xs text-gray-600">Hata ve Yorgunluk</div>
+                  <div className="text-2xl font-bold text-purple-600">{t('design.3d_automation.badge.less')}</div>
+                  <div className="text-xs text-gray-600">{t('design.3d_automation.badge.less_label')}</div>
                 </div>
               </div>
             </div>
@@ -179,31 +173,27 @@ const ThreeDAutomationPage: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-tam-blue/20">
-              <h4 className="text-xl font-semibold text-tam-blue mb-3">Tasarımda Yazılımın Gücünü Keşfedin</h4>
-              <p className="text-tam-blue/80">
-                Siz de 5 dakikanızı ayırıp tasarımda değer üretmeden geçirdiğiniz vakitleri kabaca hesaplarsanız, verimsiz geçirdiğiniz sürelerle ilgili farkındalığınızı artıracaksınız. İşte bu noktada sizin için neler yapabileceğimizi tespit ettiyseniz, tereddüt etmeden bizimle iletişime geçebilirsiniz. Sizinle tanışmak için heyecanlıyız!
-              </p>
+              <h4 className="text-xl font-semibold text-tam-blue mb-3">{t('design.3d_automation.box.software_power.title')}</h4>
+              <p className="text-tam-blue/80">{t('design.3d_automation.box.software_power.desc')}</p>
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-green-100">
-              <h4 className="text-xl font-semibold text-green-900 mb-3">Basit Bir Örnek</h4>
-              <p className="text-green-700 mb-4">Her makine tasarımcısı gibi bir mil çizerken tipik adımlar:</p>
+              <h4 className="text-xl font-semibold text-green-900 mb-3">{t('design.3d_automation.box.simple_example.title')}</h4>
+              <p className="text-green-700 mb-4">{t('design.3d_automation.box.simple_example.desc')}</p>
               <ul className="list-disc pl-5 space-y-2 text-green-700">
-                <li>“plane” – düzlem seç</li>
-                <li>“sketch” – çizim aç</li>
-                <li>“circle” – daire çiz</li>
-                <li>“diameter” – çap gir</li>
-                <li>“extrude” – katı oluştur</li>
-                <li>“length” – uzunluk gir</li>
-                <li>“apply” – onayla</li>
+                <li>{t('design.3d_automation.box.simple_example.list1')}</li>
+                <li>{t('design.3d_automation.box.simple_example.list2')}</li>
+                <li>{t('design.3d_automation.box.simple_example.list3')}</li>
+                <li>{t('design.3d_automation.box.simple_example.list4')}</li>
+                <li>{t('design.3d_automation.box.simple_example.list5')}</li>
+                <li>{t('design.3d_automation.box.simple_example.list6')}</li>
+                <li>{t('design.3d_automation.box.simple_example.list7')}</li>
               </ul>
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-purple-100">
-              <h4 className="text-xl font-semibold text-purple-900 mb-3">Zaman Hesabı</h4>
-              <p className="text-purple-700">
-                Bu basit işlemin 30 saniye sürdüğünü ve günde 100 kez yaptığınızı varsayalım: 3000 saniye yani 50 dakika. Basit bir arayüz ile bu çevrimi 5 saniyeye düşürerek aynı işi yaklaşık 8,5 dakikada tamamlayabilirsiniz.
-              </p>
+              <h4 className="text-xl font-semibold text-purple-900 mb-3">{t('design.3d_automation.box.time_calc.title')}</h4>
+              <p className="text-purple-700">{t('design.3d_automation.box.time_calc.desc')}</p>
             </div>
           </div>
         </div>

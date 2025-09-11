@@ -14,37 +14,35 @@ const WebsiteLocalizationPage: React.FC = () => {
     <div className="min-h-screen">
       <Header />
       <Hero
-        title="Website ve Türkçe Lokalizasyon"
-        subtitle="Professional Website Localization"
-        description="Web sitenizi Türkçe'ye lokalize edin, yerel pazara uygun hale getirin ve kullanıcı deneyimini artırın."
+        title={t('consulting.webLoc.hero.title')}
+        subtitle={t('consulting.webLoc.hero.subtitle')}
+        description={t('consulting.webLoc.hero.description')}
         backgroundType="image"
         backgroundSrc="/images/business-consulting.webp"
         showScrollIndicator={true}
       />
       
       <PageHeader
-        title="Website ve Türkçe Lokalizasyon"
-        description={[
-          "Web sitenizi Türkçe'ye lokalize ederek yerel pazarda güçlü bir varlık oluşturun. Uzman ekibimizle birlikte, kültürel ve dilsel uyum sağlayabilirsiniz."
-        ]}
+        title={t('consulting.webLoc.header.title')}
+        description={[t('consulting.webLoc.header.desc1')]}
         cards={[
           {
-            title: "Çoklu Dil Desteği",
-            description: "Profesyonel çeviri ve lokalizasyon",
+            title: t('consulting.webLoc.cards.multilang.title'),
+            description: t('consulting.webLoc.cards.multilang.desc'),
             image: "/images/project-design.webp",
             icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "Kültürel Uyarlama",
-            description: "Hedef pazar kültürüne uygun içerik",
+            title: t('consulting.webLoc.cards.culture.title'),
+            description: t('consulting.webLoc.cards.culture.desc'),
             image: "/images/improvement-service.webp",
             icon: <Plus className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "SEO Optimizasyonu",
-            description: "Yerel arama motoru optimizasyonu",
+            title: t('consulting.webLoc.cards.seo.title'),
+            description: t('consulting.webLoc.cards.seo.desc'),
             image: "/images/training-service.webp",
             icon: <Settings className="w-5 h-5 md:w-6 md:h-6 text-white" />,
             iconColor: "bg-gradient-to-r from-orange-500 to-orange-600"
@@ -56,31 +54,22 @@ const WebsiteLocalizationPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Website Lokalizasyonunda Uzman Rehberlik
-              </h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('consulting.webLoc.section.expertise.title')}</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Web sitenizi Türkçe'ye lokalize ederek yerel pazarda güçlü bir varlık oluşturun. 
-                Sadece çeviri değil, kültürel uyum ve yerel kullanıcı deneyimi odaklı çözümler sunuyoruz.
+                {t('consulting.webLoc.section.expertise.p1')}
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Profesyonel Çeviri:</strong> Teknik ve ticari içerik çevirisi
-                  </p>
+                  <p className="text-gray-600">{t('consulting.webLoc.section.expertise.bullets.translate')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>Kültürel Adaptasyon:</strong> Yerel kültüre uygun içerik düzenleme
-                  </p>
+                  <p className="text-gray-600">{t('consulting.webLoc.section.expertise.bullets.culture')}</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-tam-blue rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-600">
-                    <strong>SEO Optimizasyonu:</strong> Türkçe arama motoru optimizasyonu
-                  </p>
+                  <p className="text-gray-600">{t('consulting.webLoc.section.expertise.bullets.seo')}</p>
                 </div>
               </div>
             </div>
@@ -98,12 +87,8 @@ const WebsiteLocalizationPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Hizmet Alanlarımız
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Website lokalizasyon süreçlerinizin her aşamasında yanınızdayız
-            </p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('consulting.webLoc.services.title')}</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">{t('consulting.webLoc.services.subtitle')}</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -111,72 +96,48 @@ const WebsiteLocalizationPage: React.FC = () => {
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Globe className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Web Sitesi Çevirisi
-              </h3>
-              <p className="text-gray-600">
-                Tüm web sitesi içeriklerinin profesyonel Türkçe çevirisi
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.webLoc.services.translate.title')}</h3>
+              <p className="text-gray-600">{t('consulting.webLoc.services.translate.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Paintbrush className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Tasarım Adaptasyonu
-              </h3>
-              <p className="text-gray-600">
-                Yerel kullanıcı tercihlerine uygun tasarım düzenlemeleri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.webLoc.services.design.title')}</h3>
+              <p className="text-gray-600">{t('consulting.webLoc.services.design.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Smartphone className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Mobil Uyumluluk
-              </h3>
-              <p className="text-gray-600">
-                Mobil cihazlarda optimal görüntüleme ve kullanım deneyimi
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.webLoc.services.mobile.title')}</h3>
+              <p className="text-gray-600">{t('consulting.webLoc.services.mobile.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <Search className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                SEO Optimizasyonu
-              </h3>
-              <p className="text-gray-600">
-                Türkçe arama motorları için SEO optimizasyonu ve anahtar kelime stratejisi
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.webLoc.services.seo.title')}</h3>
+              <p className="text-gray-600">{t('consulting.webLoc.services.seo.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <ShoppingCart className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                E-ticaret Lokalizasyonu
-              </h3>
-              <p className="text-gray-600">
-                E-ticaret sitelerinin yerel pazara uygun hale getirilmesi
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.webLoc.services.ecom.title')}</h3>
+              <p className="text-gray-600">{t('consulting.webLoc.services.ecom.desc')}</p>
             </div>
             
             <div className="bg-gradient-to-br from-tam-blue/5 to-tam-blue/10 p-8 rounded-xl">
               <div className="w-12 h-12 bg-tam-blue rounded-lg flex items-center justify-center text-white text-xl mb-4">
                 <BarChart className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Performans Analizi
-              </h3>
-              <p className="text-gray-600">
-                Lokalize edilmiş sitenin performans analizi ve iyileştirme önerileri
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('consulting.webLoc.services.performance.title')}</h3>
+              <p className="text-gray-600">{t('consulting.webLoc.services.performance.desc')}</p>
             </div>
           </div>
         </div>

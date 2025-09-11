@@ -5,16 +5,18 @@ import PageHeader from '../../../components/PageHeader';
 import Footer from '../../../components/Footer';
 import ContactSection from '../../../components/ContactSection';
 // Removed unused StatsSection import
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const ThreeDDesignPage: React.FC = () => {
+  const { t } = useLanguage();
   return (
     <div className="min-h-screen">
       <Header />
       
       <Hero
-        title="3D Tasarım Hizmetleri"
-        subtitle="Profesyonel Çözümler"
-        description="Profesyonel 3D tasarım hizmetleri ile projelerinizi hayata geçirin"
+        title={t('design.3d_design.hero.title')}
+        subtitle={t('design.3d_design.hero.subtitle')}
+        description={t('design.3d_design.hero.description')}
         backgroundType="image"
         backgroundSrc="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80"
         showScrollIndicator={true}
@@ -22,15 +24,12 @@ const ThreeDDesignPage: React.FC = () => {
       />
 
       <PageHeader
-        title="Çözüm Odaklı Tasarım"
-        description={[
-          "Bir mekanik parçadan tam otomasyonlu paketleme hattına kadar herhangi bir 3 boyutlu tasarıma ihtiyaç duyuyorsanız, size TAM bir çözüm sunacağımıza emin olabilirsiniz.",
-          "Şapkadan tavşan çıkaracağımızı iddia etmiyoruz çünkü ihtiyaçlarınızı en iyi bilen sizlersiniz. Sizin yönlendirmeleriniz ve taleplerinizle, imalat yöntemlerine en uygun, ergonomik ve uygulanabilir tasarımları yapacağımızdan emin olabilirsiniz."
-        ]}
+        title={t('design.3d_design.header.title')}
+        description={[t('design.3d_design.header.desc1'), t('design.3d_design.header.desc2')]}
         cards={[
           {
-            title: "Konsept Geliştirme",
-            description: "İhtiyaçlarınızı anlayıp, imalata uygun konseptler oluşturuyoruz",
+            title: t('design.3d_design.cards.concept.title'),
+            description: t('design.3d_design.cards.concept.desc'),
             image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,8 +39,8 @@ const ThreeDDesignPage: React.FC = () => {
             iconColor: "bg-gradient-to-r from-tam-blue to-tam-blue"
           },
           {
-            title: "3D Modelleme",
-            description: "Detaylı 3D modeller ile tasarımı görselleştiriyoruz",
+            title: t('design.3d_design.cards.modeling.title'),
+            description: t('design.3d_design.cards.modeling.desc'),
             image: "/images/machine-design.webp",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,8 +50,8 @@ const ThreeDDesignPage: React.FC = () => {
             iconColor: "bg-gradient-to-r from-green-500 to-green-600"
           },
           {
-            title: "Üretim Hazırlığı",
-            description: "Üretim için teknik çizimler ve dokümantasyon",
+            title: t('design.3d_design.cards.production_prep.title'),
+            description: t('design.3d_design.cards.production_prep.desc'),
             image: "/images/project-design.webp",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -76,20 +75,16 @@ const ThreeDDesignPage: React.FC = () => {
             <div>
               <div className="flex items-start mb-6">
                 <h2 className="text-4xl font-bold text-gray-900 leading-tight">
-                  TAM Endüstri 3D Tasarım için size nasıl yardımcı olabilir?
+                  {t('design.3d_design.help.title')}
                 </h2>
               </div>
               
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Sizi çok iyi anlayacağımıza eminiz. Biriktirdiğimiz tecrübelerimizle tasarımlarınıza bilgi ve 
-                  zekâ katarak karşılıklı faydanın sağlanacağı çalışmaların içinde bulunmak istiyoruz.
+                  {t('design.3d_design.help.p1')}
                 </p>
                 <p>
-                  <span className="font-semibold text-tam-blue">Mekanik, Elektronik, Pnömatik ve Hidrolik sistemlerin</span> yanında 
-                  Talaşlı İşleme Yöntemleri(İşleme Merkezi,Torna), Lazer Kesim-Markalama, Abgant Büküm, Pres, 
-                  Tel Erezyon, Sıvama, Kaynak ve daha fazla üretim yöntemiyle çalışmış olmanın verdiği özgüven 
-                  ve getirdiği tecrübe ile en doğru çözüme ulaşmayı hedefliyoruz.
+                  {t('design.3d_design.help.p2')}
                 </p>
               </div>
             </div>
@@ -106,7 +101,7 @@ const ThreeDDesignPage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">CAD Tasarım</p>
+                      <p className="text-sm font-medium">{t('design.3d_design.grid.cad')}</p>
                     </div>
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
@@ -117,7 +112,7 @@ const ThreeDDesignPage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">Makine Tasarımı</p>
+                      <p className="text-sm font-medium">{t('design.3d_design.grid.machine')}</p>
                     </div>
                   </div>
                 </div>
@@ -130,7 +125,7 @@ const ThreeDDesignPage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">3D Analiz</p>
+                      <p className="text-sm font-medium">{t('design.3d_design.grid.analysis')}</p>
                     </div>
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
@@ -141,7 +136,7 @@ const ThreeDDesignPage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-3 left-3 text-white">
-                      <p className="text-sm font-medium">Proje Geliştirme</p>
+                      <p className="text-sm font-medium">{t('design.3d_design.grid.project_dev')}</p>
                     </div>
                   </div>
                 </div>
@@ -151,13 +146,13 @@ const ThreeDDesignPage: React.FC = () => {
               <div className="absolute -top-4 -right-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-tam-blue/20">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-tam-blue">15+</div>
-                  <div className="text-xs text-gray-600">Yıl Deneyim</div>
+                  <div className="text-xs text-gray-600">{t('design.3d_design.floats.experience')}</div>
                 </div>
               </div>
               <div className="absolute -bottom-4 -left-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-purple-100">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-purple-600">10K+</div>
-                  <div className="text-xs text-gray-600">Proje</div>
+                  <div className="text-xs text-gray-600">{t('design.3d_design.floats.projects')}</div>
                 </div>
               </div>
             </div>
@@ -244,21 +239,17 @@ const ThreeDDesignPage: React.FC = () => {
               </div>
             </div>
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Yenilikçi ve Çözüm Odaklı Tasarım
+              {t('design.3d_design.innovative.title')}
             </h2>
             <h3 className="text-2xl font-semibold text-indigo-600 mb-8">
-              Hızlı ve Etkili Çözümler Bulalım
+              {t('design.3d_design.innovative.subtitle')}
             </h3>
             <div className="max-w-4xl mx-auto space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                Derin malzeme bilgisi, yüzey kaplamaları ve işlemleri konusundaki tecrübemize, 
-                <span className="font-semibold"> Mukavemet hesaplarının yanında hız, devir, güç, kuvvet ve verimlilik</span> 
-                hesaplarındaki bilgi birikimimizi de ekleyerek tüm bakış açılarından tasarıma yaklaşıyoruz.
+                {t('design.3d_design.innovative.p1')}
               </p>
               <p>
-                Bilginin paylaştıkça çoğaldığına olan inancımızla yaptıklarımızı gizlemiyor ve müşterilerimizle 
-                gönül rahatlığıyla paylaşıyoruz. Siz ve ekibinizinde bu ortak çalışmalardan fayda sağlayacağını 
-                rahatça söyleyebiliriz.
+                {t('design.3d_design.innovative.p2')}
               </p>
             </div>
           </div>
@@ -271,8 +262,8 @@ const ThreeDDesignPage: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h4 className="text-xl font-semibold text-tam-blue mb-3 text-center">Mukavemet Hesapları</h4>
-              <p className="text-tam-blue/80 text-center">Malzeme dayanımı ve güvenlik faktörleri ile optimal tasarım</p>
+              <h4 className="text-xl font-semibold text-tam-blue mb-3 text-center">{t('design.3d_design.skills.strength.title')}</h4>
+              <p className="text-tam-blue/80 text-center">{t('design.3d_design.skills.strength.desc')}</p>
               <div className="mt-4 flex justify-center">
                 <div className="w-16 h-1 bg-gradient-to-r from-tam-blue to-tam-blue rounded-full"></div>
               </div>
@@ -284,8 +275,8 @@ const ThreeDDesignPage: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h4 className="text-xl font-semibold text-green-900 mb-3 text-center">Hız & Devir Hesapları</h4>
-              <p className="text-green-700 text-center">Optimal çalışma parametreleri ve performans analizi</p>
+              <h4 className="text-xl font-semibold text-green-900 mb-3 text-center">{t('design.3d_design.skills.speed.title')}</h4>
+              <p className="text-green-700 text-center">{t('design.3d_design.skills.speed.desc')}</p>
               <div className="mt-4 flex justify-center">
                 <div className="w-16 h-1 bg-gradient-to-r from-green-400 to-green-600 rounded-full"></div>
               </div>
@@ -297,8 +288,8 @@ const ThreeDDesignPage: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
                 </svg>
               </div>
-              <h4 className="text-xl font-semibold text-purple-900 mb-3 text-center">Güç & Kuvvet Analizi</h4>
-              <p className="text-purple-700 text-center">Enerji verimliliği optimizasyonu ve güç hesaplamaları</p>
+              <h4 className="text-xl font-semibold text-purple-900 mb-3 text-center">{t('design.3d_design.skills.power.title')}</h4>
+              <p className="text-purple-700 text-center">{t('design.3d_design.skills.power.desc')}</p>
               <div className="mt-4 flex justify-center">
                 <div className="w-16 h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full"></div>
               </div>
@@ -322,24 +313,16 @@ const ThreeDDesignPage: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h2 className="text-4xl font-bold text-gray-900 leading-tight">TASARIM EĞİTİMLERİ</h2>
-                  <p className="text-tam-blue font-semibold mt-1">Tasarım Ekibi Danışmanlığı</p>
+                  <h2 className="text-4xl font-bold text-gray-900 leading-tight">{t('design.3d_design.training.title')}</h2>
+                  <p className="text-tam-blue font-semibold mt-1">{t('design.3d_design.training.subtitle')}</p>
                 </div>
               </div>
 
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-                <p>
-                  Tasarım konusunda çok tecrübeli ekibimiz ile teknik ofis personellerinize ya da istediğiniz bir gruba SolidWorks 3D Tasarım eğitimleri veriyoruz.
-                </p>
-                <p>
-                  Yalnızca SolidWorks yazılımı eğitiminden ziyade, sonuca yönelik temel üretim ve tasarım bilgilerini de içeren içerikler ile doğrudan üretime yönelik çalışmalara kısa sürede başlayabilmenizi hedefliyoruz.
-                </p>
-                <p>
-                  Eğitimlerde pratik kullanımlar, doğru ürün ağacı teknikleri, tasarımda maliyet/bakım yaklaşımı ve kolay üretilebilirlik prensipleriyle çok yönlü doğru tasarıma ulaşmayı öğretiyoruz.
-                </p>
-                <p>
-                  Daha detaylı bilgi almak ya da işinize değer katacak eğitim konseptini birlikte oluşturmak için bizimle iletişime geçebilirsiniz.
-                </p>
+                <p>{t('design.3d_design.training.p1')}</p>
+                <p>{t('design.3d_design.training.p2')}</p>
+                <p>{t('design.3d_design.training.p3')}</p>
+                <p>{t('design.3d_design.training.p4')}</p>
               </div>
             </div>
 
@@ -347,7 +330,7 @@ const ThreeDDesignPage: React.FC = () => {
               <div className="relative group overflow-hidden rounded-2xl shadow-xl w-full max-w-2x">
                 <img src="/images/machine-design.webp" alt="Tasarım Eğitimi" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 text-white text-sm font-medium">Tasarım Eğitimleri</div>
+                <div className="absolute bottom-4 left-4 text-white text-sm font-medium">{t('design.3d_design.training.image_label')}</div>
               </div>
             </div>
           </div>
@@ -355,24 +338,16 @@ const ThreeDDesignPage: React.FC = () => {
           {/* SolidWorks API Eğitimleri ve Danışmanlığı */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 bg-white p-8 rounded-2xl shadow-xl border border-tam-blue/20">
-              <h3 className="text-2xl font-semibold text-tam-blue mb-3">SolidWorks API Eğitimleri ve Danışmanlığı</h3>
+              <h3 className="text-2xl font-semibold text-tam-blue mb-3">{t('design.3d_design.training.api.title')}</h3>
               <div className="space-y-6 text-tam-blue/80 leading-relaxed">
-                <p>
-                  SolidWorks API (Application Programming Interface), ileri seviyede tasarımlar dizayn etmek ve tasarım programları oluşturmak için kullanılan, SolidWorks içinde Visual Basic tabanlı gömülü bir yazılım sistemidir.
-                </p>
-                <p>
-                  Bu sistem ile tekrarlı tasarımlarınızı bir algoritmaya oturtarak gerekli ölçüleri basit bir arayüze girip tek tuşla saniyeler içinde tamamlayabilirsiniz. “3D Tasarım Otomasyonları” sayfamızdaki ürünleşmiş örneklerin yanında, kendi çözümlerinizi geliştirebilmeniz için eğitimler de veriyoruz.
-                </p>
-                <p>
-                  Bir işi en iyi bilen ve geliştirebilecek olanın o işi yapan olduğuna inandığımız için; algoritmaları anlayabilecek, ileri seviyede SolidWorks’e hâkim müşterilerimize API hizmeti yerine API eğitimini daha değerli buluyoruz.
-                </p>
+                <p>{t('design.3d_design.training.api.p1')}</p>
+                <p>{t('design.3d_design.training.api.p2')}</p>
+                <p>{t('design.3d_design.training.api.p3')}</p>
               </div>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-xl border border-tam-blue/20">
-              <h4 className="text-xl font-semibold text-tam-blue mb-3 text-center">'TAM' Zamanlı Gelişim</h4>
-              <p className="text-tam-blue/80 leading-relaxed text-center">
-                Doğru yaklaşım ile doğru tasarım: Ekibinizi tasarım ve otomasyon eğitimleriyle destekleyerek hız, kalite ve sürdürülebilirliği birlikte artırıyoruz.
-              </p>
+              <h4 className="text-xl font-semibold text-tam-blue mb-3 text-center">{t('design.3d_design.training.dev.title')}</h4>
+              <p className="text-tam-blue/80 leading-relaxed text-center">{t('design.3d_design.training.dev.desc')}</p>
             </div>
           </div>
         </div>
