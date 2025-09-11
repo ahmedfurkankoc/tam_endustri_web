@@ -1,85 +1,449 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <!-- Turkish Homepage -->
+
+  <!-- Home -->
   <url>
     <loc>https://tamendustri.com/</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/"/>
   </url>
-  
-  <!-- English Homepage -->
   <url>
     <loc>https://tamendustri.com/en</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en"/>
   </url>
-  
-  <!-- Services Page (Turkish) -->
-  <url>
-    <loc>https://tamendustri.com/hizmetler</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/services"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/hizmetler"/>
-  </url>
-  
-  <!-- Services Page (English) -->
-  <url>
-    <loc>https://tamendustri.com/en/services</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/hizmetler"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/services"/>
-  </url>
-  
-  <!-- About Page (Turkish) -->
+
+  <!-- About -->
   <url>
     <loc>https://tamendustri.com/hakkimizda</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/about"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/hakkimizda"/>
   </url>
-  
-  <!-- About Page (English) -->
   <url>
     <loc>https://tamendustri.com/en/about</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/hakkimizda"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/about"/>
   </url>
-  
-  <!-- Contact Page (Turkish) -->
+
+  <!-- Contact -->
   <url>
     <loc>https://tamendustri.com/iletisim</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/contact"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/iletisim"/>
   </url>
-  
-  <!-- Contact Page (English) -->
   <url>
     <loc>https://tamendustri.com/en/contact</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/iletisim"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/contact"/>
   </url>
-  
-</urlset> 
+
+  <!-- Design -->
+  <url>
+    <loc>https://tamendustri.com/tasarim/3d-tasarim</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/design/3d-design"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/tasarim/3d-tasarim"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/design/3d-design</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/tasarim/3d-tasarim"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/design/3d-design"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/tasarim/3d-otomasyon</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/design/3d-automation"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/tasarim/3d-otomasyon"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/design/3d-automation</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/tasarim/3d-otomasyon"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/design/3d-automation"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/tasarim/arge-makine</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/design/rnd-machine"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/tasarim/arge-makine"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/design/rnd-machine</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/tasarim/arge-makine"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/design/rnd-machine"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/tasarim/ise-ozel-makine</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/design/custom-machine"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/tasarim/ise-ozel-makine"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/design/custom-machine</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/tasarim/ise-ozel-makine"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/design/custom-machine"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/tasarim/fabrika-kurulum</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/design/factory-setup"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/tasarim/fabrika-kurulum"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/design/factory-setup</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/tasarim/fabrika-kurulum"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/design/factory-setup"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/tasarim/tersine-muhendislik</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/design/reverse-engineering"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/tasarim/tersine-muhendislik"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/design/reverse-engineering</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/tasarim/tersine-muhendislik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/design/reverse-engineering"/>
+  </url>
+
+  <!-- Business -->
+  <url>
+    <loc>https://tamendustri.com/is-gelistirme/yalin-uretim</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/business/lean-production"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/is-gelistirme/yalin-uretim"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/business/lean-production</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/is-gelistirme/yalin-uretim"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/business/lean-production"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/is-gelistirme/teknik-satis</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/business/technical-sales"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/is-gelistirme/teknik-satis"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/business/technical-sales</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/is-gelistirme/teknik-satis"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/business/technical-sales"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/is-gelistirme/hesaplama-raporlama</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/business/calculation-reporting"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/is-gelistirme/hesaplama-raporlama"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/business/calculation-reporting</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/is-gelistirme/hesaplama-raporlama"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/business/calculation-reporting"/>
+  </url>
+
+  <!-- Consulting -->
+  <url>
+    <loc>https://tamendustri.com/danismanlik/makine-imalat</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/machinery-manufacturing"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/makine-imalat"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/machinery-manufacturing</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/makine-imalat"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/machinery-manufacturing"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/danismanlik/elektrik-imalat</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/electrical-manufacturing"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/elektrik-imalat"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/electrical-manufacturing</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/elektrik-imalat"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/electrical-manufacturing"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/danismanlik/tekstil-imalat</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/textile-manufacturing"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/tekstil-imalat"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/textile-manufacturing</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/tekstil-imalat"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/textile-manufacturing"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/danismanlik/cnc-isleme</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/cnc-machining"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/cnc-isleme"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/cnc-machining</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/cnc-isleme"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/cnc-machining"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/danismanlik/lazer-kesim-bukme</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/laser-cutting-bending"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/lazer-kesim-bukme"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/laser-cutting-bending</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/lazer-kesim-bukme"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/laser-cutting-bending"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/danismanlik/website-lokalizasyon</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/website-localization"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/website-lokalizasyon"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/website-localization</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/website-lokalizasyon"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/website-localization"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/danismanlik/yazilim-tasarim</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/software-design-coding"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/yazilim-tasarim"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/software-design-coding</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/yazilim-tasarim"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/software-design-coding"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/danismanlik/turizm-danismanlik</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/tourism-consulting"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/turizm-danismanlik"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/tourism-consulting</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/turizm-danismanlik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/tourism-consulting"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/danismanlik/bankacilik-danismanlik</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/banking-consulting"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/bankacilik-danismanlik"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/banking-consulting</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/bankacilik-danismanlik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/banking-consulting"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/danismanlik/faizsiz-bankacilik</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/islamic-banking"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/faizsiz-bankacilik"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/islamic-banking</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/faizsiz-bankacilik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/islamic-banking"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/danismanlik/lojistik-danismanlik</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/logistics-consulting"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/lojistik-danismanlik"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/logistics-consulting</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/lojistik-danismanlik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/logistics-consulting"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/danismanlik/tedarik-hizmetleri</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/procurement-services"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/tedarik-hizmetleri"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/procurement-services</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/tedarik-hizmetleri"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/procurement-services"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/danismanlik/satis-danismanlik</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/sales-consulting"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/satis-danismanlik"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/sales-consulting</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/satis-danismanlik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/sales-consulting"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/danismanlik/fizibilite-calismalari</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/feasibility-studies"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/fizibilite-calismalari"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/feasibility-studies</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/fizibilite-calismalari"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/feasibility-studies"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/danismanlik/fotograf-video</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/photography-videography"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/fotograf-video"/>
+  </url>
+  <url>
+    <loc>https://tamendustri.com/en/consulting/photography-videography</loc>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tamendustri.com/danismanlik/fotograf-video"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamendustri.com/en/consulting/photography-videography"/>
+  </url>
+
+</urlset>
