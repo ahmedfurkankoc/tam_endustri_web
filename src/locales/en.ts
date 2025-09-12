@@ -75,7 +75,7 @@ export const en = {
   'footer.calculation_reporting_apps': 'Calculation and Reporting Applications',
   
   'footer.consulting': 'Consulting',
-  'footer.turkey_business_consulting': 'Türkiye Business Consulting',
+  'footer.turkey_business_consulting': 'Türkiye Market Entry Consulting',
   'footer.design_training': 'Design Training',
   'footer.feasibility_studies': 'Feasibility Studies and Reporting',
   'footer.lean_production_training': 'Lean Production Methods Training',
@@ -85,14 +85,14 @@ export const en = {
   'footer.copyright': `© ${new Date().getFullYear()} Tam Industry | All rights reserved`,
   
   // Hero Section
-  'hero.title': 'TÜRKİYE BUSINESS',
-  'hero.title2': 'CONSULTING',
+  'hero.title': 'TÜRKİYE MARKET ENTRY CONSULTING',
+  'hero.subtitle': 'End‑to‑end Industrial Solutions',
   'hero.description': 'We provide expert consulting services in Türkiye market entry processes. We manage all necessary trade processes for foreign companies to succeed in Türkiye.',
   'hero.scroll': 'Scroll',
   
   // Problem Statement
-  'problem.title': 'If you need project designs and even manufacturing that will understand you very well and reach the right results, contact us.',
-  'problem.subtitle': 'We are TAM confident that you will be pleased to meet us!',
+  'problem.title': 'Looking for project design and even manufacturing support that truly understands your needs and delivers the right results? Contact us.',
+  'problem.subtitle': 'We are fully confident that you will be pleased to meet us.',
   
   // Services Section
   'services.design.title': 'PROJECT DESIGN AND MANUFACTURING',
@@ -100,12 +100,12 @@ export const en = {
   'services.improvement.title': 'BUSINESS DEVELOPMENT AND IMPROVEMENT',
   'services.improvement.desc': 'The most valuable form of time is the time you can produce. We often waste the time we can produce inefficiently, knowingly or unknowingly. We want to add "Intelligence" to your business!',
   'services.training.title': 'OUR CONSULTING AND TRAINING',
-  'services.training.desc': 'Lean Production Methods Training, Design Training, Türkiye Business Consulting, Feasibility Studies and Reporting',
+  'services.training.desc': 'Lean Production Methods Training, Design Training, Türkiye Market Entry Consulting, Feasibility Studies and Reporting',
   'services.details': 'Details',
   
   // Regulatory Power (Business Development)
   'regulatory.title': 'BUSINESS DEVELOPMENT AND IMPROVEMENT',
-  'regulatory.description': 'Let\'s combine our expertise and your business experience to make your business more efficient. "Lean Production Methods", "Automation Software", "SolidWorks API". We are TAM confident that we will make your business more efficient!',
+  'regulatory.description': 'Let\'s combine our expertise and your business experience to make your business more efficient. "Lean Production Methods", "Automation Software", "SolidWorks API". We are fully confident we will make your business more efficient.',
   'regulatory.3d_design': '3D Design Automations',
   'regulatory.rnd_machine': 'R&D Machine Design Development - Improvement',
   'regulatory.technical_sales': 'Technical Sales Program - Applications',
@@ -116,7 +116,7 @@ export const en = {
   'approvals.description': 'We think what we can do would be useful to you, but do you want to do these within your company? This is the path we would also like to follow. We can fish for you, but we want to make bigger contributions by teaching you how to fish.',
   'approvals.lean_training': 'Lean Production Methods Training',
   'approvals.design_training': 'Design Training',
-  'approvals.business_consulting': 'Türkiye Business Consulting',
+  'approvals.business_consulting': 'Türkiye Market Entry Consulting',
   'approvals.feasibility': 'Feasibility Studies and Reporting',
   'approvals.calculation': 'Calculation - Reporting Applications',
   'approvals.factory_setup': 'Factory Setup Layout Plan',
@@ -271,7 +271,7 @@ export const en = {
   'design.3d_automation.hero.description': 'Automate repetitive tasks with the SolidWorks API to reduce errors and increase throughput.',
 
   'design.3d_automation.header.title': '3D Design Automations',
-  'design.3d_automation.header.desc1': 'Today’s requirements are speed, efficiency, and sustainability. Deliver designs rapidly while maintaining consistent, error-free outcomes.',
+  'design.3d_automation.header.desc1': 'Today\'s requirements are speed, efficiency, and sustainability. Deliver designs rapidly while maintaining consistent, error-free outcomes.',
   'design.3d_automation.header.desc2': 'Significantly reduce time spent on repetitive designs, drawings, BOMs, and machining files with SolidWorks API–based interfaces.',
 
   'design.3d_automation.cards.minimize_errors.title': 'Minimize Errors',
@@ -283,7 +283,7 @@ export const en = {
 
   'design.3d_automation.section.title': '3D Design Automations (SolidWorks API)',
   'design.3d_automation.section.subtitle': 'Speed, Efficiency, and Sustainability in Design',
-  'design.3d_automation.section.p1': 'Today’s requirements are speed, efficiency, and sustainability. Rapid design cycles must also deliver error‑free, consistent results.',
+  'design.3d_automation.section.p1': 'Today\'s requirements are speed, efficiency, and sustainability. Rapid design cycles must also deliver error‑free, consistent results.',
   'design.3d_automation.section.p2': 'Your customers expect shorter lead times while your day is filled with repetitive work: designs, drawings, BOMs, and machining files.',
   'design.3d_automation.section.h1': 'Minimize Errors.',
   'design.3d_automation.section.p3': 'Sustaining productivity without errors is challenging. The SolidWorks API enables automated execution through custom interfaces, removing manual burden from calculations and checks.',
@@ -305,13 +305,13 @@ export const en = {
 
   'design.3d_automation.box.simple_example.title': 'A Simple Example',
   'design.3d_automation.box.simple_example.desc': 'Typical steps when drawing a shaft like any machine designer:',
-  'design.3d_automation.box.simple_example.list1': '“plane” – select plane',
-  'design.3d_automation.box.simple_example.list2': '“sketch” – open sketch',
-  'design.3d_automation.box.simple_example.list3': '“circle” – draw a circle',
-  'design.3d_automation.box.simple_example.list4': '“diameter” – enter diameter',
-  'design.3d_automation.box.simple_example.list5': '“extrude” – create solid',
-  'design.3d_automation.box.simple_example.list6': '“length” – enter length',
-  'design.3d_automation.box.simple_example.list7': '“apply” – confirm',
+  'design.3d_automation.box.simple_example.list1': '"plane" – select plane',
+  'design.3d_automation.box.simple_example.list2': '"sketch" – open sketch',
+  'design.3d_automation.box.simple_example.list3': '"circle" – draw a circle',
+  'design.3d_automation.box.simple_example.list4': '"diameter" – enter diameter',
+  'design.3d_automation.box.simple_example.list5': '"extrude" – create solid',
+  'design.3d_automation.box.simple_example.list6': '"length" – enter length',
+  'design.3d_automation.box.simple_example.list7': '"apply" – confirm',
 
   'design.3d_automation.box.time_calc.title': 'Time Calculation',
   'design.3d_automation.box.time_calc.desc': 'Assume this simple process takes 30 seconds and you do it 100 times a day: 3000 seconds, i.e., 50 minutes. With a simple interface, you can reduce this cycle to 5 seconds and complete the same task in approximately 8.5 minutes.',
@@ -332,7 +332,7 @@ export const en = {
   'design.3d_design.cards.production_prep.title': 'Production Preparation',
   'design.3d_design.cards.production_prep.desc': 'Technical drawings and documentation for production',
 
-  'design.3d_design.help.title': 'How TAM Industry Supports Your 3D Design',
+  'design.3d_design.help.title': 'How We Support Your 3D Design',
   'design.3d_design.help.p1': 'We take a collaborative approach—combining your goals with our experience to add insight and value to your designs.',
   'design.3d_design.help.p2': 'In addition to Mechanical, Electronic, Pneumatic and Hydraulic systems, with the confidence and experience brought by working with Machining Methods (Machining Center, Lathe), Laser Cutting-Marking, Press Brake Bending, Press, Wire Erosion, Spinning, Welding and more production methods, we aim to reach the most accurate solution.',
 
@@ -345,7 +345,7 @@ export const en = {
   'design.3d_design.floats.projects': 'Projects',
 
   'design.3d_design.innovative.title': 'Innovative and Solution-Oriented Design',
-  'design.3d_design.innovative.subtitle': 'Let’s identify fast, effective solutions',
+  'design.3d_design.innovative.subtitle': 'Let\'s identify fast, effective solutions',
   'design.3d_design.innovative.p1': 'By adding our deep material knowledge and experience in surface coatings and processes, as well as our knowledge in strength calculations along with speed, rotation, power, force, and efficiency calculations, we approach the design from all perspectives.',
   'design.3d_design.innovative.p2': 'With our belief that knowledge grows as it is shared, we do not hide what we do and share it with our customers with peace of mind. We can easily say that you and your team will also benefit from these collaborative efforts.',
 
@@ -365,9 +365,9 @@ export const en = {
   'design.3d_design.training.image_label': 'Design Trainings',
   'design.3d_design.training.api.title': 'SolidWorks API Trainings and Consulting',
   'design.3d_design.training.api.p1': 'SolidWorks API (Application Programming Interface) is an embedded software system based on Visual Basic within SolidWorks, used to design advanced designs and create design programs.',
-  'design.3d_design.training.api.p2': 'With this system, by placing your repetitive designs into an algorithm and entering the necessary dimensions into a simple interface, you can complete them within seconds with a single click. In addition to productized examples on our “3D Design Automations” page, we also provide training so that you can develop your own solutions.',
+  'design.3d_design.training.api.p2': 'With this system, by placing your repetitive designs into an algorithm and entering the necessary dimensions into a simple interface, you can complete them within seconds with a single click. In addition to productized examples on our "3D Design Automations" page, we also provide training so that you can develop your own solutions.',
   'design.3d_design.training.api.p3': 'Because we believe that the one who does the job knows it best and can improve it, we find API training more valuable than API service for our customers who can understand algorithms and have advanced mastery of SolidWorks.',
-  'design.3d_design.training.dev.title': '“TAM” Timed Development',
+  'design.3d_design.training.dev.title': 'Right‑Time Development',
   'design.3d_design.training.dev.desc': 'The right approach with the right design: By supporting your team with design and automation trainings, we increase speed, quality and sustainability together.',
 
   // Header Mega Menu Descriptions
@@ -441,7 +441,7 @@ export const en = {
 
   'design.custom.header.title': 'Custom Machine Design – Manufacturing Projects',
   'design.custom.header.desc1': 'Have a machine or system in mind but cannot find a partner to meet your requirements?',
-  'design.custom.header.desc2': 'Let’s explore your needs without constraints, align on options, and define a tailored plan together.',
+  'design.custom.header.desc2': 'Let\'s explore your needs without constraints, align on options, and define a tailored plan together.',
 
   'design.custom.cards.consult.title': 'Consult and Design Together',
   'design.custom.cards.consult.desc': 'End‑to‑end design support: mechanical/electrical selections, feasibility, and cost analysis.',
@@ -451,7 +451,7 @@ export const en = {
   'design.custom.cards.turnkey.desc': 'Solution partnership from concept to installation—fully turnkey delivery.',
 
   'design.custom.section.title': 'Go Beyond Standard Solutions',
-  'design.custom.section.p1': 'Have a machine or system in scope but cannot find a manufacturer to deliver to your expectations? Let’s talk.',
+  'design.custom.section.p1': 'Have a machine or system in scope but cannot find a manufacturer to deliver to your expectations? Let\'s talk.',
   'design.custom.section.p2': 'We work without restrictive boundaries—align on your target, evaluate options, and define the right plan to execute.',
 
   'design.custom.grid.custom_design': 'Custom Design',
@@ -484,7 +484,7 @@ export const en = {
   'design.factory.grid.network': 'Communications Network',
   'design.factory.grid.automation': 'Automation Topology',
 
-  'design.factory.panel.support.title': 'Sustainable Production—With TAM Industry by Your Side',
+  'design.factory.panel.support.title': 'Sustainable Production—With Us by Your Side',
   'design.factory.panel.support.desc': 'We are ready to collaborate with energy and focus. Contact us to discuss your plans—we look forward to working together.',
 
   // Services > Design > Reverse Engineering Page
@@ -494,7 +494,7 @@ export const en = {
 
   'design.reverse.header.title': 'Reverse Engineering Designs',
   'design.reverse.header.desc1': 'Have parts, fixtures, or machines that are discontinued or no longer meet your speed and quality expectations? Need a single gear for a large reducer but cannot source the part?',
-  'design.reverse.header.desc2': 'Want to re‑engineer a frequently replaced plastic component in aluminum or steel? Let’s solve it together.',
+  'design.reverse.header.desc2': 'Want to re‑engineer a frequently replaced plastic component in aluminum or steel? Let\'s solve it together.',
 
   'design.reverse.cards.detect.title': 'Diagnostics',
   'design.reverse.cards.detect.desc': 'Disassembly, metrology, and material analysis to establish the current state',
@@ -537,7 +537,7 @@ export const en = {
   'business.lean.section.value.p3': 'Together we converge on the simplest, most effective programs and applications through structured iteration.',
 
   'business.lean.panel.shopfloor.title': 'Lean Shop‑Floor Fixtures, Machine Design, and Production',
-  'business.lean.panel.shopfloor.desc': 'Invite us on‑site to identify how we can increase efficiency and sustainability—mechanically, electronically, and through automation. Let’s discover opportunities together.',
+  'business.lean.panel.shopfloor.desc': 'Invite us on‑site to identify how we can increase efficiency and sustainability—mechanically, electronically, and through automation. Let\'s discover opportunities together.',
 
   'business.lean.section.saving.title': 'Example Time Savings',
   'business.lean.section.saving.desc': 'In a 10‑second assembly joining two parts with a single screw, the ideal daily output over 8 hours is 2,880 units. With a simple fixture and automatic screwdriving reducing the cycle to 8 seconds, you save 96 minutes per day and gain roughly 720 additional units.',

@@ -18,7 +18,7 @@ const ThreeDDesignPage: React.FC = () => {
         subtitle={t('design.3d_design.hero.subtitle')}
         description={t('design.3d_design.hero.description')}
         backgroundType="image"
-        backgroundSrc="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80"
+        backgroundSrc="/images/3d_design/30985ce996f980166020cfc66539eef1_2600x1600_0x0_2600x1734_crop.jpg"
         showScrollIndicator={true}
         overlayOpacity={0.6}
       />
@@ -30,7 +30,7 @@ const ThreeDDesignPage: React.FC = () => {
           {
             title: t('design.3d_design.cards.concept.title'),
             description: t('design.3d_design.cards.concept.desc'),
-            image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+            image: "/images/3d_design/d2187313f59e5e5023fd7417be64b91e_2128x1417_0x0_2131x1421_crop.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
@@ -41,7 +41,7 @@ const ThreeDDesignPage: React.FC = () => {
           {
             title: t('design.3d_design.cards.modeling.title'),
             description: t('design.3d_design.cards.modeling.desc'),
-            image: "/images/machine-design.webp",
+            image: "/images/3d_design/0b26bb86a5ee380ef2f367e2f8caff0b_2128x1410_0x0_2132x1412_crop.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -52,7 +52,7 @@ const ThreeDDesignPage: React.FC = () => {
           {
             title: t('design.3d_design.cards.production_prep.title'),
             description: t('design.3d_design.cards.production_prep.desc'),
-            image: "/images/project-design.webp",
+            image: "/images/3d_design/e4af8039ce4b9ba95bae29bf12199db7_2400x3000_fit.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -95,7 +95,7 @@ const ThreeDDesignPage: React.FC = () => {
                 <div className="space-y-4">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img 
-                      src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                      src="/images/3d_design/30985ce996f980166020cfc66539eef1_2600x1600_0x0_2600x1734_crop.jpg"
                       alt="CAD Tasarım Süreci"
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -106,7 +106,7 @@ const ThreeDDesignPage: React.FC = () => {
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img 
-                      src="/images/machine-design.webp"
+                      src="/images/3d_design/d2187313f59e5e5023fd7417be64b91e_2128x1417_0x0_2131x1421_crop.jpg"
                       alt="Makine Tasarımı"
                       className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -119,7 +119,7 @@ const ThreeDDesignPage: React.FC = () => {
                 <div className="space-y-4 pt-8">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img 
-                      src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                      src="/images/3d_design/0b26bb86a5ee380ef2f367e2f8caff0b_2128x1410_0x0_2132x1412_crop.jpg"
                       alt="3D Analiz"
                       className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -130,7 +130,7 @@ const ThreeDDesignPage: React.FC = () => {
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img 
-                      src="/images/project-design.webp"
+                      src="/images/3d_design/e4af8039ce4b9ba95bae29bf12199db7_2400x3000_fit.jpg"
                       alt="Proje Geliştirme"
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />

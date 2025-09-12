@@ -17,7 +17,7 @@ const FactorySetupPage: React.FC = () => {
         subtitle={t('design.factory.hero.subtitle')}
         description={t('design.factory.hero.description')}
         backgroundType="image"
-        backgroundSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        backgroundSrc="/images/factory_setup/ab485f892691b0ae4cddfd08803deec3_fit.jpg"
         showScrollIndicator={true}
         overlayOpacity={0.6}
       />
@@ -29,7 +29,7 @@ const FactorySetupPage: React.FC = () => {
           {
             title: t('design.factory.cards.layout.title'),
             description: t('design.factory.cards.layout.desc'),
-            image: "/images/project-design.webp",
+            image: "/images/factory_setup/618ec77da800d727387afb132ecda72b_1279x720_0x0_1280x720_crop.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h8M7 16h6" />
@@ -40,7 +40,7 @@ const FactorySetupPage: React.FC = () => {
           {
             title: t('design.factory.cards.comm.title'),
             description: t('design.factory.cards.comm.desc'),
-            image: "/images/machine-design.webp",
+            image: "/images/factory_setup/38c262fe81e0bd0af1c75f23c26ea2c8_1710x1140_0x0_1711x1141_crop.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v8m-4-4h8" />
@@ -51,7 +51,7 @@ const FactorySetupPage: React.FC = () => {
           {
             title: t('design.factory.cards.coord.title'),
             description: t('design.factory.cards.coord.desc'),
-            image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            image: "/images/factory_setup/04d57de47d08fc36e10c54b770b84ab2_fit.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -85,7 +85,7 @@ const FactorySetupPage: React.FC = () => {
                 <div className="space-y-4">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                      src="/images/factory_setup/ab485f892691b0ae4cddfd08803deec3_fit.jpg"
                       alt="Layout Planı"
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -96,7 +96,7 @@ const FactorySetupPage: React.FC = () => {
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="/images/project-design.webp"
+                      src="/images/factory_setup/618ec77da800d727387afb132ecda72b_1279x720_0x0_1280x720_crop.jpg"
                       alt="Makine Konumlandırma"
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -109,7 +109,7 @@ const FactorySetupPage: React.FC = () => {
                 <div className="space-y-4 pt-8">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                      src="/images/factory_setup/38c262fe81e0bd0af1c75f23c26ea2c8_1710x1140_0x0_1711x1141_crop.jpg"
                       alt="Haberleşme Ağı"
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -120,7 +120,7 @@ const FactorySetupPage: React.FC = () => {
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="/images/machine-design.webp"
+                      src="/images/factory_setup/04d57de47d08fc36e10c54b770b84ab2_fit.jpg"
                       alt="Otomasyon Kurgusu"
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                     />

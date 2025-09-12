@@ -15,9 +15,6 @@ const HomePage: React.FC = () => {
     <div className="min-h-screen">
       <HeaderNew />
       <Banner
-        title="Türkiye Ticaret Danışmanlığı"
-        subtitle="Endüstride TAM Çözümler"
-        description="Tasarım, otomasyon ve danışmanlıkta uçtan uca, hızlı ve sürdürülebilir çözümler."
         backgroundType="video"
         backgroundSrc="/hero.mp4"
         showScrollIndicator={true}

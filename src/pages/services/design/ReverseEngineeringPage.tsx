@@ -17,7 +17,7 @@ const ReverseEngineeringPage: React.FC = () => {
         subtitle={t('design.reverse.hero.subtitle')}
         description={t('design.reverse.hero.description')}
         backgroundType="image"
-        backgroundSrc="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        backgroundSrc="/images/reverse_engineering/clock-mechanism-made-technique-toning-very-shallow-depth-field-focus-central-gears.jpg"
         showScrollIndicator={true}
         overlayOpacity={0.6}
       />
@@ -29,7 +29,7 @@ const ReverseEngineeringPage: React.FC = () => {
           {
             title: t('design.reverse.cards.detect.title'),
             description: t('design.reverse.cards.detect.desc'),
-            image: "/images/project-design.webp",
+            image: "/images/reverse_engineering/7812a5725f8765996685383c398411b8_1761x1172_0x0_1761x1174_crop.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -40,7 +40,7 @@ const ReverseEngineeringPage: React.FC = () => {
           {
             title: t('design.reverse.cards.design.title'),
             description: t('design.reverse.cards.design.desc'),
-            image: "/images/machine-design.webp",
+            image: "/images/reverse_engineering/c7f04abe0c9494e78b406d4fb90ec02a_1758x1318_fit.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h8M7 16h6" />
@@ -51,7 +51,7 @@ const ReverseEngineeringPage: React.FC = () => {
           {
             title: t('design.reverse.cards.manufacture.title'),
             description: t('design.reverse.cards.manufacture.desc'),
-            image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            image: "/images/factory_setup/04d57de47d08fc36e10c54b770b84ab2_fit.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -85,7 +85,7 @@ const ReverseEngineeringPage: React.FC = () => {
                 <div className="space-y-4">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="https://images.unsplash.com/photo-1540409775241-8d4d2cc3d043?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                      src="/images/reverse_engineering/7812a5725f8765996685383c398411b8_1761x1172_0x0_1761x1174_crop.jpg"
                       alt="Ölçüm & Analiz"
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -96,7 +96,7 @@ const ReverseEngineeringPage: React.FC = () => {
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="/images/machine-design.webp"
+                      src="/images/reverse_engineering/c7f04abe0c9494e78b406d4fb90ec02a_1758x1318_fit.jpg"
                       alt="CAD Tasarım"
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -109,7 +109,7 @@ const ReverseEngineeringPage: React.FC = () => {
                 <div className="space-y-4 pt-8">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="https://images.unsplash.com/photo-1581093588401-8630a18f6d1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                      src="/images/3d_design/0b26bb86a5ee380ef2f367e2f8caff0b_2128x1410_0x0_2132x1412_crop.jpg"
                       alt="Malzeme Seçimi"
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -120,7 +120,7 @@ const ReverseEngineeringPage: React.FC = () => {
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="/images/project-design.webp"
+                      src="/images/rnd/3a1fe9007edd8e4b0429c7007e030644_2400x1350_fit.jpg"
                       alt="Üretim Hazırlığı"
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                     />

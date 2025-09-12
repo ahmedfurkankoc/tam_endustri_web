@@ -17,7 +17,7 @@ const TechnicalSalesPage: React.FC = () => {
         subtitle={t('business.sales.hero.subtitle')}
         description={t('business.sales.hero.description')}
         backgroundType="image"
-        backgroundSrc="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        backgroundSrc="/images/technical_sale/e54b811cf2b3533ade7a882de4d75600_fit.jpg"
         showScrollIndicator={true}
         overlayOpacity={0.5}
       />
@@ -29,7 +29,7 @@ const TechnicalSalesPage: React.FC = () => {
           {
             title: t('business.sales.cards.presentation.title'),
             description: t('business.sales.cards.presentation.desc'),
-            image: "/images/project-design.webp",
+            image: "/images/technical_sale/166f7449ba8af5931610b7158fdb511f_1870x1246_fit.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A2 2 0 0122 9.618V14.5a2 2 0 01-2.447 1.894L15 14" />
@@ -40,7 +40,7 @@ const TechnicalSalesPage: React.FC = () => {
           {
             title: t('business.sales.cards.layout_docs.title'),
             description: t('business.sales.cards.layout_docs.desc'),
-            image: "/images/machine-design.webp",
+            image: "/images/technical_sale/b35706e025b49aad731cfa451eb2f1e9_1830x1102_fit.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h8M7 16h6" />
@@ -51,7 +51,7 @@ const TechnicalSalesPage: React.FC = () => {
           {
             title: t('business.sales.cards.calc_feas.title'),
             description: t('business.sales.cards.calc_feas.desc'),
-            image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            image: "/images/technical_sale/11e420e4c6540724c3ea3fcf7eecac3d_1709x1011_93x103_1920x1141_crop.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />

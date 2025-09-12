@@ -85,8 +85,8 @@ export const tr = {
   'footer.copyright': `© ${new Date().getFullYear()} Tam Endüstri | Tüm hakları saklıdır`,
   
   // Hero Section
-  'hero.title': 'TÜRKİYE TİCARET',
-  'hero.title2': 'DANIŞMANLIĞI',
+  'hero.title': 'TÜRKİYE TİCARET DANIŞMANLIĞI',
+  'hero.subtitle': 'Endüstride TAM Çözümler',
   'hero.description': 'Türkiye pazarına giriş süreçlerinde uzman danışmanlık hizmeti veriyoruz. Yabancı şirketlerin Türkiye\'de başarılı olması için gerekli tüm ticaret süreçlerini yönetiyoruz.',
   'hero.scroll': 'Scroll',
   

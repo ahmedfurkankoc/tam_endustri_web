@@ -17,7 +17,7 @@ const RndMachinePage: React.FC = () => {
         subtitle={t('design.rnd.hero.subtitle')}
         description={t('design.rnd.hero.description')}
         backgroundType="image"
-        backgroundSrc="https://images.unsplash.com/photo-1542206395-9feb3edaa68e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        backgroundSrc="/images/rnd/3a1fe9007edd8e4b0429c7007e030644_2400x1350_fit.jpg"
         showScrollIndicator={true}
         overlayOpacity={0.6}
       />
@@ -29,7 +29,7 @@ const RndMachinePage: React.FC = () => {
           {
             title: t('design.rnd.cards.expertise.title'),
             description: t('design.rnd.cards.expertise.desc'),
-            image: "/images/machine-design.webp",
+            image: "/images/rnd/e9cf814f65351a31a399148bfd83d87e_1680x1198_0x0_1694x1199_crop.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 7a2 2 0 012 2v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9a2 2 0 012-2h6z" />
@@ -40,7 +40,7 @@ const RndMachinePage: React.FC = () => {
           {
             title: t('design.rnd.cards.value.title'),
             description: t('design.rnd.cards.value.desc'),
-            image: "/images/project-design.webp",
+            image: "/images/rnd/683a3d13568ea2ece0f3fcf0ee7ff6f3_1760x1174_fit.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -51,7 +51,7 @@ const RndMachinePage: React.FC = () => {
           {
             title: t('design.rnd.cards.innovative.title'),
             description: t('design.rnd.cards.innovative.desc'),
-            image: "https://images.unsplash.com/photo-1603706581674-8d9a75b9f4d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            image: "/images/rnd/6ef1ca2b39928758ff4cc5a7cc3d3825_2365x1721_0x0_2365x3548_crop.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -85,7 +85,7 @@ const RndMachinePage: React.FC = () => {
                 <div className="space-y-4">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="https://images.unsplash.com/photo-1540409775241-8d4d2cc3d043?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                      src="/images/rnd/f5783ad754ce547422b51026b667cc0d_3521x1444_0x0_3521x2347_crop.jpg"
                       alt="AR-GE Süreçleri"
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -96,7 +96,7 @@ const RndMachinePage: React.FC = () => {
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="/images/machine-design.webp"
+                      src="/images/rnd/683a3d13568ea2ece0f3fcf0ee7ff6f3_1760x1174_fit.jpg"
                       alt="Makine İyileştirme"
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -109,7 +109,7 @@ const RndMachinePage: React.FC = () => {
                 <div className="space-y-4 pt-8">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                      src="/images/rnd/e9cf814f65351a31a399148bfd83d87e_1680x1198_0x0_1694x1199_crop.jpg"
                       alt="Analiz & Hesap"
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -120,7 +120,7 @@ const RndMachinePage: React.FC = () => {
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="/images/project-design.webp"
+                      src="/images/rnd/3a1fe9007edd8e4b0429c7007e030644_2400x1350_fit.jpg"
                       alt="Yüzey & Malzeme"
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                     />

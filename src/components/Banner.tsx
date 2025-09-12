@@ -77,7 +77,7 @@ const Banner: React.FC<BannerProps> = ({
             {title || t('hero.title')}
           </h1>
           <p className="mt-2 mb-6 text-xl md:text-2xl text-white/90">
-            {subtitle || t('hero.title2')}
+            {subtitle || t('hero.subtitle')}
           </p>
           <div className="flex items-start space-x-6">
             {showScrollIndicator && (

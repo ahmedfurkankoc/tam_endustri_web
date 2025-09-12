@@ -17,7 +17,7 @@ const CustomMachinePage: React.FC = () => {
         subtitle={t('design.custom.hero.subtitle')}
         description={t('design.custom.hero.description')}
         backgroundType="image"
-        backgroundSrc="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        backgroundSrc="/images/custom_machine/423c6a674c45f0805d998324e46f2c7d_2400x1600_fit.jpg"
         showScrollIndicator={true}
         overlayOpacity={0.6}
       />
@@ -29,7 +29,7 @@ const CustomMachinePage: React.FC = () => {
           {
             title: t('design.custom.cards.consult.title'),
             description: t('design.custom.cards.consult.desc'),
-            image: "/images/machine-design.webp",
+            image: "/images/custom_machine/42dcb3e255f64a37516a7e6f02f7ad6f_1912x1080_0x0_1920x1080_crop.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -40,7 +40,7 @@ const CustomMachinePage: React.FC = () => {
           {
             title: t('design.custom.cards.prep.title'),
             description: t('design.custom.cards.prep.desc'),
-            image: "/images/project-design.webp",
+            image: "/images/custom_machine/31cc039b695147ba8769943c7fd59c0a_1918x1029_0x0_1920x1029_crop.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h8M7 16h6" />
@@ -51,7 +51,7 @@ const CustomMachinePage: React.FC = () => {
           {
             title: t('design.custom.cards.turnkey.title'),
             description: t('design.custom.cards.turnkey.desc'),
-            image: "https://images.unsplash.com/photo-1581093588401-8630a18f6d1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            image: "/images/custom_machine/fa1ac79a040a05b42eb97bee5371ed0f_1920x640_0x0_1920x1280_crop.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -85,7 +85,7 @@ const CustomMachinePage: React.FC = () => {
                 <div className="space-y-4">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                      src="/images/custom_machine/423c6a674c45f0805d998324e46f2c7d_2400x1600_fit.jpg"
                       alt="Özel Tasarım"
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -96,7 +96,7 @@ const CustomMachinePage: React.FC = () => {
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="/images/machine-design.webp"
+                      src="/images/custom_machine/42dcb3e255f64a37516a7e6f02f7ad6f_1912x1080_0x0_1920x1080_crop.jpg"
                       alt="Mekanik & Elektronik Seçimler"
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -109,7 +109,7 @@ const CustomMachinePage: React.FC = () => {
                 <div className="space-y-4 pt-8">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                      src="/images/custom_machine/31cc039b695147ba8769943c7fd59c0a_1918x1029_0x0_1920x1029_crop.jpg"
                       alt="Fizibilite & Maliyet"
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -120,7 +120,7 @@ const CustomMachinePage: React.FC = () => {
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="/images/project-design.webp"
+                      src="/images/custom_machine/fa1ac79a040a05b42eb97bee5371ed0f_1920x640_0x0_1920x1280_crop.jpg"
                       alt="Üretim Hazırlığı"
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                     />

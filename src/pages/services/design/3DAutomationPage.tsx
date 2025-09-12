@@ -18,7 +18,7 @@ const ThreeDAutomationPage: React.FC = () => {
         subtitle={t('design.3d_automation.hero.subtitle')}
         description={t('design.3d_automation.hero.description')}
         backgroundType="image"
-        backgroundSrc="https://images.unsplash.com/photo-1581093588401-8630a18f6d1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        backgroundSrc="/images/3d_automation/562743208d1a781ef5ef004c28cf7831_2400x1600_fit.jpg"
         showScrollIndicator={true}
         overlayOpacity={0.6}
       />
@@ -33,7 +33,7 @@ const ThreeDAutomationPage: React.FC = () => {
           {
             title: t('design.3d_automation.cards.minimize_errors.title'),
             description: t('design.3d_automation.cards.minimize_errors.desc'),
-            image: "/images/machine-design.webp",
+            image: "/images/3d_automation/48e1635831387e371881fad05f2a67a8_1632x1078_0x0_1632x1088_crop.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -44,7 +44,7 @@ const ThreeDAutomationPage: React.FC = () => {
           {
             title: t('design.3d_automation.cards.simple_example.title'),
             description: t('design.3d_automation.cards.simple_example.desc'),
-            image: "/images/project-design.webp",
+            image: "/images/3d_automation/87c498637b5a7b52227819353a732154_1639x1088_0x0_1639x1093_crop.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -55,7 +55,7 @@ const ThreeDAutomationPage: React.FC = () => {
           {
             title: t('design.3d_automation.cards.time_saving.title'),
             description: t('design.3d_automation.cards.time_saving.desc'),
-            image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            image: "/images/3d_automation/1a695afdc0534d90685048b4bf0342ce_2822x1590_0x0_2822x1869_crop.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -95,7 +95,7 @@ const ThreeDAutomationPage: React.FC = () => {
                 <div className="space-y-4">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                      src="/images/3d_automation/48e1635831387e371881fad05f2a67a8_1632x1078_0x0_1632x1088_crop.jpg"
                       alt="CAD Otomasyon"
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -106,7 +106,7 @@ const ThreeDAutomationPage: React.FC = () => {
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="/images/machine-design.webp"
+                      src="/images/3d_automation/87c498637b5a7b52227819353a732154_1639x1088_0x0_1639x1093_crop.jpg"
                       alt="Tekrarlayan İşler"
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -119,7 +119,7 @@ const ThreeDAutomationPage: React.FC = () => {
                 <div className="space-y-4 pt-8">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                      src="/images/3d_automation/1a695afdc0534d90685048b4bf0342ce_2822x1590_0x0_2822x1869_crop.jpg"
                       alt="Kontrol & Hesap"
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -130,7 +130,7 @@ const ThreeDAutomationPage: React.FC = () => {
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img
-                      src="/images/project-design.webp"
+                      src="/images/3d_automation/562743208d1a781ef5ef004c28cf7831_2400x1600_fit.jpg"
                       alt="Sürdürülebilirlik"
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -143,7 +143,7 @@ const ThreeDAutomationPage: React.FC = () => {
                 <div className="col-span-2">
                   <div className="relative group overflow-hidden rounded-2xl shadow-xl">
                     <img
-                      src="https://images.unsplash.com/photo-1581093458791-9d1b1bfa3f5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                      src="/images/3d_automation/562743208d1a781ef5ef004c28cf7831_2400x1600_fit.jpg"
                       alt="Otomasyon Banner"
                       className="w-full h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
                     />

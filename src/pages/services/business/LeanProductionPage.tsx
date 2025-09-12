@@ -17,11 +17,11 @@ const LeanProductionPage: React.FC = () => {
         subtitle={t('business.lean.hero.subtitle')}
         description={t('business.lean.hero.description')}
         backgroundType="image"
-        backgroundSrc="/hero-lean-production.jpg"
+        backgroundSrc="/images/lean_production/2e95fcb9cfaced6202a44a0f9b9d8298_1492x994_fit.jpg"
         showScrollIndicator={true}
         overlayOpacity={0.5}
       />
-
+      
       <PageHeader
         title={t('business.lean.header.title')}
         description={[t('business.lean.header.desc1'), t('business.lean.header.desc2')]}
@@ -29,7 +29,7 @@ const LeanProductionPage: React.FC = () => {
           {
             title: t('business.lean.cards.kaizen.title'),
             description: t('business.lean.cards.kaizen.desc'),
-            image: "/images/improvement-service.webp",
+            image: "/images/lean_production/7fe6a8d853ae3ac7f524941c204758d3_1890x1184_fit.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
@@ -40,7 +40,7 @@ const LeanProductionPage: React.FC = () => {
           {
             title: t('business.lean.cards.apps.title'),
             description: t('business.lean.cards.apps.desc'),
-            image: "/images/lean.webp",
+            image: "/images/lean_production/11420ac88b5607549956b8bbbae27748_fit.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v8m-4-4h8" />
@@ -51,7 +51,7 @@ const LeanProductionPage: React.FC = () => {
           {
             title: t('business.lean.cards.fixtures.title'),
             description: t('business.lean.cards.fixtures.desc'),
-            image: "/images/machine-design.webp",
+            image: "/images/lean_production/2e95fcb9cfaced6202a44a0f9b9d8298_1492x994_fit.jpg",
             icon: (
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h8M7 16h6" />
@@ -62,13 +62,13 @@ const LeanProductionPage: React.FC = () => {
         ]}
         id="lean-production-services"
       />
-
+      
       <section className="py-20 bg-gradient-to-br from-gray-50 via-tam-blue/10 to-tam-blue/20 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 right-0 w-96 h-96 bg-tam-blue/20 rounded-full -translate-y-20 translate-x-20"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-tam-blue/10 rounded-full translate-y-20 -translate-x-20"></div>
         </div>
-
+        
         <div className="max-w-7xl mx-auto px-6 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
             <div>
@@ -79,13 +79,13 @@ const LeanProductionPage: React.FC = () => {
                 <p>{t('business.lean.section.value.p3')}</p>
               </div>
             </div>
-
+            
             <div className="bg-white p-8 rounded-2xl shadow-xl border border-tam-blue/20">
               <h3 className="text-2xl font-semibold text-tam-blue mb-3">{t('business.lean.panel.shopfloor.title')}</h3>
               <p className="text-tam-blue/80 leading-relaxed">{t('business.lean.panel.shopfloor.desc')}</p>
             </div>
           </div>
-
+          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">{t('business.lean.section.saving.title')}</h3>
@@ -98,14 +98,13 @@ const LeanProductionPage: React.FC = () => {
           </div>
         </div>
       </section>
-
       
       {/* Yalın Üretim Eğitimi Bölümü - Modern ve diğer servis sayfalarıyla uyumlu */}
       <section className="py-20 bg-gradient-to-br from-gray-50 via-tam-blue/10 to-indigo-50 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-200/20 rounded-full translate-y-20 -translate-x-20"></div>
         </div>
-
+        
         <div className="max-w-7xl mx-auto px-6 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
             {/* Sol Metin */}
@@ -123,14 +122,14 @@ const LeanProductionPage: React.FC = () => {
                 <p>{t('business.lean.training.p2')}</p>
               </div>
             </div>
-
+            
             {/* Sağ Görsel Mozaik */}
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img 
-                      src="/images/improvement-service.webp"
+                      src="/images/lean_production/7fe6a8d853ae3ac7f524941c204758d3_1890x1184_fit.jpg"
                       alt="Sürekli İyileştirme"
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -139,7 +138,7 @@ const LeanProductionPage: React.FC = () => {
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img 
-                      src="/images/lean.webp"
+                      src="/images/lean_production/11420ac88b5607549956b8bbbae27748_fit.jpg"
                       alt="Yalın Uygulamalar"
                       className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -150,7 +149,7 @@ const LeanProductionPage: React.FC = () => {
                 <div className="space-y-4 pt-8">
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img 
-                      src="/images/machine-design.webp"
+                      src="/images/lean_production/2e95fcb9cfaced6202a44a0f9b9d8298_1492x994_fit.jpg"
                       alt="Aparat & Makine"
                       className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -159,7 +158,7 @@ const LeanProductionPage: React.FC = () => {
                   </div>
                   <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                     <img 
-                      src="/images/project-design.webp"
+                      src="/images/lean_production/a38971717f082b89d46d71c05f7a7f1b_fit.jpg"
                       alt="Akış & Yerleşim"
                       className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -168,9 +167,9 @@ const LeanProductionPage: React.FC = () => {
                   </div>
                 </div>
               </div>
-
+              
               {/* Yüzen küçük bilgi kutuları */}
-              <div className="absolute -top-4 -right-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-tam-blue/20">
+              <div className="absolute -top-4 -right-4 bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-tam-blue/20">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-tam-blue">Kaizen</div>
                   <div className="text-xs text-gray-600">{t('business.lean.float.kaizen')}</div>
@@ -178,7 +177,7 @@ const LeanProductionPage: React.FC = () => {
               </div>
             </div>
           </div>
-
+          
           <div className="bg-white p-8 rounded-2xl shadow-xl border border-tam-blue/20">
             <h3 className="text-2xl font-semibold text-tam-blue mb-3">{t('business.lean.cta.title')}</h3>
             <p className="text-tam-blue/80 leading-relaxed">{t('business.lean.cta.desc')}</p>
@@ -186,7 +185,7 @@ const LeanProductionPage: React.FC = () => {
         </div>
       </section>
       <ContactSection />
-
+      
       <Footer />
     </div>
   );
